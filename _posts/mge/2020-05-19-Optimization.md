@@ -156,7 +156,8 @@ Convex combination은 다수의 점에 대해서도 정의할 수 있다. 우린
 
 반대로 concave는 함숫값의 convex combination이 크거나 같으면 될 것이다. 그렇다면 linear function이면 convex하면서 동시에 concave할까? 그렇다! Convex하지 않다고 반드시 concave하진 않은 셈이다.
 
-또, 이 모든 것은 convex set 안에서 일어남을 알아두자. 도넛 형태 평면 위의 점들을 변수로 가지는 함수라면 convex/concave가 잘 판단될 수 있을까?
+또, 이 모든 것은 convex set 안에서 일어남을 알아두자. 도넛 형태 평면 위의 점들을 변수로 가지는 함수라면 convex/concave가 잘 판단될 수 있을까? 물론, convex set 위에서도 convex하지 않으면서 concave하지도 않은 경우가 있다. 꼬불꼬불거리는(?) 함수가 그 예시다. 물론 일부를 따면 convex한 부분과 concave한 부분이 있겠지만, 그 함수 자체는 아니니.
+
 
 
 
