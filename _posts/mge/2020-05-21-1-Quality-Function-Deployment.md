@@ -1,6 +1,6 @@
 ---
 title: [OM 1] Quality Function Deployment
-tags: Management-Engineering OM
+tags: OM
 toc: true
 ---
 
