@@ -1,5 +1,5 @@
 ---
-title:  "3 Conditionals"
+title:  "[MIPS 3] Conditionals"
 tags: MIPS
 toc: true
 ---

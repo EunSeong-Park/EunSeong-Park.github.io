@@ -1,5 +1,5 @@
 ---
-title:  "2 분할 정복"
+title:  "[Algorithms 2] 분할 정복"
 tags: Algorithms
 toc: true
 key: algo2

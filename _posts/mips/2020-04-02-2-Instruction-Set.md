@@ -1,5 +1,5 @@
 ---
-title:  "2 Instruction Set"
+title:  "[MIPS 2] Instruction Set"
 tags: MIPS
 toc: true
 ---

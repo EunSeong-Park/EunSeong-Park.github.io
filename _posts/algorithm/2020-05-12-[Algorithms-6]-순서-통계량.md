@@ -1,5 +1,5 @@
 ---
-title: 6 순서 통계량
+title: [Algorithms 6] 순서 통계량
 tags: Algorithms
 toc: true
 key: algo6

@@ -1,5 +1,5 @@
 ---
-title:  "0 Intro"
+title:  "[Algorithms 0] Intro"
 tags: Algorithms
 toc: true
 key: algo0

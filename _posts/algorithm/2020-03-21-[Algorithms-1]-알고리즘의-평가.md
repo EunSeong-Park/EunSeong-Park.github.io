@@ -1,5 +1,5 @@
 ---
-title:  "1 알고리즘의 평가"
+title:  "[Algorithms 1] 알고리즘의 평가"
 tags: Algorithms
 toc: true
 key: algo1

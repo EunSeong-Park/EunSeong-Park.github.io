@@ -1,5 +1,5 @@
 ---
-title: 7 동적 계획법
+title: [Algorithms 7] 동적 계획법
 tags: Algorithms
 toc: true
 ---

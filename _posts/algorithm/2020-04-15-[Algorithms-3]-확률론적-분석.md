@@ -1,5 +1,5 @@
 ---
-title:  "3 확률론적 분석"
+title:  "[Algorithms 3] 확률론적 분석"
 tags: Algorithms
 toc: true
 key: algo3

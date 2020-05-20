@@ -1,5 +1,5 @@
 ---
-title:  "4 Procedure Call"
+title:  "[MIPS 4] Procedure Call"
 tags: MIPS
 toc: true
 ---
