@@ -141,10 +141,10 @@ Convex combination은 다수의 점에 대해서도 정의할 수 있다. 우린
 
 정의 몇 가지만 더 하고가자. 수학 과목을 하는 기분이다.
 
-- 어떤 방향 단위벡터 $d$에 대해, 모든 non-zero 벡터 $x$와 모든 스칼라 상수 $\rambda$에 대해 $x+\rambda d \in S$면 $S$는 그 방향에 대해 unbound다.
-- 어떤 집합이 unbound여서, $R= \{x+\rambda d \in S : \rambda \ge 0 \}$ 내의 점이 모두 집합에 포함될 때, $R$을 ray라고 한다.
+- 어떤 방향 단위벡터 $d$에 대해, 모든 non-zero 벡터 $x$와 모든 스칼라 상수 $\lambda$에 대해 $x+\lambda d \in S$면 $S$는 그 방향에 대해 unbound다.
+- 어떤 집합이 unbound여서, $R= \{x+\lambda d \in S : \lambda \ge 0 \}$ 내의 점이 모두 집합에 포함될 때, $R$을 ray라고 한다.
 - 집합 내에서 어떤 방향벡터 $d$가 다른 방향벡터 둘의 positive-linear-combination으로 나타내어지지 않는 경우, 이를 extreme direction(ED)이라고 한다.
-- EP와 ED에 의해 만들어지는 직선, $R= \{x+\rambda d \in S : \rambda \ge 0 \}$을 extreme ray라고 한다.
+- EP와 ED에 의해 만들어지는 직선, $R= \{x+\lambda d \in S : \lambda \ge 0 \}$을 extreme ray라고 한다.
 
 왜 이런 짓을 하고 있는지 의문이 들 것이다. 사실 나도 그렇다. 이후에 사용할 optimization에 사용될 수학적 베이스가 되겠지 하고 넘기고 있다. 아무튼 이제 convex/concave function을 잘 정의할 수 있게 되었다.
 
