@@ -77,9 +77,9 @@ toc: true
 ### Little's Law
 Stable한 시스템에서, 시스템 전체나 대기열 내의 고객 수 평균은 다음과 같이 구할 수 있다.
 
-$L = \lambdaW$
+$L = \lambda W$
 
-$L_q = \lambdaW_q$ 
+$L_q = \lambda W_q$ 
 
 $W = W_q + \frac{1}{\mu}$
 
