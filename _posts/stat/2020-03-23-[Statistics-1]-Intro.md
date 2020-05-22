@@ -30,7 +30,7 @@ __통계량(statistic)__ 이란, (특히 샘플의) 데이터로부터 얻어지
 우리는 세 종류의 통계량에 주목할 것이다.
 
 ### Sample Mean
-__Sample mean__ , $\bar(x)$는 다음과 같이 정의된다.
+__Sample mean__ , $\bar{x}$는 다음과 같이 정의된다.
 
 $$\bar{x} = \frac{\sum_{k=1}^{n} x_k}{n}$$ $$= \frac{x_1 + x_2 + ... + x_n}{n}$$
 
@@ -39,7 +39,7 @@ $$\bar{x} = \frac{\sum_{k=1}^{n} x_k}{n}$$ $$= \frac{x_1 + x_2 + ... + x_n}{n}$$
 ### Deviations
 __Deviation__ 은 sample mean과 특정 값 사이의 차이로 정의된다.
 
-$$x_i - x$$
+$x_i - x$
 
 ### Sample Median
 __Sample median__ 은 샘플을 정렬했을 때 가운데에 위치한 값이다. 샘플 크기가 홀수라면 정확히 가운데를 찾을 수 있지만, 짝수라면 그렇지 않다. 이 때는 나온 두 값의 평균으로 median을 정의한다. $n$은 샘플의 크기고, 번호는 1번부터 시작한다고 하자.
