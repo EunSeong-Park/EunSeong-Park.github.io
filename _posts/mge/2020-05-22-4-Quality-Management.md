@@ -58,12 +58,12 @@ $\sigma{\bar{X}}$는 $\frac{\hat{\sigma}_ {X}}{\sqrt{n}}$을 통해 추정될 �
 
 좀 더 깔끔하게 정리하면 다음과 같다.
 
-![](/imgs/mge/om15.png)
+![](/imgs/mge/om16.png)
 
 관리도 계수, $A, d$ 등은 [링크](http://www.moonrepeat.org/wiki/doku.php?id=%EA%B4%80%EB%A6%AC%EB%8F%84_%EA%B3%84%EC%88%98%ED%91%9C&redirect=1)에서 볼 수 있다.
 
 ### Example
-![](/imgs/mge/om16.png)
+![](/imgs/mge/om15.png)
 
 [출처](http://www.moonrepeat.org/wiki/doku.php?id=x_bar_%EA%B4%80%EB%A6%AC%EB%8F%84)
 
