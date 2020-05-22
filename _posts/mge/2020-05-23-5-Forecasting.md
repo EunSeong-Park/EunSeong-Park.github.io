@@ -1,158 +1,119 @@
 ---
-title: "[OM 4] Quality Management"
+title: "[OM 5] Forecasting"
 tags: Management-Engineering OM
 toc: true
 ---
 
 # Intro
-제품 및 서비스의 품질(quality)을 분석 및 관리하는 게 중요하다는 것은 굳이 설명하지 않아도 될 것이다. 하지만 그에 대한 방법을 명확히 할 필요가 있는데, 이를 위해 이번엔 품질 관리를 위한 process capability analysis, statistical process control 등의 유용한 기법들을 알아볼 것이다.
+Business analytics는 데이터를 사용하는 목적에 따라 크게 세 종류로 나눌 수 있다.
+
+- Descriptive analytics: 현재 상황 또는 문제에 대한 정확하고 체계적인 파악을 위해 사용한다. 
+- Predictive analytics: 미래에 발생할 동향이나 현상을 예측하기 위해 사용한다.
+- Prescriptive analytics: 최선의 결정이나 선택을 고르기 위해 사용된다.
+
+Forecasting은 predictive analytics의 일종이다. 이는 많은 분야와, 많은 종류의 과정에서 사용되어, 더 나은 결정을 하는 데 도움을 줄 수 있다. 
 
 
-# Quality Management
+# Forecasting
+## Features
+대부분의 forecasting은 다음과 같은 특성을 가진다.
 
-- Proces control: Identification and control of major variance source
-- Process improvement: Further reduction of variation and mean improvement
+- Causal system을 가정한다. 즉, future input은 고려하지 않고, 현재와 과거의 input에 의존한다.
+- 내재된 산포와 무작위성으로 인해, forecast는 대개 완벽할 수 없다.
+- 그것의 정확성은 예측하려는 시점이 멀수록 떨어진다.
 
+Forecasting은 어떻게 이루어질까? 정성적(qualitative)인 방법과 정량적(quantitative)인 방법이 있다.
 
-품질 관리에서의 가장 중요한 원칙은, _"Control comes first before improvement"_ 라 할 수 있다. 달리 말하면, 목표 평균치에 가까운데 막 퍼져있는 것보단, 좀 멀리 떨어져 있어도 편차가 적은 편이 낫다는 것이다. 왜냐? 이미 잘 control되어 있다면, 여기에 mean improvement를 수행하면 되기 때문이다. 사격 훈련이랑 비슷한 맥락이다.
+- Qualitative: 추정은 과거의 경험과 사람(들)의 판단을 기반으로 한다. 정성적이어도 여기엔 논리적인 추론 및 가설 검증 단계를 필요로 하고, 어느 정도의 계산 및 수학적 테크닉을 수반할 수 있다.
+- Quantitative: 수학적 모델을 활용한 data-based한 판단(judgement)을 내린다.
 
-![](/imgs/mge/om12.png)
+이러한 절차를 따라 forecasting을 하면 된다.
 
-우리는 다음과 같은 절차를 따라 품질 관리(quality management)의 방법을 알아볼 것이다.
+![](/imgs/mge/om19.png)
 
-![](/imgs/mge/om13.png)
+우리는 qunatitative forecasting을 중심으로 알아볼 것이다.
 
+## Accuracy Measurement
+정량적인 방법으로 forecasting을 했다면, 이것이 실제로 얼마나 정확한지 검증해야 한다. 실제 값과의 격차가 tolerable하지 않다면, 방법이나 모델을 수정 및 변경해야 할 것이다. 그렇다면, 어떻게 forecast accuracy를 측정할 수 있을까?
 
-# Statistical Process Control (SPC)
-우리는 보다 균일하고 안정적인 품질의 제품을 생산하기 위해 SPC를 사용한다. SPC는 통계적이고 수학적인 기법을 사용해 프로세스에 대한 객관적인 지표를 제공하며 그에 대한 개선책을 세울 수 있도록 한다.
+우선, error, $e_t$를 $e_t = D_t - F_t$라 정의한다.
 
-![](/imgs/mge/om14.png)
+- Mean Error: 각 항목의 error의 평균이다. 즉, $ME = \frac{\sum e_t}{n}$
+- Mean Absolute Error: 각 항목의 error의 절댓값의 평균이다. 즉, $MAE = \frac{\sum |e_t|}{n}$
+- Mean Squared Error: 각 항목의 제곱의 평균이다. 즉, $MSE = \frac{\sum e_t^2}{n}$
 
-우리는 여러 control chart를 이용해 프로세스를 분석 및 관리할 수 있다. Control chart는 관심 있는 대상이 무엇인지에 따라 크게 두 종류로 나눌 수 있다.
+## Time Series Analysis
+시계열 분석(time series analysis)은 과거의 데이터를 바탕으로 미래의 데이터를 예측하는 방법이다. 물론 이는 과거와 미래가 어느 정도 일관성있게 흘러감을 가정한다. 또, 이는 다른 변수에 의존하지 않고 오직 시간에 따른 데이터만을 고려한다.
 
-- Variable(계량형): 두께, 길이 등과 같이 numerical scale로 측정 가능한 값. $\bar{X}, R, S$ chart 등이 여기에 포함된다.
-- Attribute(계수형): 불량/정상, 불량품 개수 등 이산적인 값. $p, np, c, u$ chart 등이 여기에 포함된다.
+시계열을 graphic하게 분석하면 그 데이터의 동향이 어떤지, 어떤 주기성과 특징을 가지는지 한 눈에 알아볼 수 있다.
 
-우리는 mean value와 variability에 관심이 있으므로, 여기선 $\bar{X}$와 $R$ chart를 이용할 것이다. 
+- Trend: long-term movement in data
+- Seasonality: short-term regular variations in data
+- Cycles: wave-like variations of more than one year's duration
+- Random variation: caused by chance
+- Irregular variation: caused by unusual circumstances
 
-기본적인 통계적 베이스는 간단히만 설명하고, 이후에 statistics 관련 포스팅에 따로 정리할 예정이다. 
+예를 들어, 보일러, 에어컨같이 계절성을 띠는 제품은 시계열에서 seasonality를 확인할 수 있을 것이다. 그럼에도 전반적으로 판매량이 증가한다면 이것은 증가하는 trend를 보여주는 것이고. 이렇게 하나의 시계열은 위와 같은 요소들이 한 곳에 모인 형태다.
 
-## Construction of X-bar & R Chart
-우리는 프로세스가 가지는 평균과 표준 편차를 모르고 있음을 가정한다. 즉, 표본으로부터 추정(estimation)을 해야 한다.
+![](/imgs/mge/om20.png)
 
-### R Chart
-$R$은 주어진 샘플이 가지는 범위(range)다. 즉, 샘플 $j$에 대한 $R_j$는, $R_j = X_{max} - X_{min}$이다. R chart의 중심선(CL, Center Line)과 LCL/UCL(Lower/Upper Control Limit)은 다음과 같다.
+Stochastic한 process, ${X_t}$는 현실에서 white noise 등이 첨가된 형태의 ${x_t}$로 드러나고 관찰된다. 이러한 상황에서, 우리는 두 가지 선택지가 있다.
 
-- CL: $CL = \bar{R}$
-- LCL/UCL: $\bar{R} \pm 3\sigma_{R}$
+1. 별도의 모델 없이 관찰된 데이터, ${x_t}$에 주목한다.
+2. Parameter의 추정을 수반한 모델링을 수행한다. 즉, ${X_t}$에 주목한다.
 
-$\sigma_{R}$은 $\frac{d_3}{d_2} \hat{\sigma_{\bar{R}}}$를 통해 추정될 수 있다.
+전자의 경우 moving average, smoothing 등의 기법이 있고, 후자의 경우 Box-Jenkins type method 등이 있다. 우리는 전자를 중심으로 알아볼 것이다.
 
-### X-bar Chart
-$\bar{X}$는 샘플의 일부를 따와 평균을 낸 sample mean이다. 
+### Smoothing Method
+스무딩(smoothing)은 말 그대로 시계열을 부드럽게 만들어주는 기법이다. 그럼으로써 각종 불규칙한 변동을 완화시킬 수 있다는 점에서 유용하다.
 
-- CL: $\bar{\bar{X}}$
-- LCL/UCL: $\bar{\bar{X}} \pm 3\sigma_{\bar{X}} $
+![](/imgs/mge/om21.png)
 
-$\sigma{\bar{X}}$는 $\frac{\hat{\sigma}_ {X}}{\sqrt{n}}$을 통해 추정될 수 있다.
+가장 간단한 방법은 simple moving average 기법이다. 특정 시점으로부터 최근 데이터 몇 개의 평균을 내면서 스무딩을 수행한다. 이 방법은 간단하지만, trend, seasonality를 반영하지 못하고, 모든 데이터를 고려할 수 없다는 단점이 있다. (초반 혹은 후반에 몇 개의 데이터가 누락된다)
 
-좀 더 깔끔하게 정리하면 다음과 같다.
+![](/imgs/mge/om22.png)
 
-![](/imgs/mge/om16.png)
+Exponential smoothing은 이전 데이터의 영향을 받되, 시점으로부터 멀어질 수록 그 영향력이 exponential하게 감소하는 형태의 smoothing이다. 즉, 가장 직전의 값이 가장 영향을 크게 준다.
 
-관리도 계수, $A, d$ 등은 [링크](http://www.moonrepeat.org/wiki/doku.php?id=%EA%B4%80%EB%A6%AC%EB%8F%84_%EA%B3%84%EC%88%98%ED%91%9C&redirect=1)에서 볼 수 있다.
+이는 각 시점에서 모든 데이터를, 그리고 더 정교하게 고려할 수 있게 만들어준다. 하지만 여전히 trend나 seasonality를 systemical하게 분석할 방법을 주진 않는데, 이는 다음과 같은 방법으로 개선될 수 있다.
 
-### Example
-![](/imgs/mge/om15.png)
+![](/imgs/mge/om23.png)
 
-[출처](http://www.moonrepeat.org/wiki/doku.php?id=x_bar_%EA%B4%80%EB%A6%AC%EB%8F%84)
+일명 weighted exponential smoothing이다. Trend factor를 도입함으로써 시계열을 보정한다.
 
-다음과 같은 프로세스가 있다고 생각해보자. CL은 각 샘플 그룹이 가지는 평균($\bar{x}$)의 평균, 57.6051이다. 또, 샘플 전체의 $\bar{R}$은 0.354로, 이를 이용해 UCL과 LCL을 구할 수 있다. $CL \pm A_2\bar{R} = 57.3933, 57.8169$
+$\alpha$, 혹은 $\beta$는 임의로 설정하는 계수다. 그 값에 따라 smoothing의 정도가 달라지는데, 너무 크면 스무딩이 안되고, 너무 작으면 데이터가 씹히는 등의 문제가 발생한다.
 
-이렇게 데이터가 주어졌을 때, control chart는 어떻게 그릴까? 엑셀을 사용하는 방법도 있지만, [Minitab](http://datalabs.co.kr/html/support/DemoDownload.php)이라는 유용한 도구가 있다. 심심하면 써보자.
+관련 예제를 풀어보진 않을 것이다. 별 이유는 없고 귀찮아서(...)
 
-## Management
-주로 $R$ chart를 먼저 분석하여 이를 관리하고, 만족스런 결과가 나오면 $\bar{X}$ chart를 분석하여 이를 관리하는 식으로 이루어진다. (맨 위쪽 그림에서 볼 수 있다)
+### Model-Based Method
+Smoothing method는 몇 가지 단점을 내포하고 있는데,
 
-만약 제대로 컨트롤이 되지 않고 있다면, 그러한 원인을 찾아야 한다. 원인은 프로세스 자체에 내재되었을 수도, 여러 작은 요인들이 뭉치고 뭉쳐 만들어졌을 수도, 일부 설비, 재료, 인원의 문제일 수도 있다. 또는, 잘못된 방식으로 설비나 도구를 이용했을 수도, 공정 내에 비합리적이고 불필요한 절차가 있었을 수도 있다.
+- $\alpha, \beta$ 설정의 어려움
+- 직전 값이 irregular하다면 forecasting을 망칠 수 있음
+- 현상 자체를 설명해주지는 않음
 
-일부는 우연히, 그리고 필연적으로 발생할 수 있지만, 어떠한 문제는 충분히 개선이 가능할 것이다. 그렇다면 이를 찾아내 고치면 된다. 말은 쉽다.
+적절한 모델의 설계는 forecasting 자체뿐 아니라 다른 많은 측면에서의 도움을 줄 수 있다. Model-based한 방법은 관측값 ${x_t}$보단 ${X_t}$에 주목하여, 프로세스 그 자체를 설명하기 위한 방법을 찾는다.
 
-또, 5M1E라는 품질 변동의 원인들을 나타내는 범주가 있다.
+이는 계산 알고리즘을 이용한 파라미터의 추정을 수반하는데, 그 수가 적다면 Box-Jenkins method를 사용하는 게 가장 일반적이다.
 
-- Men: 사람 각각의 역량 및 업무 방식
-- Meterials: 제품 생산을 위한 재료의 특성
-- Methods: 업무 수행 방식, 설비 및 공정 배치 등
-- Measurements: 측정 방식 및 도구 등
-- Machine: 기계 및 설비의 성능, 노후화 여부 등
-- Environments: 다양한 측면에서의 업무 환경
+여기서 커버할 범위는 아니라 생략한다. 또 나도 못알아먹겠다... 똑똑해지면 다시 공부해보자
 
-이를 이용해 문제들을 잘 카테고라이징해서 분석하면 보다 용이할 것이다.
+## Explanatory Model
+시계열 분석에서 드는 근본적인 의문이 조금 있다. 실제로 과거랑 비슷한 경향을 따라 일관성있게 일이 발생할지 알 수 없다는 점, 그리고 오직 시간만을 의존하는 게 충분할지에 대한 의문 등이 있다. 종합적인 요소를 고려하면서도, 현상을 보다 잘 설명해주는 forecasting method가 없을까?
 
-## Summary
-정리하면, SPC를 통해 품질의 균일화를 추구할 수 있고, 계량적인 요소(variable)의 경우 $\bar{X}, R$ chart 등을 사용할 수 있다. 만약 어떤 품질에 대하여 프로세스 자체의 평균 혹은 표준 편차를 알지 못한다면, 샘플을 통해 추정을 할 수 있다.
+Explanatory model은 관심 있는 데이터에 대해, 그것에 영향을 줄 수 있는 여러 요소들을 고려할 수 있게 해준다. 특정 시점과 그 때의 데이터만을 고려하는 시계열 분석과는 대비된다. 예를 들어, 일기 예보를 위해선 온도, 습도, 기압 등 수 많은 요소들을 고려해야 한다. 시계열 분석으론 충분하지 않을 것이다.
 
-또, 이렇게 세운 control chart를 통해, 개선 가능한(assignable) 품질 변동의 원인들을 분석 및 해결할 수 있다.
+Explanatory Model은 광범위하게 사용되는데, regression도 explanatory model의 용례라고 볼 수 있다. 왜? 주어진 $X$들을 통해 미래의, 그리고 일반적인 $Y$를 forecast하기 때문이다. 그런데 regression이 뭐지?
 
+### Regression
+회귀분석(regression)은 독립 변수와 종속 변수 간의 관계를 함수로 표현 및 설명하는 방법이다. 엑셀에서 점 몇 개만을 가지고도 추세선을 그릴 수 있다는 사실을 알 것이다. 그것 또한 regression의 용례로 볼 수 있다.
 
-# Process Capability Analysis
-Process capability란, 프로세스를 평가하기 위한 간단한 형태의 지표다. 공정능력 정도로 번역되는 듯하다. 이는 프로세스가 안정적(in control)인 상태에 있을 때, 프로세스가 산출해내는 품질에 대한 달성능력을 의미한다. 달리 말하면, "얼마나 규격에 맞는 제품을 생산해낼 수 있는가?"에 대한 척도다.
+가장 간단한 regression은 linear한 trend를 예측하는, linear regression일 것이다. $y = ax + b$의 형태로 나타내어, $a$와 $b$의 값을 추정하는 것이다.
 
-그 전에 몇 가지 간단한 개념들을 짚고 가자.
+![](/imgs/mge/om24.png)
 
-## Tolerance
-대부분의 제품과 서비스, 그리고 이들을 구성하는 각 요소는 그에 맞는 tolerance, 즉 허용 범위가 있다. 예를 들어, 아메리카노에 물을 30mL만 넣는다거나, 0.5mm 샤프심을 만드는데 0.9mm로 만든다거나, 이런 경우는 명백히 허용 범위를 넘는, defect일 것이다. 반면, 5kg 덤벨을 생산하는데, 정확한 무게를 만들기 위해 CGPM에서 정의한 1kg의 정의를 따라 한치의 오차도 없이 만들기 위해 노력하는 건 분명한 낭비다.
-
-그래서 어떤 이상적인 수치를 기준으로 그 허용 범위 내에 있으면 해당 제품은 통과하는 방식을 사용한다. 물론 이상적인 값에 가까울 수록 좋을 것이다.
-
-Tolerancing은 ideal value(basic)로부터 그 범위의 방향에 따라 세 타입으로 나누어 볼 수 있다.
-
-### N-Type
-Nominal-the-best. Basic으로부터 LSL(Lower Specification Limit)과 USL(Upper Specification Limit)이 모두 존재하는 형태다. 샤프심 두께는 아마 N-type일 것이다. 너무 얇아도, 너무 두꺼워도 문제가 생기기 때문이다.
-
-$X \in [LSL, USL]$이면 그 샘플은 통과하고, 그렇지 않으면 불량으로 간주한다. 이를 통해 우리는 proportion of reject를 계산할 수 있다.
-
-우선, central limit theorem을 적용해, 각 sample은 normal distribution에 근사될 수 있다고 가정한다. 즉, $X \sim N(\mu, \sigma^2)$이면,
-
-$p = P[X < LSL] + P[X > USL] =$ $P[Z < \frac{LSL - \mu}{\sigma}] + P[Z > \frac{USL - \mu}{\sigma}]$
-
-![](/imgs/mge/om17.png)
-
-### S-Type
-Smaller-the-best. Basic으로부터 USL만 존재한다. 보통은 non-negative로 범위를 한정한다. 예를 들어 화학 제품의 불순물 양, 모니터의 불량 화소 개수 등은 적을 수록 좋을 것이다.
-
-Proportion of reject는 USL보다 큰 경우일 것이다.
-
-$p = P[X > USL] = P[Z > \frac{USL - \mu}{\sigma}]$
-
-### L-Type
-Larger-the-best. Basic으로부터 LSL만 존재한다. 예를 들어 물체의 내구성(강도 등)이나 배터리 수명 등은 클 수록 좋을 것으로 보인다. 
-
-Proportion of reject는 LSL보다 작은 경우다.
-
-$p = P[X < LSL] = P[Z < \frac{LSL - \mu}{\sigma}]$
-
-## Process Capability Index
-$C_p$는 다음과 같이 정의된다. 즉, natural tolerance($6\sigma$)에 대한 specification width의 비율이다. 
-
-$ C_p = \frac{USL-LSL}{6\sigma}$
-
-예를 들어, $USL-LSL$이 6이고, 표준 편자가 1이라면 $C_p$는 1.0이 된다. 그럼 어느 정도가 좋은 공정능력이라고 볼 수 있을까? 보통은 1.33 이상을 적합한 수준으로, 1 미만을 부족한 수준으로 본다. 높을 수록 좋은 수치지만, 과도하게 높다면(1.68 이상) 프로세스를 어느 정도 간소화하는 등의 방향으로 품질 관리의 비용을 절약하는 전략을 세워볼 수 있다.
-
-$C_p$는 얼마나 분산되어 있는지(variability)만을 보기 때문에, 분포의 치우침, 즉 mean-shift를 고려하지 못한다. 아래의 B, C는 A와 같은 $C_p$를 갖는데, 이는 분명히 문제가 있어 보인다.
-
-![](/imgs/mge/om18.png)
-
-$C_{pk}$는 $C_p$에서 치우침의 정도, $k$를 함께 고려한 지수다. $C_{pk}$는 다음과 같이 정의된다.
-
-$C_{pk} = min(C_{pL}, C_{pR})$ where $C_{pL} = \frac{\mu - LSL}{3\sigma}, C_{pR} = \frac{USL - \mu}{3\sigma}$
-
-둘 중 minimum을 선택한다는 것은, 더 안좋은 쪽을 고려하겠다는 의미다. (conservative decision) $C_{pk}$ 또한 1.33 이상을 적합한 수준으로 본다. 
-
-$C_{pk}$는 평균이 치우친 상황에서도 적용 가능한 점에서 $C_p$보다 나은 지표처럼 보이나, 여기에도 한계가 있다. 목표치(target)를 고려하지 않는다는 점, (가정을 하고 시작하므로) 분포 자체의 형태를 고려하지 않는다는 점 등이 있다. 본격적인 Process capability analysis 전에 normality test가 필요한 이유일 듯 하다.
+물론 non-linear한 경우에도 적절한 모델을 사용함으로써 분석할 수 있다. 이건 다른 과목에서 하자.
 
 
 # 마치며
-꽤 분량을 길게 썼다. 기초적인 통계적 베이스가 어느 정도 필요한 내용이었는데, 아무래도 통계 복습을 해야할 것 같다.
-
-아무튼 다음엔 forecasting에 대해 알아보도록 하자.
+솔직히 이해가 안되는 부분이 꽤 있다. 아직 지식이 너무 얕아서 그런 것 같은데, 공부를 좀 하고 나중에 글을 다듬어야지.

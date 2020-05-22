@@ -23,7 +23,7 @@ toc: true
 ![](/imgs/mge/om13.png)
 
 
-# Statistical Process Control (SPC)
+# Statistical Process Control
 우리는 보다 균일하고 안정적인 품질의 제품을 생산하기 위해 SPC를 사용한다. SPC는 통계적이고 수학적인 기법을 사용해 프로세스에 대한 객관적인 지표를 제공하며 그에 대한 개선책을 세울 수 있도록 한다.
 
 ![](/imgs/mge/om14.png)
