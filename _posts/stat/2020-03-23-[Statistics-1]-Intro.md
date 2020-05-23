@@ -103,10 +103,14 @@ $s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}$
 ## Law of Large Numbers
 우선, 실제로 저 값이 population의 varaince, $\sigma^2$을 잘 대표해준다는 사실을 보이기 위해, $s^2$의 기댓값(expectation)이 $\sigma^2$임을 보일 것이다.
 
-$E(s^2) = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) \\ \quad = \frac{1}{n-1} E(\sum_{i=1}^n x_i^2 - n\bar{x}^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n E(x_i^2) - E(\bar{x})^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n (Var(x_i) + \mu^2 - Var(\bar{x}) - \mu^2 ) \\ \quad = \frac{n}{n-1} (\sigma^2 - Var(\frac{1}{n} \sum_{i-1}^n x_i)) \\
-\quad = \frac{n}{n-1} (\sigma^2 - \frac{n\sigma^2}{n^2}) = \sigma^2 $
+- $E(s^2) = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) $
+- $\quad = \frac{1}{n-1} E(\sum_{i=1}^n x_i^2 - n\bar{x}^2) $ 
+- $\quad = \frac{1}{n-1} (\sum_{i=1}^n E(x_i^2) - E(\bar{x})^2) $
+- $\quad = \frac{1}{n-1} (\sum_{i=1}^n (Var(x_i) + \mu^2 - Var(\bar{x}) - \mu^2 ) $
+- $\quad = \frac{n}{n-1} (\sigma^2 - Var(\frac{1}{n} \sum_{i-1}^n x_i)) $
+- $\quad = \frac{n}{n-1} (\sigma^2 - \frac{n\sigma^2}{n^2}) = \sigma^2 $
 
-Mathjax 쓰기 어렵다... 아무튼 sample mean의 expectation은 population mean과 같고, independent한 각 $x_i$에 대한, variance의 linearity를 이용하여 증명하였다.
+Sample mean의 expectation은 population mean과 같고, independent한 각 $x_i$에 대한, variance의 linearity를 이용하여 증명하였다.
 
 그리고, 큰 수의 법칙(law of large numbers)을 이용하면, $s^2$의 평균이 $\sigma^2$에 수렴함을 알 수 있다.
 
