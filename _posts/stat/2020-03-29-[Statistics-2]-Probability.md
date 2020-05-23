@@ -65,9 +65,9 @@ $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 		<li>$B = (B-A) \cup (A \cap B) $ (and they are disjoint)</li>
 		<li>$P(A) = P(A-B) + P(A \cap B)$ (by axiom 3)</li>
 		<li>$P(B) = P(B-A) + P(A \cap B)$ (by axiom 3)</li>
-		<li>$P(A) + P(B) = P(A-B) + P(B-A) + 2P(A \cap B)$ </li>
-		<li>$P(A) + P(B) = 2P(A \cap B) + P((A-B) \cup (B-A))$ (disjoint)</li>
-		<li>$P((A-B) \cup (B-A)) + P(A \cap B) = P(((A-B) \cup (B-A)) \cup (A \cap B)) = P(A \cup B)$ </li>
+		<li>$P(A) + P(B)$ $= P(A-B) + P(B-A) + 2P(A \cap B)$ </li>
+		<li>$P(A) + P(B)$ $= 2P(A \cap B) + P((A-B) \cup (B-A))$ (disjoint)</li>
+		<li>$P((A-B) \cup (B-A)) + P(A \cap B)$ $= P(((A-B) \cup (B-A)) \cup (A \cap B)) = P(A \cup B)$ </li>
 		<li>So, $P(A) + P(B) = P(A \cap B) + P(A \cup B) $</li>
 		<li>$P(A \cup B) = P(A) + P(B) - P(A \cap B)$</li>
 	</ul> 
@@ -84,12 +84,24 @@ Conditional probability of B given that A, 즉, A가 발생했을 때 B가 발�
 ## Properties
 아래는 가장 간단한 multiplication rule이다. Non-empty event인 $A$에 대해 다음과 같은 식이 성립한다.
 
-$P(B|A) = \frac{P(A \cap B)}{P(A)}$
+$P(B \vert A) = \frac{P(A \cap B)}{P(A)}$
 
 이는 아래와 같이 표현할 수도 있다.
 
-$P(A)P(B|A) = P(A \cap B)$
+$P(A)P(B \vert A) = P(A \cap B)$
 
 또, 더욱 일반화하여 다음과 같은 식도 성립한다.
 
-$P(A_1 \cap A_2 \cap ... \cap A_n) = P(A_1)P(A_2|A_1)P(A_3|A_1 \cap A_2)...P(A_n|A_1 \cap ... \cap A_{n-1})$
+$P(A_1 \cap A_2 \cap ... \cap A_n)$ $= P(A_1)P(A_2 \vert A_1)P(A_3 \vert A_1 \cap A_2)...P(A_n \vert A_1 \cap ... \cap A_{n-1})$
+
+## Independence
+두 event에 대해, 한 event의 발생 여부가 다른 event의 확률에 영향을 주지 않는다면, 두 event는 독립적(independent)이라고 한다. 더 정확히 정의하면, $P(A \cap B) = P(A)P(B)$일 때 $A$와 $B는 독립이다. 또, 독립이면 위의 식을 만족한다.
+
+이는 empty하지 않은 $A$와 $B$에서 그 의미가 직관적으로 다가온다. 왜냐?
+
+$P(A \vert B)$ $= \frac{P(A \cap B)}{P(B)}$ $= \frac{P(A)P(B)}{P(B)}$ $=P(A)$
+
+보통 empty한 event와 임의의 event는 서로 독립인 걸로 본다(어떤 책은 non-zero probability를 독립 조건에 추가하기도 한다). 다만 empty한 event의 경우 바로 위의 공식이 유도될 수 없다. 분모가 0이 되기 때문이다.
+
+독립의 정의는 임의의 $n$개의 event에도 적용될 수 있다.
+
