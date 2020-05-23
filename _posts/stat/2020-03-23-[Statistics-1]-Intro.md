@@ -100,6 +100,39 @@ __Sample standard deviation__ , $s$는 sample variance의 square-root로 정의�
 
 $s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}$
 
-가장 간단한 방법은, 실제로 저 값이 population의 varaince, $\sigma^2$을 잘 대표해준다는 사실을 보이기 위해, $s^2$의 기댓값(expectation)이 $\sigma^2$임을 보이는 것이다.
+## Law of Large Numbers
+우선, 실제로 저 값이 population의 varaince, $\sigma^2$을 잘 대표해준다는 사실을 보이기 위해, $s^2$의 기댓값(expectation)이 $\sigma^2$임을 보일 것이다.
 
-$$E(s^2) = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) \\ \quad = \frac{1}{n-1} E(\sum_{i=1}^n x_i^2 - n\bar{x}^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n E(x_i^2) - E(\bar{x})^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n (Var(x_i) + \mu^2 - Var(\bar(x)) - \mu^2 ) \\ $$
+$E(s^2) = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) \\ \quad = \frac{1}{n-1} E(\sum_{i=1}^n x_i^2 - n\bar{x}^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n E(x_i^2) - E(\bar{x})^2) \\ \quad = \frac{1}{n-1} (\sum_{i=1}^n (Var(x_i) + \mu^2 - Var(\bar{x}) - \mu^2 ) \\ \quad = \frac{n}{n-1} (\sigma^2 - Var(\frac{1}{n} \sum_{i-1}^n x_i)) \\
+\quad = \frac{n}{n-1} (\sigma^2 - \frac{n\sigma^2}{n^2}) = \sigma^2 $
+
+Mathjax 쓰기 어렵다... 아무튼 sample mean의 expectation은 population mean과 같고, independent한 각 $x_i$에 대한, variance의 linearity를 이용하여 증명하였다.
+
+그리고, 큰 수의 법칙(law of large numbers)을 이용하면, $s^2$의 평균이 $\sigma^2$에 수렴함을 알 수 있다.
+
+이렇게 $n-1$로 나눈 추정량(estimator)은 그것의 기댓값이 population parameter(모수?), 즉, population variance와 같고, 이러한 성질을 만족하는 추정량을 불편추정량(unbiased estimator)라고 한다. 
+
+## Degree of Freedom
+DoF의 관점에서 이 문제를 볼 수도 있다. DoF는 러프하게 표현하면, 독립적인(자유로운) 변수의 개수로 볼 수 있다. $x + y + z = 9$에서, $x, y$를 임의로 정한다면 $z$는 주어진 조건에 종속된다. 그래서 이 경우 DoF는 2다. 
+
+Sample variance는 어떨까? 정의로부터, 우리는 이를 구하기 위해, sample mean의 값을 필요로 함을 알 수 있다. 그 상태에서, $n-1$개의 데이터는 자유롭게 결정될 수 있지만, 마지막 하나는 나머지 값들에 의존해 결정된다. 그래서 sample variance의 DoF는 $n-1$이다.
+
+"우리는 아직 분산을 모르는데 왜 마지막 데이터가 결정되냐?"라는 의문이 들 수 있다. 하지만 이는 명백히 결정되는데, __편차의 합은 반드시 0이기 때문이다.__ 
+
+마지막으로 "그래서, 왜 DoF로 나누냐?"라는 의문또한 들 수 있다. 아마 이게 직관적으로 납득이 어려운 부분일 것 같다.
+
+이것은 약간은 자의적인 느낌이 있을 수 있는데, 다음 절에 설명한다.
+
+## Bias
+샘플 사이즈가 작은 경우, sample variance와 population variance는 어느 정도의 차이를 보인다. 그러한 차이를 bias라고 한다. 또 그렇게, bias를 발생시키는 추정치(estimator, 여기선 sample variance)를 biased estimator라고 한다. 당연하게 느껴지겠지만, 일반적으로 이는 바람직하지 않다.
+
+그런데 $n$ 대신 DoF, $n-1$를 사용함으로써 이러한 estimator를 unbiased하게, 즉 unbiased estimator로 만들 수 있음을 알게 되었고, 그렇게 DoF를 사용하게 된 것이다.
+
+이러한 이유는 꽤 clear하지 않아보인다. "어쩌다 보니 이걸 쓰게 되었다"라는 뉘앙스로 들릴 수 있기 때문인데, 그저 적절한 도구의 도입 정도로 보면 편할 것 같다. 항상 0이 되는 편차의 평균을 대신하여, 데이터의 편차, 그리고 퍼짐의 정도를 표현하기 위해 variance를 도입한 것처럼 말이다.
+
+
+# 마치며
+이제 아주 기본적인 통계 파트가 끝났다. 각종 이상한 도표를 제외하고 나니 진도가 굉장히 빨리 나간다.
+
+다음엔 확률을 비롯한 여러 주제를 다루어보려고 한다.
+
