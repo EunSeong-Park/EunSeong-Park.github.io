@@ -20,7 +20,7 @@ toc: true
 Event에 대한 intersection, union, complement 등은 모두 생략한다.
 
 ## Probability of Event
-어떤 event, $E$의 확률(probability)을 다음과 같이 정의한다.
+어떤 event, $E$의 __확률(probability)__ 을 다음과 같이 정의한다.
 
 $P(E) = \frac{n(E)}{n(S)}$
 
@@ -31,6 +31,7 @@ $n(E), n(S)$는 각 집합에 포함된 원소의 수를 의미한다. 그런데
 > Each outcome in the sample space S is equally likely to occur.
 
 이러면 위의 질문은 가정을 만족하기 위해 수정되어야 한다. 이제 "일단은" 정의에 문제가 없는 것으로 보인다.
+
 
 # Properties of Probability
 ## Axioms of Probability
@@ -43,6 +44,8 @@ $n(E), n(S)$는 각 집합에 포함된 원소의 수를 의미한다. 그런데
 이제 위의 세 공리를 이용해 몇 가지 유용한 정리를 이끌어낼 것이다.
 
 ## Properties
+모두 증명이 쉬운 성질들이지만, 그래도 적어놨다.
+
 $P(A^c) = 1 - P(A)$
 <details>
 	<summary>Proof</summary>
@@ -53,3 +56,40 @@ $P(A^c) = 1 - P(A)$
 		<li>$P(A^c) = 1 - P(A)$</li>
 	</ul> 
 </details>
+
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+<details>
+	<summary>Proof</summary>
+	<ul>
+		<li>$A = (A-B) \cup (A \cap B) $ (and they are disjoint)</li>
+		<li>$B = (B-A) \cup (A \cap B) $ (and they are disjoint)</li>
+		<li>$P(A) = P(A-B) + P(A \cap B)$ (by axiom 3)</li>
+		<li>$P(B) = P(B-A) + P(A \cap B)$ (by axiom 3)</li>
+		<li>$P(A) + P(B) = P(A-B) + P(B-A) + 2P(A \cap B)$ </li>
+		<li>$P(A) + P(B) = 2P(A \cap B) + P((A-B) \cup (B-A))$ (disjoint)</li>
+		<li>$P((A-B) \cup (B-A)) + P(A \cap B) = P(((A-B) \cup (B-A)) \cup (A \cap B)) = P(A \cup B)$ </li>
+		<li>So, $P(A) + P(B) = P(A \cap B) + P(A \cup B) $</li>
+		<li>$P(A \cup B) = P(A) + P(B) - P(A \cap B)$</li>
+	</ul> 
+</details>
+
+생각보다 정리할 게 별로 없다. 기초적인 확률 계산은 공리와 이 성질들만 써도 문제 없다. "계산은"...
+
+
+# Conditional Probability
+__조건부 확률(conditional probability)__ 은 어떤 event가 발생했을 때 다른 event가 발생할 확률을 의미한다. "다른 event"라고는 했지만, 구분을 위해 그렇게 불렀을 뿐, 같은 event여도 문제가 되진 않는다.
+
+Conditional probability of B given that A, 즉, A가 발생했을 때 B가 발생할 확률은 $P(B|A)$와 같이 표기한다. 
+
+## Properties
+아래는 가장 간단한 multiplication rule이다. Non-empty event인 $A$에 대해 다음과 같은 식이 성립한다.
+
+$P(B|A) = \frac{P(A \cap B)}{P(A)}$
+
+이는 아래와 같이 표현할 수도 있다.
+
+$P(A)P(B|A) = P(A \cap B)$
+
+또, 더욱 일반화하여 다음과 같은 식도 성립한다.
+
+$P(A_1 \cap A_2 \cap ... \cap A_n) = P(A_1)P(A_2|A_1)P(A_3|A_1 \cap A_2)...P(A_n|A_1 \cap ... \cap A_{n-1})$
