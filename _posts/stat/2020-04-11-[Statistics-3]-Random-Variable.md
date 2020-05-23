@@ -47,7 +47,7 @@ $P(X = x_i)$ | \frac{1}{6} | \frac{1}{6} | \frac{1}{6} | \frac{1}{6} | \frac{1}{
 모든 경우의 확률의 합, 즉 sample space의 확률 $P(S)$는 1임을 기억하자.
 
 ## Expectation
-Discrete RV의 기댓값(expectation, expected value)은 다음과 같이 정의된다.
+Discrete RV, $X$의 기댓값(expectation, expected value)은 다음과 같이 정의된다.
 
 > $E(X) = \sum_{i=1}^n x_iP(X=x_i)$
 
@@ -69,5 +69,88 @@ $E(aX + b) = aE(X) + b$
 
 $E(X_1 + ... X_n) = E(X_1) + ... + E(X_n)$
 
+선형성은 기댓값의 계산을 매우 편하게 만들어준다.
+
+### Function of RV
+어떤 RV, $X$에 대한 함수, $g(X)$를 생각해보자. $g(X)$의 기댓값은 다음과 같다.
+
+> $E(g(X)) = \sum g(X_i)P(X = x_i)$
+
+함수가 적용되면 확률은 유지된 채로 RV의 값만 달라진다고 생각하면 받아들이기 쉽다.
+
+#### Example
+주사위 눈의 제곱의 기댓값을 구해보자.
+
+주사위 눈을 RV, $X$라고 하자. 우리는 눈의 제곱에 관심이 있으므로, $g(X) = X^2$으로 놓는다.
+
+$E(g(X))$ $= \frac{1}{6}(1^2 + 2^2 + ... + 6^2)$ $= \frac{91}{6}$
+
+## Variance
+RV의 기댓값을 $\mu$라 하자. RV, $X$의 분산(variance)은 RV의 종류에 상관 없이 다음과 같이 정의된다.
+
+> $Var(X) = E((X-\mu)^2)$
+
+그리고 기댓값의 선형성을 이용하면 다음과 같이 쉽게 계산할 수 있다.
+
+> $Var(X) = E(X^2) - \mu^2$
+
+### Properties
+우선, 분산의 정의에 의해 $Var(X) \ge 0$이다. 또, 정의에 의해 다음과 같은 식이 성립한다.
+
+> $Var(aX + b) = a^2Var(X)$
+
+위의 사실은 분산의 정의를 통해 쉽게 유도할 수 있다.
+
+또, 두 RV, $X, Y$에 대해 다음이 성립한다.
+
+> $Var(aX + bY)$ $= a^2Var(X) + b^2Var(Y) + 2abCov(X, Y)$
+
+$Cov(X, Y)$는 $X$와 $Y$의 공분산(covariance)을 나타내고, 두 RV가 independent하다면 0이다. 즉,
+
+> $Var(aX + bY)$ $= a^2Var(X) + b^2Var(Y)$ if $X$ and $Y$ are independent
+
+## Standard Deviation
+RV, $X$의 표준 편차(standard deviation)는 다음과 같이 정의된다.
+
+> $SD(X) = \sqrt{Var(X)}$
+
+Variance가 non-negative이므로, $SD(X)$ 또한 non-negative다. 
 
 
+# Binomial RV
+## Bernoulli's Trial
+베르누이 시행(Bernoulli's trial)이란, 오직 두 outcome 중 하나를 얻는 시행을 의미한다. 두 사건을 각각 성공, 실패라고 하자.
+
+베르누이 시행은 성공 확률 $p$에 의해 결정될 수 있다. 성공 확률이 $p$라면, 실패 확률은 자연스럽게 $1-p$다. 베르누이 시행의 예는 무엇이 있을까?
+
+- 동전 던지기
+- 주사위에서 5를 노리기
+
+## Binomial RV
+Binomial(이항) RV는 $n$회의 (일정한 확률의 독립적인) 베르누이 시행의 성공 횟수를 의미하는 discrete random variable이다. 이는 베르누이 시행의 횟수, $n$과 각 베르누이 시행의 확률, $p$에 의해 결정된다.
+
+어떤 RV, $X$가 binomial하다면 $X \sim B(n, p)$와 같이 표현한다.
+
+### Properties
+베르누이 시행의 성공 횟수가 $i$일 확률, 즉, $P(X=i)$는 다음과 같다.
+
+> $P(X = i)$ $=C(n, i)p^i(1-p)^{n-i}$
+
+왜냐? 성공 횟수가 $i$면 각 시행은 독립이므로 $i$회 성공할 확률은 $p^i$다. 그에 따라 $n-i$회 실패할 확률은 $(1-p)^{n-i}$다.
+
+또, 성공 횟수가 $i$인 사건은, 총 $C(n, i)$ 경우다($n$개의 시행 시퀀스에서 $i$개를 뽑는 것과 동일하므로). 
+
+기댓값과 분산은 다음과 같다.
+
+- $E(X) = np$
+- $Var(X) = npq$
+
+<details>
+	<summary>Proof for $E(X)$</summary>
+ㅁㅇㄴ
+
+ㅁㄴㅇㅇㅁㄴ
+
+ㄴㅇㅁㄴ
+
+</details>

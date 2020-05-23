@@ -79,7 +79,7 @@ $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 # Conditional Probability
 __조건부 확률(conditional probability)__ 은 어떤 event가 발생했을 때 다른 event가 발생할 확률을 의미한다. "다른 event"라고는 했지만, 구분을 위해 그렇게 불렀을 뿐, 같은 event여도 문제가 되진 않는다.
 
-Conditional probability of B given that A, 즉, A가 발생했을 때 B가 발생할 확률은 $P(B|A)$와 같이 표기한다. 
+Conditional probability of B given that A, 즉, A가 발생했을 때 B가 발생할 확률은 $P(B \vert A)$와 같이 표기한다. 
 
 ## Properties
 아래는 가장 간단한 multiplication rule이다. Non-empty event인 $A$에 대해 다음과 같은 식이 성립한다.
@@ -104,4 +104,8 @@ $P(A \vert B)$ $= \frac{P(A \cap B)}{P(B)}$ $= \frac{P(A)P(B)}{P(B)}$ $=P(A)$
 보통 empty한 event와 임의의 event는 서로 독립인 걸로 본다(어떤 책은 non-zero probability를 독립 조건에 추가하기도 한다). 다만 empty한 event의 경우 바로 위의 공식이 유도될 수 없다. 분모가 0이 되기 때문이다.
 
 독립의 정의는 임의의 $n$개의 event에도 적용될 수 있다.
+
+
+# 마치며
+예제를 안푸니 굉장히 빨리 끝난다.
 
