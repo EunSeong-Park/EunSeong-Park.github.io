@@ -103,7 +103,7 @@ $s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}$
 ## Law of Large Numbers
 우선, 실제로 저 값이 population의 varaince, $\sigma^2$을 잘 대표해준다는 사실을 보이기 위해, $s^2$의 기댓값(expectation)이 $\sigma^2$임을 보일 것이다.
 
-- $E(s^2) = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) $
+- $E(s^2) \; = \frac{1}{n-1} E(\sum_{i=1}^n (x_i - \bar{x})^2) $
 - $\qquad \quad = \frac{1}{n-1} E(\sum_{i=1}^n x_i^2 - n\bar{x}^2) $ 
 - $\qquad \quad = \frac{1}{n-1} (\sum_{i=1}^n E(x_i^2) - E(\bar{x})^2) $
 - $\qquad \quad = \frac{1}{n-1} (\sum_{i=1}^n (Var(x_i) + \mu^2 - Var(\bar{x}) - \mu^2 ) $
