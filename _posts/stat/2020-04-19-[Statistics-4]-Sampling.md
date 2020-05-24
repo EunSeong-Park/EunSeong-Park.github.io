@@ -42,7 +42,7 @@ Sample mean의 expectation, $E(\bar{X})$는 population mean, $\mu$와 같다. �
 
 ### Example
 
-> Frequent fliers of a particular airline fly a random number of miles each year, having mean and standard deviation (in thousands of miles) of 23 and 11, respectively. As a promotional gimmick, the airline has decided to randomly select 20 of these fliers and give them, as a bonus, a check of $10 for each 1000 miles flown. Approximate the probability that the total amount paid out is between $4500 and $5000.
+> Frequent fliers of a particular airline fly a random number of miles each year, having mean and standard deviation (in thousands of miles) of 23 and 11, respectively. As a promotional gimmick, the airline has decided to randomly select 20 of these fliers and give them, as a bonus, a check of 10 dollars for each 1000 miles flown. Approximate the probability that the total amount paid out is between 4500 dollars and 5000 dollars.
 
 우리가 구하려는 대상은 total pay, $X_1 + X_2 + ... + X_{20}$이 450-500 사이에 있을 확률이다. 즉,
 
@@ -93,7 +93,7 @@ $P(X < a)$ | $P(X < a - 0.5)$
 
 # Estimation
 ## Estimator
-__Estimator__ 는 샘플의 추출에 의존하는 statistic이다. 예를 들어, sample mean은 population으로부터 뽑는 샘플에 따라 그 값이 다를 수 있다. 그리고 __estimate__ 은 추정치의 특정한 값으로, population의 parameter를 예측하는 데 사용된다.
+__Estimator__ 는 샘플의 추출에 의존하는 statistic이다. 예를 들어, sample mean은 population으로부터 뽑는 샘플에 따라 그 값이 다를 수 있다. 그리고 __estimate__ 는 estimator의 특정한 값으로, population의 parameter를 예측하는 데 사용된다.
 
 만약 estimator의 expectation이 우리가 추정하려는 population의 parameter와 같다면, 우리는 sample을 통해 parameter를 쉽게 추정할 수 있을 것이다. 이러한 estimator를 unbiased estimator라고 한다.
 
@@ -143,7 +143,7 @@ $P(T > t_{DoF, \alpha}) = \alpha$
 
 $z_{\alpha}$와 달리, 이는 upper-tail probability임을 유의하자. 이 값은 t-table에 잘 정리되어 있다.
 
-![](/imgs/stat/s1.png)
+![](/imgs/stat/s6.png)
 
 #### Confidence Interval Estimator
 이제, 이 값을 이용해 confidence interval estimator를 구할 수 있다.
