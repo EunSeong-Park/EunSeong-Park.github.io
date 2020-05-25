@@ -133,9 +133,9 @@ $P-value = 2P(Z > 1.886)$ $=0.0588 > \alpha$
 
 $\alpha$ | $n$ | Test type | | DoF | CV
 ---|---|---|---|---|---
-0.05 | 16 | right-tailed | 15 | $1.753$
-0.01 | 23 | left-tailed | 22 | $-2.508$
-0.10 | 19 | two-tailed | 18 | $\pm 1.734$
+0.05 | 16 | right-tailed | | 15 | $1.753$
+0.01 | 23 | left-tailed | | 22 | $-2.508$
+0.10 | 19 | two-tailed | | 18 | $\pm 1.734$
 
 Two-tailed test는 $frac{\alpha}{2}$를 사용함을 알아두자.
 
