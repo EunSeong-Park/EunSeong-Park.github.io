@@ -215,9 +215,9 @@ $ \frac{\bar{X}-\bar{Y} - (\mu_x - \mu_y)}{\sqrt{\frac{\sigma_x^2}{n} + \frac{\s
 
 이럼으로써, 우리는 $ \frac{\bar{X}-\bar{Y}}{\sqrt{\frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}}} $이라는 하나의 TS(Test Statistic)만을 생각하면 된다. 물론 이 또한 standard normal distribution을 따를 것이다. 우리는 $\mu_x - \mu_y != 0$을 alternative hypothesis로 세웠으므로, TS에 대한 two-tailed test를 생각해볼 수 있다.
 
-$P(|Z|\ge z_{\frac{\alpha}{2}} = 2P(Z\ge z_{\frac{\alpha}{2}}) = \alpha$
+$P(\|Z\|\ge z_{\frac{\alpha}{2}} = 2P(Z\ge z_{\frac{\alpha}{2}}) = \alpha$
 
-여기서 $|TS| \ge z_{\frac{\alpha}{2}}$면, (귀무)가설을 기각하기에 충분하다고 볼 수 있다. 예제를 통해 연습해보자.
+여기서 $\|TS\| \ge z_{\frac{\alpha}{2}}$면, (귀무)가설을 기각하기에 충분하다고 볼 수 있다. 예제를 통해 연습해보자.
 
 #### Example
 
