@@ -48,11 +48,10 @@ about을 가장한 테스트용 페이지
   <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
 </div>
 
-야호 아싸리 대충 자기소개~
 
 ```python
 def hello():
-    print("hello" + 3)
+    print("it is test" + 3)
     return a
 
 ```
