@@ -50,16 +50,16 @@ about을 가장한 테스트용 페이지
 
 야호 아싸리 대충 자기소개~
 
-'''python
+```python
 def hello():
     print("hello" + 3)
     return a
 
-'''
+```
 
 <div class="card">
   <div class="card__image">
-    <img class="image" src="/imgs/1.jfif"/>
+![](/imgs/1.jfif)
   </div>
   <div class="card__content">
     <div class="card__header">
