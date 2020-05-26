@@ -49,10 +49,10 @@ Statistical hypothesis는 크게 두 종류로 나누어 볼 수 있다. 한국�
 
 우리가 해야 할 일은, test value가 있는 영역이 critical인지 noncritical인지 확인하고, 그에 따라 $H_0$의 채택/기각 여부를 결정하는 것이다.
 
-## Test of Population Mean
+## Hypothesis Test
 이제, 우리는 population mean에 대한 추측이 옳은지 아닌지를 검증해볼 것이다. Population은 normal하다고 가정할 것이다.
 
-물론 아래의 방법들은 대부분 population mean에만 국한된 방법이 아니다. Population mean에 대한 가설을 검증하면서, 검증을 위한 여러 기법을 살펴보도록 하자.
+물론 아래의 방법들은 대부분 population mean에만 국한된 방법이 아니다. Population mean에 대한 가설을 검증하면서, 가설 검증을 위한 여러 기법을 살펴보도록 하자.
 
 ### z-test
 z-test는 population mean에 대한 statistical test다. 이는 population standard deviation($\sigma$)이 알려져 있을 때 사용할 수 있다.
@@ -137,7 +137,7 @@ $\alpha$ | $n$ | Test type | | DoF | CV
 0.01 | 23 | left-tailed | | 22 | $-2.508$
 0.10 | 19 | two-tailed | | 18 | $\pm 1.734$
 
-Two-tailed test는 $frac{\alpha}{2}$를 사용함을 알아두자.
+Two-tailed test는 $\frac{\alpha}{2}$를 사용함을 알아두자.
 
 #### Example
 
@@ -155,4 +155,105 @@ $t = \frac{\bar{X} - \mu}{\frac{S}{\sqrt{n}}}$ $= \frac{17.7-16.3}{\frac{1.8}{\s
 
 이는 critical region 내부에 있으므로, 우리는 claim, $H_0: \mu = 16.3$을 기각할 수 있다.
 
-## population proportionhogogog
+## Population Proportion
+
+$z = \frac{\hat{p}-p}{\frac{p(1-p)}{n}}$
+
+이를 이용해 $\hat{p}$를 적절히 변형하여 사용할 수 있을 것이다. 예제나 풀어보자.
+
+### Example
+
+> A researcher claims that based on the information obtained from the Centers for Disease Control and Prevention, 17% of young people ages 2–19 are obese. To test this claim, she randomly selected 200 people ages 2–19 and found that 42 were obese. At α = 0.05, is there enough evidence to reject the claim?
+
+- $H_0: p = 0.17$ (claim)
+- $H_1: p \ne 0.17$
+- Given: $n=200$, $\alpha = 0.05$, $\hat{p} = 0.21$
+
+#### Using z-Test
+
+$2P(Z > z_{\frac{\alpha}{2}) = \alpha$
+
+위 식을 만족하는 $z_{\frac{\alpha}{2}}$는 $1.96$이다. 즉 CV는 $\pm 1.96$이다. 이제 test value를 계산해보자.
+
+$z = \frac{\hat{p} - p}{\sqrt{frac{p(1-p)}{n}}} = 1.51$
+
+이는 critical region 밖에 있으므로, 가설을 기각하기 위한 충분한 증거가 될 수 없다.
+
+#### Using P-value Test
+P-value를 통해 가설을 검증해보자. Two-tailed test고, test value는 앞서 구했으므로,
+
+$P-value = 2P(Z > test) = 2P(Z > 1.51) = 0.0656$
+
+이는 $\alpha(=0.05)$보다 크므로, 가설을 기각할 수 없다.
+
+## Test Concerning Two Populations
+우리는 앞서 하나의 population에 관한 가설만을 세우고, 검증해왔다. 하지만 두 population의 parameter를 비교하는 가설이 필요할 때도 있다.
+
+- "남학생과 여학생의 수학 성적 평균은 같을까?"
+- "미국 사람과 러시아 사람의 평균 키는 누가 더 클까?"
+
+...와 같은 예시가 두 population의 parameter를 필요로 하는 케이스다.
+
+우리는 이제부터 두 normal population에 대한 가설에 대해 살펴볼 것이다.
+
+### Equality of Means (1)
+다음과 같은 가설을 생각할 수 있다.
+
+- $H_0: \mu_x = \mu_y$
+- $H_1: \mu_x \ne \mu_y$
+
+만약 각 population의 sample에 대하여, $\bar{X}$와 $\bar{Y}$가 충분히 멀리 있다면, 가설을 기각해도 될 것처럼 보인다. 즉, 적당한 $c$를 잡아, $|\bar{X}-\bar{Y}| \ge c$일 때 $H_0$을 기각하고, 그렇지 않다면 기각하지 말자는 아이디어다.
+
+여기서 중요한 점은, population은 normal하다는 가정이다. 즉, 우리는 $\bar{X}-\bar{Y}$에 대해 다음과 같은 특성을 생각해볼 수 있다. $n$은 $x$에 대한 sample size, $m$은 $y$에 대한 sample size다.
+
+- $E(\bar{X}-\bar{Y}) = \mu_x - \mu_y$
+- $Var(\bar{X}-\bar{Y}) = \frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}$
+
+그럼, 자연스럽게 $\bar{X}-\bar{Y}$를 standardize할 수 있다.
+
+$ \frac{\bar{X}-\bar{Y} - (\mu_x - \mu_y)}{\sqrt{\frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}}} $
+
+이럼으로써, 우리는 $ \frac{\bar{X}-\bar{Y}}{\sqrt{\frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}}} $이라는 하나의 TS(Test Statistic)만을 생각하면 된다. 물론 이 또한 standard normal distribution을 따를 것이다. 우리는 $\mu_x - \mu_y != 0$을 alternative hypothesis로 세웠으므로, TS에 대한 two-tailed test를 생각해볼 수 있다.
+
+$P(|Z|\ge z_{\frac{\alpha}{2}} = 2P(Z\ge z_{\frac{\alpha}{2}}) = \alpha$
+
+여기서 $|TS| \ge z_{\frac{\alpha}{2}}$면, (귀무)가설을 기각하기에 충분하다고 볼 수 있다. 예제를 통해 연습해보자.
+
+#### Example
+
+> A study using two random samples of 35 people each found that the average amount of time those in the age group of 26–35 years spent per week on leisure activities was 39.6 hours, and those in the age group of 46–55 years spent 35.4 hours. Assume that the population standard deviation for those in the first age group found by previous studies is 6.3 hours, and the population standard deviation of those in the second group found by previous studies was 5.8 hours. At α = 0.05, can it be concluded that there is a significant difference in the average times each group spends on leisure activities?
+
+- $H_0: \mu_x = \mu_y$
+- $H_1: \mu_x \ne \mu_y$ (claim)
+
+26-35 그룹과 46-55 그룹, 두 개의 population이 있다. 이들은 각각 다음과 같은 상황이다.
+
+/ | 26-35 | 46-55
+---|---|---
+$n$ | 35 | 35
+$\bar{X}$ | 39.6 | 35.4
+$\sigma$ | 6.3 | 5.8
+
+그리고 $\alpha=0.05$다.
+
+Test value가 critical region 내에 있는지 확인해보자. $\frac{\alpha}{2} = 0.025$이므로, $z_{\frac{\alpha}{2}} = 1.96$, 즉, CV는 $\pm 1.96$이다. Test value, $z$는 다음과 같다.
+
+$z = \frac{(39.6-35.4)- (0)}{\sqrt{\frac{(6.3)^2}{35} + \frac{(5.8)^2}{35}}} = 2.9$
+
+즉, 이는 critical region 내부에 있고, 우리는 claim을 채택할 수 있다.
+
+P-value test로도 해보자.
+
+$P-value = 2P(Z > 2.9) = 0.0038 < \alpha$
+
+즉, $H_1$을 채택할 수 있다.
+
+이에 더해, 여기서 $95%$ confidence interval도 구해보자. 이전에 구해왔던 방식과 동일하게 구하면 된다.
+
+$(\bar{X} - \bar{Y}) \pm z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_x^2}{n} + \frac{\sigma_y^2}{m}}$
+
+이를 계산하면 다음과 같다.
+
+$1.363 < \mu_1 - \mu_2 < 7.037$
+
+우리는 여기서, confidence interval이 0을 포함하는지 여부를 통해 $H_0$의 기각 여부를 판단할 수도 있다. 0이 포함되어 있지 않다면 기각을, 포함되어 있다면 $H_0$을 채택한다.
