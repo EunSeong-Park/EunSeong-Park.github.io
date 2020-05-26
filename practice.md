@@ -4,4 +4,8 @@ titles: "Practice"
 key: page-about
 ---
 
-야호 아싸리 대충 연습~~
+'''python3
+def hello():
+	print("yo hello!")
+	return hello
+'''
