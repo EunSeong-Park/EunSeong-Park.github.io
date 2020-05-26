@@ -32,13 +32,6 @@ key: page-about
   }
 </style>
 
-{%- raw -%}
-{%- include scripts/lib/swiper.js -%}
-var SOURCES = window.TEXT_VARIABLES.sources;
-window.Lazyload.js(SOURCES.jquery, function() {
-  $('.swiper-demo').swiper();
-});
-{% endraw %}
 
 <div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
   <div class="swiper__wrapper">
@@ -62,3 +55,17 @@ def hello():
     return a
 
 '''
+
+
+
+<script>
+  {%- include scripts/lib/swiper.js -%}
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $('.swiper-demo--0').swiper();
+    $('.swiper-demo--1').swiper();
+    $('.swiper-demo--2').swiper();
+    $('.swiper-demo--3').swiper();
+    $('.swiper-demo--4').swiper({ animation: false });
+  });
+</script>
