@@ -125,9 +125,9 @@ $(\bar{X}-z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}, \bar{X}+z_{\frac{\alpha}{
 
 > An electric scale gives a reading equal to the true weight plus a random error that is normally distributed with mean 0 and standard deviation σ =0.1 ounces. Suppose that the results of five successive weightings of the same object are as follows: 3.142, 3.163, 3.155, 3.150, 3.141. Determine a 99 percent confidence interval estimate of the true weight.
 
-여기서 confidence level은 $99$%다. 따라서, $z_{\frac{\alpha}{2}} = z_{0.005} = 2.576$이다. 그에 따라 confidence interval estimate는...
+여기서 confidence level은 $99$%다. 따라서, $z_{\frac{\alpha}{2}} = z_{0.005} = 2.58$이다. 그에 따라 confidence interval estimate는...
 
-$\bar{X} \pm {\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}$ $= 3.1502 \pm 2.56 * \frac{0.1}{\sqrt{5}}$
+$\bar{X} \pm {\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}$ $= 3.1502 \pm 2.58 * \frac{0.1}{\sqrt{5}}$
 
 ### Without Population Variance
 앞서 언급하였듯, 위의 방법은 population variance를 모른다면 사용할 수 없다. 다른 방법을 찾아보자.
@@ -166,7 +166,7 @@ $(\bar{X} - t_{DoF, \frac{\alpha}{2}} \frac{S}{\sqrt{n}}, \bar{X} + t_{DoF, \fra
 
 그리고 $n$이 충분히 크다면($np$와 $n(1-p)$가 5보다 크다면), 우리는 normal approximation을 통해, $100(1-\alpha)$ percent confidence interval estimator of $p$를 다음과 같이 구할 수 있다.
 
-$(\hat{p} - z_{\frac{\alpha}{2}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}})$
+$(\hat{p} - z_{\frac{\alpha}{2}} \sqrt{\frac{p(1-p)}{n}}, \hat{p} + z_{\frac{\alpha}{2}} \sqrt{\frac{p(1-p)}{n}})$
 
 
 # 마치며
