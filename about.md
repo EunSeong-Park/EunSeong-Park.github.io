@@ -58,7 +58,9 @@ def hello():
 
 <div class="card">
   <div class="card__image">
-![](/imgs/1.jfif)
+
+![](/imgs/etc/1.jfif)
+
   </div>
   <div class="card__content">
     <div class="card__header">
