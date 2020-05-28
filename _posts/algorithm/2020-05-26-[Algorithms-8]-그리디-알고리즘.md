@@ -63,5 +63,30 @@ Iterative한 selector를 구현해볼 수도 있다.
 Recursive든 iterative든, 각 원소는 단 한 번 탐색된다. 따라서 $\Theta(n)$의 time complexity를 가진다. 다만, 이 알고리즘은 정렬을 필요로 하므로, 정렬되어 있지 않다면 $\Theta(n \log n)$의 비용이 추가로 발생한다.
 
 
+# Use of Greedy Algorithm
+그래서, 그리디 알고리즘을 언제 사용할 수 있을까? 그리디 알고리즘은 다음과 같은 상황에서 사용하기 좋다.
+
+- Optimal substructure: 즉, 메인이 되는 문제의 optimal solution은 subproblem의 optimal solution을 포함한다. 이는 DP의 경우와 같다.
+- Greedy-choice property: locally optimal choice의 결합이 globally optimal solution을 낳을 수 있다.
+
+DP는 subproblem의 optimal solution에 근거하여 답을 선택하지만, 그리디 알고리즘은 subproblem을 풀기 전에 선택을 한다는 점에서 차이가 있다.
 
 
+# Knapsack Problem
+
+> 도둑은 가게를 털러 왔는데, 가게엔 $n$개의 물건이 있어 각 물건은 $a_i$로 나타내어진다. $a_i$엔 그에 대응되는 가격, $v_i$와 무게 $w_i$가 정해져있고, 도둑은 최대 $W$만큼의 무게까지만 들고 나갈 수 있다. 여기서 도둑은 적절히 물건을 골라, 최대로 돈을 벌고 싶다.
+
+이 문제엔 두 가지 종류가 있다.
+
+- 0-1 knapsack: 각 물건에 대하여, 도둑은 물건을 챙기거나(0) 두고 가는(1) 행위만 할 수 있다.
+- Fractional knapsack: 각 물건에 대하여, 도둑은 물건의 일부만을 챙겨갈 수 있다. 가격은 가져간 물건의 양에 정비례한다.
+
+Fractional한 문제가 좀 더 쉬운데, 무게 대비 비싼 순서로 정렬한 뒤, 앞에서부터 담으면 되기 때문이다. 이는 그리디 알고리즘으로 구현할 수 있다. 정렬에 $O(n\log{n})$을, 이후에 $O(n)$을 소비한다.
+
+![](/imgs/algorithm/algo32.png)
+
+다만, 그리디 알고리즘은 0-1 Knapsack에선 최적의 솔루션을 제공하지 못한다. 다음과 같은 반례가 있다.
+
+![](/imgs/algorithm/algo33.png)
+
+0-1 Knapsack은 DP를 이용해 해결하도록 하자.
