@@ -343,6 +343,8 @@ $CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_
 
 > The mean tar content of a simple random sample of 25 unfiltered king size cigarettes is 21.1 mg, with a standard deviation of 3.2 mg. The mean tar content of a simple random sample of 25 filtered 100mm cigarettes is 13.2 mg with a standard deviation of 3.7 mg. use a 0.05 significance level to test the claim that unfiltered king size cigarettes have a mean tar content greater than that of filtered 100mm cigarettes. What does the result suggest about the effectiveness of cigarette filters? Assume that the population standard deviations are equal.
 
+20181098 박은성
+
 - $H_0: \mu_x = \mu_y$
 - $H_1: \mu_x > \mu_y$ (claim)
 
@@ -352,8 +354,6 @@ $n$ | 25 | 25
 $\bar{X}$ | 21.1 | 13.2
 $S$ | 3.2 | 3.7
 
-20181098 박은성
-
 $\frac{s_2^2}{s_1^2} = 1.34 < 3$, pooled. 
 
 $\frac{\alpha}{2} = 0.025$, $DoF = 25+25-2 = 48$, $t_{DoF, \frac{\alpha}{2}} = (about) 2$ 
@@ -362,9 +362,7 @@ $s_p = \sqrt{\frac{(25-1)(3.2)^2 + (25-1)(3.7)^2}{25+25-2}} = \sqrt{11.965}$
 
 $TestValue = \frac{21.1 - 13.2}{\sqrt{11.965(\frac{1}{24} + \frac{1}{24})}} = 7.912$
 
-$P = P(Z > 7.912) \sim 0 < \alpha$
-
-So, reject $H_0$ and accept claim($H_1$)
+Test value is in critical region (2 > 7.912) So, reject $H_0$ and accept claim($H_1$)
 
 
 ### Equality of Population Proportion
