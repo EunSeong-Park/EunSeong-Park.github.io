@@ -74,9 +74,9 @@ def hello():
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
-  <div class="card__content" style="height: 2rem; padding-bottom: 3px;">
+  <div class="card__content" style="height: 2rem;">
     <div class="card__header">
-      <h6>미안하다2</h6>
+      <p>미안하다2</p>
     </div>
   </div>
 </div>
