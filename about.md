@@ -76,7 +76,7 @@ def hello():
   </div>
   <div class="card__content" style="height: 2rem;">
     <div class="card__header">
-      <p>미안하다2</p>
+      <p style ="margin:0; padding: 0;">미안하다2</p>
     </div>
   </div>
 </div>
