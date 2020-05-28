@@ -1,12 +1,12 @@
 ---
 layout: article
-titles: "About Me"
+titles: "About"
 key: page-about
 ---
 
 <style>
   .swiper-demo {
-    height: 220px;
+    height: 400px;
   }
   .swiper-demo .swiper__slide {
     display: flex;
@@ -36,7 +36,14 @@ about을 가장한 테스트용 페이지
 
 <div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
   <div class="swiper__wrapper">
-    <div class="swiper__slide">1</div>
+    <div class="swiper__slide">
+
+```python
+def hello():
+    print("it is test" + 3)
+    return a
+```
+    </div>
     <div class="swiper__slide">2</div>
     <div class="swiper__slide">3</div>
     <div class="swiper__slide">4</div>
@@ -49,12 +56,7 @@ about을 가장한 테스트용 페이지
 </div>
 
 
-```python
-def hello():
-    print("it is test" + 3)
-    return a
 
-```
 
 <div class="card">
   <div class="card__image">
