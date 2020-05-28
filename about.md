@@ -32,10 +32,13 @@ key: page-about
   }
 </style>
 
-about을 가장한 테스트용 페이지
+
 
 <div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
   <div class="swiper__wrapper">
+    <div class="swiper__slide">
+ about을 가장한 테스트용 페이지    
+    </div>
     <div class="swiper__slide">
 
 ```python
@@ -44,7 +47,6 @@ def hello():
     return a
 ```
     </div>
-    <div class="swiper__slide">2</div>
     <div class="swiper__slide">3</div>
     <div class="swiper__slide">4</div>
     <div class="swiper__slide">5</div>
