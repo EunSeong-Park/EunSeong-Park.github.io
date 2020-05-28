@@ -40,6 +40,7 @@ key: page-about
 about을 가장한 테스트용 페이지    
     </div>
     <div class="swiper__slide">
+
 [참고문서](https://tianqi.name/jekyll-TeXt-theme/test/)
     </div>
     <div class="swiper__slide">3</div>
@@ -59,7 +60,7 @@ def hello():
     return a
 ```
 
-<div class="card">
+<span class="card">
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
@@ -69,9 +70,9 @@ def hello():
     </div>
     <p>이거 보여주려고 어그로끌었다..나루토 사스케 싸움수준 ㄹㅇ실화냐? 진짜 세계관최강자들의 싸움이다.. 그찐따같던 나루토가 맞나? 진짜 나루토는 전설이다..</p>
   </div>
-</div>
+</span>
 
-<div class="card">
+<span class="card">
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
@@ -81,7 +82,7 @@ def hello():
     </div>
     <p>이거 보여주려고 어그로끌었다..나루토 사스케 싸움수준 ㄹㅇ실화냐? 진짜 세계관최강자들의 싸움이다.. 그찐따같던 나루토가 맞나? 진짜 나루토는 전설이다..</p>
   </div>
-</div>
+</span>
 
 <script>
   {%- include scripts/lib/swiper.js -%}
