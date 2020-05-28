@@ -6,7 +6,7 @@ key: page-about
 
 <style>
   .swiper-demo {
-    height: 400px;
+    height: 20px;
   }
   .swiper-demo .swiper__slide {
     display: flex;
@@ -40,12 +40,6 @@ key: page-about
  about을 가장한 테스트용 페이지    
     </div>
     <div class="swiper__slide">
-
-```python
-def hello():
-    print("it is test" + 3)
-    return a
-```
     </div>
     <div class="swiper__slide">3</div>
     <div class="swiper__slide">4</div>
@@ -58,7 +52,11 @@ def hello():
 </div>
 
 
-
+```python
+def hello():
+    print("it is test" + 3)
+    return a
+```
 
 <div class="card">
   <div class="card__image">
