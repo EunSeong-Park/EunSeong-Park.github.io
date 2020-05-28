@@ -65,7 +65,7 @@ def hello():
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
-      <p>미안하다22</p>
+      <p class="p_card">미안하다22</p>
     </div>
   </div>
 </div>
