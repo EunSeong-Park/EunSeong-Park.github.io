@@ -6,7 +6,7 @@ key: page-about
 
 <style>
   .swiper-demo {
-    height: 20px;
+    height: 150px;
   }
   .swiper-demo .swiper__slide {
     display: flex;
