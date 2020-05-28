@@ -65,7 +65,7 @@ def hello():
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
-      <p style ="margin:0; padding: 0;">sample pic1</p>
+      <p style ="margin:0; padding: 0 0.5rem 0 0.5rem;">sample pic1</p>
     </div>
   </div>
 </div>
@@ -87,7 +87,7 @@ def hello():
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
-      <p style ="margin:0; padding: 0;">sample pic3</p>
+      <p style ="margin:0; padding: 0 0.5rem 0 0.5rem;">sample pic3</p>
     </div>
   </div>
 </div>
