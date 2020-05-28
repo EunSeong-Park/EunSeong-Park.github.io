@@ -63,7 +63,7 @@ def hello():
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
-  <div class="card__content" style="height: 1.5rem;>
+  <div class="card__content" style="height: 1.5rem;">
     <div class="card__header" >
       <h4>미안하다</h4>
     </div>
@@ -74,7 +74,7 @@ def hello():
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
-  <div class="card__content" style="height: 2rem;">
+  <div class="card__content" style="height: 2rem; padding-bottom: 3px;">
     <div class="card__header">
       <h6>미안하다2</h6>
     </div>
