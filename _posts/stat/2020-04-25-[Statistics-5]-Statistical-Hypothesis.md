@@ -257,3 +257,114 @@ $(\bar{X} - \bar{Y}) \pm z_{\frac{\alpha}{2}} \sqrt{\frac{\sigma_x^2}{n} + \frac
 $1.363 < \mu_1 - \mu_2 < 7.037$
 
 우리는 여기서, confidence interval이 0을 포함하는지 여부를 통해 $H_0$의 기각 여부를 판단할 수도 있다. 0이 포함되어 있지 않다면 기각을, 포함되어 있다면 $H_0$을 채택한다.
+
+### Equality of Means (2)
+이번엔 두 population의 두 standard deviation($\sigma$)를 모르는 상황을 생각해보자. 우리는 $n_1 \ge 30, n_2 \g2 30$일 때, test value에서 $sigma$를 sample standard deviation, $S$로 치환하여 사용할 수 있다. 즉,
+
+$TestValue = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{S_1^2}{n_1} + frac{S_2^2 }{m}}}$
+
+#### Example
+
+> To test the effectiveness of a new cholesterol-lowering medication, 100 volunteers were randomly divided into two groups of size 50 each. Members of the first group were given pills containing the new medication, while members of the second, or control, group were given pills containing lovastatin, one of the standard medications for lowering blood cholesterol. All the volunteers were instructed to take a pill every 12 hours for the next 3 months. None of the volunteers knew which group they were in. Suppose that the result of this experiment was an average reduction of 8.2 with a sample variance of 5.4 in the blood cholesterol levels of those taking the old medication, and an average reduction of 8.8 with a sample variance of 4.5 of those taking the newer medication. Do these results prove, at the 5 percent level, that the new medication is more effective than the old one?
+
+- $H_0: \mu_x = \mu_y$
+- $H_1: \mu_x > \mu_y$ (claim)
+
+/ | 26-35 | 46-55
+---|---|---
+$n$ | 50 | 50
+$\bar{X}$ | 8.8 | 8.2
+$S^2$ | 4.5 | 5.4
+
+$TestValue = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{S_1^2}{n_1} + frac{S_2^2 }{m}}} = \frac{8.8 - 8.2}{\sqrt{\frac{4.5}{50} + frac{5.4}{50}}} = 1.3484$
+
+P-value 테스트를 해보자.
+
+$P = P(Z > 1.3484) = 0.085 > 0.05(\alpha)$
+
+즉, $H_0$을 채택하고, $H_1$을 기각한다.
+
+### Equality of Means (3)
+Population standard deviation을 모르는 위의 상황에서, 우리는 각각의 샘플 사이즈가 충분히 크다고 가정하고 위의 공식을 사용하였다. 그렇다면 샘플 사이즈가 작다면 어떨까? 두 sample standard deviation에 따라 가능한 두 케이스가 있다.
+
+1. $s_1$, $s_2$의 값이 비슷하다. ($\frac{s_1^2}{s_2^2} < 3$ where $s_1 > s_2$)
+2. $s_1$, $s_2$의 값이 비슷하지 않다. ($\frac{s_1^2}{s_2^2} \ge 3$ where $s_1 > s_2$)
+
+1번의 경우를 pooled하다고 하며, population standard deviation을 같다고 가정한다. 그렇다면 다음과 같이 confidence interval과 test statistic을 계산할 수 있다.
+
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}$, where $DoF = n_1+n_2 - 2$
+
+$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$
+
+$s_p = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2-1)s_2^2}{n_1+n+2 -2}}$
+
+2번의 경우는 nonpooled하다고 하며, 다음과 같은 방식으로 CI와 test statistic을 계산한다.
+
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}$, where $DoF = min(n_1 - 1, n_2 - 1)$
+
+$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
+
+어우 많이 복잡해졌다.. 예제를 풀며 익숙해져보자.
+
+#### Example
+
+> A researcher wishes to see if the average weights of newborn male infants are different from the average weights of newborn female infants. She selects a random sample of 10 male infants and finds the mean weight is 7 pounds 11 ounces and the standard deviation of the sample is 8 ounces. She selects a random sample of 8 female infants and finds that the mean weight is 7 pounds 4 ounces and the standard deviation of the sample is 5 ounces. Can it be concluded at α = 0.05 that the mean weight of the males is different from the mean weight of the females? Assume that the variables are normally distributed.
+
+- $H_0: \mu_x = \mu_y$
+- $H_1: \mu_x \ne \mu_y$ (claim)
+
+/ | Male | Female
+---|---|---
+$n$ | 10 | 8
+$\bar{X}$ | 7 lb 11 oz | 7 lb 4 oz
+$S$ | 8 oz | 5 oz
+
+$\frac{64}{25} = 2.56 < 3$이므로, pooled하다. Test value가 critical region에 들어가는지 확인해보자.
+
+$\frac{\alpha}{2} = 0.025$, $DoF = 10+8-2 = 16$이므로, $t_{DoF, \frac{\alpha}{2}} = 2.120$이다. Critial region은 $\pm 2.120$ 바깥의 영역이다.
+
+$s_p = \sqrt{\frac{(10-1)8^2 + (8-1)5^2}{10+8-2}} = \sqrt{46.9375}$
+
+$TestValue = \frac{123-116}{\sqrt{46.9375} \sqrt{\frac{1}{10} + \frac{1}{8}}} = 2.1540$
+
+즉, test value는 critical region 내부에 있고, $H_1$, claim을 채택할 수 있다.
+
+간단하게 P-value 테스트로도 해볼까?
+
+$P = 2P(Z > 2.1540) < 0.025$
+
+덤으로 $95%$ confidence interval도 구해보자.
+
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}$, where $DoF = n_1+n_2 - 2$
+
+이므로, 대입하면 $0.1105 < \mu_1 - \mu_2 < 13.8895$
+
+이는 0을 포함하지 않으므로, $H_0$을 기각할 수 있다고 볼 수 있다.
+
+> The mean tar content of a simple random sample of 25 unfiltered king size cigarettes is 21.1 mg, with a standard deviation of 3.2 mg. The mean tar content of a simple random sample of 25 filtered 100mm cigarettes is 13.2 mg with a standard deviation of 3.7 mg. use a 0.05 significance level to test the claim that unfiltered king size cigarettes have a mean tar content greater than that of filtered 100mm cigarettes. What does the result suggest about the effectiveness of cigarette filters? Assume that the population standard deviations are equal.
+
+- $H_0: \mu_x = \mu_y$
+- $H_1: \mu_x > \mu_y$ (claim)
+
+/ | Unfiltered | Filtered
+---|---|---
+$n$ | 25 | 25
+$\bar{X}$ | 21.1 | 13.2
+$S$ | 3.2 | 3.7
+
+20181098 박은성
+
+$\frac{s_2^2}{s_1^2} = 1.34 < 3$, pooled. 
+
+$\frac{\alpha}{2} = 0.025$, $DoF = 25+25-2 = 48$, $t_{DoF, \frac{\alpha}{2}} = (about) 2$ 
+
+$s_p = \sqrt{\frac{(25-1)(3.2)^2 + (25-1)(3.7)^2}{25+25-2}} = \sqrt{11.965}$
+
+$TestValue = \frac{21.1 - 13.2}{\sqrt{11.965(\frac{1}{24} + \frac{1}{24})}} = 7.912$
+
+$P = P(Z > 7.912) \sim 0 < \alpha$
+
+So, reject $H_0$ and accept claim($H_1$)
+
+
+### Equality of Population Proportion
