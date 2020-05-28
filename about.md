@@ -12,7 +12,7 @@ key: page-about
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 1rem;
     color: #fff;
   }
   .swiper-demo .swiper__slide:nth-child(even) {
