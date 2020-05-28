@@ -61,7 +61,7 @@ def hello():
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/1.jfif">
+    <img src="/imgs/etc/1.png">
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
@@ -72,18 +72,18 @@ def hello():
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/2.jfif">
+    <img src="/imgs/etc/2.png">
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
-      <p style ="margin:0; padding: 0;">sample pic2</p>
+      <p style ="margin:0; padding: 0; padding-left: 1rem">sample pic2</p>
     </div>
   </div>
 </div>
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/3.jfif">
+    <img src="/imgs/etc/3.png">
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
