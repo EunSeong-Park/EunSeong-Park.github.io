@@ -341,6 +341,4 @@ $CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_
 
 이는 0을 포함하지 않으므로, $H_0$을 기각할 수 있다고 볼 수 있다.
 
-> The mean tar content of a simple random sample of 25 unfiltered king size cigarettes is 21.1 mg, with a standard deviation of 3.2 mg. The mean tar content of a simple random sample of 25 filtered 100mm cigarettes is 13.2 mg with a standard deviation of 3.7 mg. use a 0.05 significance level to test the claim that unfiltered king size cigarettes have a mean tar content greater than that of filtered 100mm cigarettes. What does the result suggest about the effectiveness of cigarette filters? Assume that the population standard deviations are equal.
-
 ### Equality of Population Proportion
