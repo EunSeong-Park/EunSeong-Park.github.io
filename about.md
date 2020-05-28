@@ -64,7 +64,7 @@ def hello():
     <img src="/imgs/etc/1.gif">
   </div>
   <div class="card__content">
-    <div class="card__header">
+    <div class="card__header" style="height: 1.5rem;">
       <h4>미안하다</h4>
     </div>
   </div>
