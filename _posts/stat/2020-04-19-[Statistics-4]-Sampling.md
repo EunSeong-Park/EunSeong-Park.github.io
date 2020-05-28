@@ -119,7 +119,7 @@ $100(1-\alpha)$ percent confidence interval estimator는 다음과 같다.
 
 $(\bar{X}-z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}, \bar{X}+z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}})$
 
-즉, population mean을 포함할 확률이 $100(1-\alpha)$가 되도록 하는 구간을 의미한다. 우리는 $\sigma$가 population variance라는 점을 주목해야 한다. 즉, population variance를 알고 있어야 위와 같은 방식으로 confidence interval estimator를 구할 수 있다.
+즉, 여러 구간 중, population mean을 포함하는 구간의 비율이 $100(1-\alpha)$가 되도록 하는 구간을 의미한다. 우리는 $\sigma$가 population variance라는 점을 주목해야 한다. 즉, population variance를 알고 있어야 위와 같은 방식으로 confidence interval estimator를 구할 수 있다.
 
 #### Example
 
