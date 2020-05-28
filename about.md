@@ -70,24 +70,13 @@ def hello():
   </div>
 </div>
 
-<a href="eunseong-park.github.io">
-  <div class="card card--clickable" style="display: inline-block;">
-    <div class="card__image">
-      <img src="/imgs/etc/1.gif">
-      <div class="overlay">
-        <p>미안하다</p>
-      </div>
-    </div>
-  </div>
-</a>
-
 <div class="card" style="display: inline-block;">
   <div class="card__image">
     <img src="/imgs/etc/1.gif">
   </div>
   <div class="card__content">
     <div class="card__header">
-      <h4>미안하다2</h4>
+      <h6>미안하다2</h6>
     </div>
   </div>
 </div>
