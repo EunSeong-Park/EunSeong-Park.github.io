@@ -65,14 +65,14 @@ def hello():
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
-      <p class="p_card">미안하다22</p>
+      <p style ="margin:0; padding: 0;">1</p>
     </div>
   </div>
 </div>
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/1.gif">
+    <img src="/imgs/etc/2.jfif">
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
