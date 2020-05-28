@@ -67,9 +67,19 @@ def hello():
     <div class="card__header">
       <h4>미안하다</h4>
     </div>
-    <p>이거 보여주려고 어그로끌었다..나루토 사스케 싸움수준 ㄹㅇ실화냐? 진짜 세계관최강자들의 싸움이다.. 그찐따같던 나루토가 맞나? 진짜 나루토는 전설이다..</p>
   </div>
 </div>
+
+<a href="eunseong-park.github.io" style="display: inline-block;">
+  <div class="card card--clickable">
+    <div class="card__image">
+      <img class="image" src=""/>
+      <div class="overlay">
+        <p>Photograph</p>
+      </div>
+    </div>
+  </div>
+</a>
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
