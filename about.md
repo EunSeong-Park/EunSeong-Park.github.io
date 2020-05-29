@@ -59,6 +59,20 @@ def hello():
     return a
 ```
 
+<div class="item">
+  <div class="item__image">
+    <img class="image" src="/imgs/etc/3.png">
+  </div>
+  <div class="item__content">
+    <div class="item__header">
+      <h4>Samle</h4>
+    </div>
+    <div class="item__description">
+      <p>이것은 굉장한 프로젝트로, 정말 굉장한 프로젝트여서 남들로 하여금 굉장한 프로젝트가 굉장한 프로젝트임을 부인할 수 없도록 만들 정도의 굉장한 프로젝트임을 보여준다</p>
+    </div>
+  </div>
+</div>
+
 <div class="card" style="display: inline-block;">
   <div class="card__image">
     <img src="/imgs/etc/1.png">
@@ -81,16 +95,6 @@ def hello():
   </div>
 </div>
 
-<div class="card" style="display: inline-block;">
-  <div class="card__image">
-    <img src="/imgs/etc/3.png">
-  </div>
-  <div class="card__content" style="height: 2rem; padding:0;">
-    <div class="card__header">
-      <p style ="margin:0; padding: 0 0.5rem 0 0.5rem;">sample pic3</p>
-    </div>
-  </div>
-</div>
 
 
 <script>
