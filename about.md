@@ -33,7 +33,7 @@ key: page-about
 
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -76,39 +76,32 @@ def hello():
     return a
 ```
 
-<div class="item" style="box-shadow: 1px 1px 1px 1px gray;  margin-bottom: 2px; border-radius: 3px; cursor: pointer;" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="item__image">
-    <img class="image" src="/imgs/etc/3.png">
-  </div>
-  <div class="item__content" style="padding-bottom: 0;">
-    <div class="item__header">
-      <h3 id="h_for_list">Sample</h3>
-      <p id="p_for_list">hello!</p>
-    </div>
+<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+  <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">대충 해바라기~</h5>
+    <p id="p_for_list">어메이징한 부가설명!!</p>
   </div>
 </div>
-
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample</h5>
-    <p id="p_for_list">hello!</p>
+    <h5 id="h_for_list">놀라운 헤더</h5>
+    <p id="p_for_list">어메이징한 부가설명!</p>
+  </div>
+</div>
+
+<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+  <div class="cell cell--2"><img src="/imgs/etc/1.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">놀라운 헤더</h5>
+    <p id="p_for_list">어메이징한 부가설명!</p>
   </div>
 </div>
 
 
 
-<div class="card" style="display: inline-block;">
-  <div class="card__image">
-    <img src="/imgs/etc/2.png">
-  </div>
-  <div class="card__content" style="height: 2rem; padding:0;">
-    <div class="card__header">
-      <p style ="margin:0; padding: 0 0.5rem 0 0.5rem;">sample pic2</p>
-    </div>
-  </div>
-</div>
 
 
 
