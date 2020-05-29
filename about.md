@@ -73,23 +73,11 @@ def hello():
   </div>
 </div>
 
-<div class="item" style="box-shadow: 1px 1px 1px 1px gray;  margin-bottom: 2px; border-radius: 3px; cursor: pointer;" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="item__image">
-    <img class="image" src="/imgs/etc/2.png">
-  </div>
-  <div class="item__content" style="padding-bottom: 0;">
-    <div class="item__header">
-      <h4 style="font-size: 2vw;">Sample 2</h4>
-    </div>
-    <div class="item__description">
-      <p style="font-size: 1vw;">이것은 굉장한 프로젝트로, 정말 굉장한 프로젝트여서 남들로 하여금 굉장한 프로젝트가 굉장한 프로젝트임을 부인할 수 없도록 만들 정도의 굉장한 프로젝트임을 보여준다. 그래서 이 굉장한 프로젝트는 그것의 굉장함을 굉장하게 표현하는 굉장한 프로젝트라고 할 수 있겠다. 그리하여 이 굉장한 프로젝트는 실로 굉장한 프로젝트라 부를 수 있을 만한 굉장한 프로젝트가 되었다.</p>
-    </div>
-  </div>
-</div>
+
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/2.png">
+    <img src="/imgs/etc/2.png">https://eunseong-park.github.io/imgs/etc/3.png
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
@@ -98,8 +86,19 @@ def hello():
   </div>
 </div>
 
+<table class="item">
+    <tr>
+        <th><img class = "img_table_item" src="https://eunseong-park.github.io/imgs/etc/2.png"></th>
+        <td>
+          <p class="p_table_item">Hello i am eunseong park nice to meet you Hello i am eunseong park nice to meet youHello i am eunseong park nice to meet youHello i am eunseong park nice to meet you</p>
+        </td>
+    </tr>
+</table>
 
 
+
+
+<!-- SCRIPT -->
 <script>
   {%- include scripts/lib/swiper.js -%}
   var SOURCES = window.TEXT_VARIABLES.sources;
