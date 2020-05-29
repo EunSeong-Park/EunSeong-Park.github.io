@@ -31,6 +31,23 @@ key: page-about
     background-color: #000;
   }
 
+  .scale {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  }
+
+  .scale:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  }
+
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid gray;
@@ -79,7 +96,7 @@ def hello():
     return a
 ```
 
-<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">엄청난 해바라기</h5>
