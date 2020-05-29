@@ -31,7 +31,7 @@ key: page-about
     background-color: #000;
   }
 
-  .grid{
+  #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -78,7 +78,7 @@ def hello():
 </div>
 
 
-<div class="grid">
+<div class="grid" id="grid_for_list">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
   <h3>Sample</h3>
