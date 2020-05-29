@@ -57,6 +57,7 @@ key: page-about
 
   #cell_for_list{
     padding: 2px 2px 2px 2px;
+    background-color: $background-color;
   }
   #h_for_list{
     margin: 0 0 0 0.5rem;
