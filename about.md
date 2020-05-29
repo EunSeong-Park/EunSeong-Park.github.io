@@ -31,29 +31,28 @@ key: page-about
     background-color: #000;
   }
 
-  .scale {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transition: all 0.1s ease-in-out;
-  }
-
-  .scale:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  }
-
-  #grid_for_slist{
+  #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid gray;
     border-radius: 3px;
     cursor: pointer;
+
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.1s ease-in-out;
   }
+
+  #grid_for_list:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+
   #cell_for_list{
     padding: 2px 2px 2px 2px;
   }
