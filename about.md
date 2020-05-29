@@ -36,6 +36,15 @@ key: page-about
     border: 1px solid #ccc;
     border-radius: 3px;
   }
+  #cell_for_list{
+    padding: 0 0 0 0;
+  }
+  #h_for_list{
+    margin: 0 0 0 0;
+  }
+  #p_for_list{
+    margin: 0 0 0 0;
+  }
 
 </style>
 
@@ -72,7 +81,8 @@ def hello():
   </div>
   <div class="item__content" style="padding-bottom: 0;">
     <div class="item__header">
-      <h3>Sample</h3>
+      <h3 id="h_for_list">Sample</h3>
+      <p id="p_for_list">hello!</p>
     </div>
   </div>
 </div>
