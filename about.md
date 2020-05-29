@@ -73,13 +73,16 @@ def hello():
   </div>
 </div>
 
-<div class="card" style="display: inline-block;">
-  <div class="card__image">
-    <img src="/imgs/etc/1.png">
+<div class="item" style="box-shadow: 1px 1px 1px 1px gray;  margin-bottom: 2px; border-radius: 3px; cursor: pointer;" onclick="location.href='https://eunseong-park.github.io/';">
+  <div class="item__image">
+    <img class="image" src="/imgs/etc/2.png">
   </div>
-  <div class="card__content" style="height: 2rem; padding:0;">
-    <div class="card__header">
-      <p style ="margin:0; padding: 0 0.5rem 0 0.5rem;">sample pic1</p>
+  <div class="item__content" style="padding-bottom: 0;">
+    <div class="item__header">
+      <h4 style="font-size: 2vw;">Sample 2</h4>
+    </div>
+    <div class="item__description">
+      <p style="font-size: 1vw;">정말 대단한 샘플!</p>
     </div>
   </div>
 </div>
