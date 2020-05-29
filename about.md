@@ -91,7 +91,8 @@ def hello():
 <div class="grid" id="grid_for_list">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
-  <h3>Sample</h3>
+    <h3 id="h_for_list">Sample</h3>
+    <p id="p_for_list">hello!</p>
   </div>
 </div>
 
