@@ -47,7 +47,7 @@ key: page-about
     margin: 0 0 0 0.5rem;
   }
   div.cell img{
-    border-left: 1px solid gray;
+    border-right: 1px solid gray;
   }
 
 </style>
