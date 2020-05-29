@@ -65,23 +65,10 @@ def hello():
   </div>
   <div class="item__content" style="padding-bottom: 0;">
     <div class="item__header">
-      <h4>Sample</h4>
-    </div>
-    <div class="item__description">
-      <p>이것은 굉장한 프로젝트로, 정말 굉장한 프로젝트여서 남들로 하여금 굉장한 프로젝트가 굉장한 프로젝트임을 부인할 수 없도록 만들 정도의 굉장한 프로젝트임을 보여준다. 그래서 이 굉장한 프로젝트는 그것의 굉장함을 굉장하게 표현하는 굉장한 프로젝트라고 할 수 있겠다. 그리하여 이 굉장한 프로젝트는 실로 굉장한 프로젝트라 부를 수 있을 만한 굉장한 프로젝트가 되었다.</p>
+      <h2>Sample</h2>
     </div>
   </div>
 </div>
-
-
-<table class="item">
-    <tr>
-        <th><img class = "img_table_item" src="https://eunseong-park.github.io/imgs/etc/2.png"></th>
-        <td>
-          <p>Hello i am eunseong park nice to meet you Hello i am eunseong park nice to meet youHello i am eunseong park nice to meet you</p>
-        </td>
-    </tr>
-</table>
 
 
 <div class="card" style="display: inline-block;">
