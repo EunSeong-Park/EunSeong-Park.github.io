@@ -69,7 +69,7 @@ def hello():
     </div>
     <div class="item__description">
       <p>이것은 굉장한 프로젝트로, 정말 굉장한 프로젝트여서 남들로 하여금 굉장한 프로젝트가 굉장한 프로젝트임을 부인할 수 없도록 만들 정도의 굉장한 프로젝트임을 보여준다. 그래서 이 굉장한 프로젝트는 그것의 굉장함을 굉장하게 표현하는 굉장한 프로젝트라고 할 수 있겠다.</p>
-      <a class="button button--primary button--rounded"  href="eunseong-park.github.io" style = "position: relative; width: 100%; bottom: 1rem;">
+      <a class="button button--primary button--rounded"  href="https://eunseong-park.github.io/" style = "position: relative; width: 100%; bottom: 1rem;">
       그것의 굉장함을 느껴보기</a>
     </div>
   </div>
