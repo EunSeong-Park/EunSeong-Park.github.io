@@ -35,6 +35,7 @@ key: page-about
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid #ccc;
     border-radius: 3px;
+    cursor: pointer;
   }
   #cell_for_list{
     padding: 0 0 0 0;
@@ -88,10 +89,10 @@ def hello():
 </div>
 
 
-<div class="grid" id="grid_for_list">
+<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
-    <h3 id="h_for_list">Sample</h3>
+    <h5 id="h_for_list">Sample</h5>
     <p id="p_for_list">hello!</p>
   </div>
 </div>
