@@ -37,27 +37,25 @@ key: page-about
     border: 1px solid gray;
     border-radius: 3px;
     cursor: pointer;
-    background-color: $background-color;
 
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transition: all 0.1s ease-in-out;
   }
 
   #grid_for_list:hover {
-    transform: scaleX(1.05);
-    -webkit-transform: scaleX(1.05);
-    -moz-transform: scaleX(1.05);
-    -ms-transform: scaleX(1.05);
-    -o-transform: scaleX(1.05);
+    transform: scale(1.0125);
+    -webkit-transform: scale(1.0125);
+    -moz-transform: scale(1.0125);
+    -ms-transform: scale(1.0125);
+    -o-transform: scale(1.0125);
   }
 
   #cell_for_list{
     padding: 2px 2px 2px 2px;
-    background-color: $background-color;
   }
   #h_for_list{
     margin: 0 0 0 0.5rem;
