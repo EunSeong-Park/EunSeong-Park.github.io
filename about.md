@@ -37,18 +37,18 @@ key: page-about
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   }
 
   .scale:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   }
 
-  #grid_for_list{
+  #grid_for_slist{
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid gray;
     border-radius: 3px;
