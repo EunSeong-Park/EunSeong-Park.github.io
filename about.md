@@ -90,7 +90,7 @@ def hello():
     <tr>
         <th><img class = "img_table_item" src="https://eunseong-park.github.io/imgs/etc/2.png"></th>
         <td>
-          <p class="p_table_item">Hello i am eunseong park nice to meet you Hello i am eunseong park nice to meet youHello i am eunseong park nice to meet youHello i am eunseong park nice to meet you</p>
+          <p style="font-size: 2vw;">Hello i am eunseong park nice to meet you Hello i am eunseong park nice to meet youHello i am eunseong park nice to meet youHello i am eunseong park nice to meet you</p>
         </td>
     </tr>
 </table>
