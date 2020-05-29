@@ -36,6 +36,7 @@ key: page-about
     border: 1px solid gray;
     border-radius: 3px;
     cursor: pointer;
+    background-color: $background-color;
 
     transform: scale(1);
     -webkit-transform: scale(1);
