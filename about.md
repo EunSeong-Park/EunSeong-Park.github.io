@@ -59,7 +59,7 @@ def hello():
     return a
 ```
 
-<div class="item">
+<div class="item" style="box-shadow: 1px 1px 1px 1px gray; padding-bottom: 0;">
   <div class="item__image">
     <img class="image" src="/imgs/etc/3.png">
   </div>
