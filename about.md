@@ -31,6 +31,7 @@ key: page-about
     background-color: #000;
   }
 
+  /* DON'T USE JS TO THIS!! */
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
     border: 1px solid gray;
