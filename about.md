@@ -82,8 +82,8 @@ def hello():
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">대충 해바라기~</h5>
-    <p id="p_for_list">어메이징한 부가설명!!</p>
+    <h5 id="h_for_list">엄청난 해바라기</h5>
+    <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
 
@@ -91,7 +91,7 @@ def hello():
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">놀라운 검정색</h5>
-    <p id="p_for_list">어메이징한 부가설명!</p>
+    <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
 
@@ -99,7 +99,7 @@ def hello():
   <div class="cell cell--2"><img src="/imgs/etc/1.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">굉장한 그림</h5>
-    <p id="p_for_list">어메이징한 부가설명!</p>
+    <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
 
