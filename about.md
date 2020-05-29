@@ -41,10 +41,10 @@ key: page-about
     padding: 0 0 0 0;
   }
   #h_for_list{
-    margin: 0 0 0 0;
+    margin: 0 0 0 0.5rem;
   }
   #p_for_list{
-    margin: 0 0 0 0;
+    margin: 0 0 0 0.5rem;
   }
 
 </style>
