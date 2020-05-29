@@ -55,7 +55,7 @@ key: page-about
     cursor: pointer;
   }
   #cell_for_list{
-    padding: 1px 1px 1px 1px;
+    padding: 2px 2px 2px 2px;
   }
   #h_for_list{
     margin: 0 0 0 0.5rem;
