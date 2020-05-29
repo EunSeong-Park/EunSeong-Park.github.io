@@ -71,8 +71,8 @@ def hello():
 </div>
 
 
-<div class="grid" style="height: 20vw;">
-  <div class="cell cell--2">Hello</div>
+<div class="grid">
+  <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">Hello</div>
 </div>
 
