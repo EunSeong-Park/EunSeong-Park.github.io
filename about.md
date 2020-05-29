@@ -65,7 +65,7 @@ def hello():
   </div>
   <div class="item__content" style="padding-bottom: 0;">
     <div class="item__header">
-      <h2>Sample</h2>
+      <h3>Sample</h3>
     </div>
   </div>
 </div>
