@@ -59,7 +59,7 @@ def hello():
     return a
 ```
 
-<div class="item" style="box-shadow: 1px 1px 1px 1px gray; padding-bottom: 0; margin-bottom: 2px; border-radius: 1em">
+<div class="item" style="box-shadow: 1px 1px 1px 1px gray;  margin-bottom: 2px; border-radius: 3px">
   <div class="item__image">
     <img class="image" src="/imgs/etc/3.png">
   </div>
@@ -67,7 +67,7 @@ def hello():
     <div class="item__header">
       <h4>Sample</h4>
     </div>
-    <div class="item__description">
+    <div class="item__description" style="padding-bottom: 0;">
       <p>이것은 굉장한 프로젝트로, 정말 굉장한 프로젝트여서 남들로 하여금 굉장한 프로젝트가 굉장한 프로젝트임을 부인할 수 없도록 만들 정도의 굉장한 프로젝트임을 보여준다. 그래서 이 굉장한 프로젝트는 그것의 굉장함을 굉장하게 표현하는 굉장한 프로젝트라고 할 수 있겠다.</p>
       <a class="button button--primary button--rounded"  href="https://eunseong-park.github.io/" style = "width: 100%; vertical-align: bottom;">
       그것의 굉장함을 느껴보기</a>
