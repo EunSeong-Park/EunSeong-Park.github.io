@@ -77,7 +77,7 @@ def hello():
 
 <div class="card" style="display: inline-block;">
   <div class="card__image">
-    <img src="/imgs/etc/2.png">https://eunseong-park.github.io/imgs/etc/3.png
+    <img src="/imgs/etc/2.png">
   </div>
   <div class="card__content" style="height: 2rem; padding:0;">
     <div class="card__header">
