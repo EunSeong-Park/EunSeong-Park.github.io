@@ -71,6 +71,13 @@ def hello():
 </div>
 
 
+<div class="grid" style="height: 20vw;">
+  <div class="cell cell--2">Hello</div>
+  <div class="cell cell--auto">Hello</div>
+</div>
+
+
+
 <div class="card" style="display: inline-block;">
   <div class="card__image">
     <img src="/imgs/etc/2.png">
@@ -81,6 +88,8 @@ def hello():
     </div>
   </div>
 </div>
+
+
 
 
 
