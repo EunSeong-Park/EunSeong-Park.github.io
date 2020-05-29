@@ -46,6 +46,9 @@ key: page-about
   #p_for_list{
     margin: 0 0 0 0.5rem;
   }
+  div.cell img{
+    border-left: 1px solid gray;
+  }
 
 </style>
 
