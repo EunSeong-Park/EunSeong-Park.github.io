@@ -30,6 +30,13 @@ key: page-about
   .swiper-demo--image .swiper__slide:nth-child(n) {
     background-color: #000;
   }
+
+  .grid{
+    box-shadow: 1px 1px 1px 1px #ccc;  
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
 </style>
 
 
@@ -73,7 +80,9 @@ def hello():
 
 <div class="grid">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
-  <div class="cell cell--auto">Hello</div>
+  <div class="cell cell--auto">
+  <h3>Sample</h3>
+  </div>
 </div>
 
 
