@@ -1,5 +1,5 @@
 ---
-title: "[CSS] 속성: 테두리(Border)"
+title: "[CSS] 속성: 테두리(border)"
 tags: HTML CSS
 toc: true
 ---
