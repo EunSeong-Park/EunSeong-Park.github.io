@@ -88,7 +88,7 @@ Keyword | Description
 </p>
 
 ## border-radius
-지금까지는 전부 사각형 테두리만을 그려보았다. 우리는 `border-radius` 속성을 사용하여 모서리를 둥글게 만들 수 있다.
+지금까지는 전부 사각형 테두리만을 그려보았다. 이젠 `border-radius` 속성을 사용하여 모서리를 둥글게 만들어 보자.
 
 한 테두리는 모서리를 네 개 가지고 있고, 각 모서리에 접하는 타원은 그것의 너비와 높이에 의해 결정된다. (이 때, 너비와 높이가 같으면 일반적인 원이 된다.) 즉, 우리는 `border-radius`를 온전히 결정하기 위해 총 8개의 값이 필요한 셈이다.
 
@@ -98,7 +98,7 @@ Keyword | Description
 border-radius: w_top-left w_top-right w_bottom-right w_bottom-left / h_top-left h_top-right h_bottom-right h_bottom-left
 ```
 
-`/`에 의해 너비와 높이가 구분되며, 2, 1, 4, 3 사분면 순서로 지정된다. 여기엔 다음과 같은 생략 규칙이 있다.
+`/`에 의해 너비와 높이가 구분되며, 그 안에서 각 속성값은 공백에 의해 구분되고, 2, 1, 4, 3 사분면 순서로 지정된다. 여기엔 다음과 같은 생략 규칙이 있다.
 
 - `/`가 생략된 경우, 너비와 높이는 같은 것으로 본다.
   - 즉, 원형 모서리다.
