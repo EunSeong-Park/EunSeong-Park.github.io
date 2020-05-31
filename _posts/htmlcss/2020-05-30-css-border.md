@@ -16,7 +16,7 @@ toc: true
 
 위 코드에서, id가 `b`인 `<div>` 태그에 주목해보자. 회색 영역을 마진(margin), 파랑색 영역을 외곽선(outline), 검정색 영역을 테두리(border), 빨강색 영역을 패딩(padding), 그리고 초록색 영역을 내용(content)으로 볼 수 있다. 
 
-테두리가 어느 위치에 있는지 간단히 확인만 해보았다. 이후 별도의 포스팅에서 더 자세히 다룰 예정이다.
+테두리가 어느 위치에 있는지 간단히 확인만 해보았다. 이들에 대한 세부적인 정보는 [여기](https://eunseong-park.github.io/2020/05/31/css-%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8.html)에 정리해두었다.
 
 # Property
 ## border
