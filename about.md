@@ -69,7 +69,19 @@ key: page-about
 
 </style>
 
+<br>
 
+<div class="grid scale">
+  <div class="cell cell--3"><img src="/imgs/etc/3.png"></div>
+  <div class="cell cell--auto">
+    <he4>My name</h5>
+    <p>O 어메이징한 연락처</p>
+    <p>O 어메이징한 이메일</p>
+    <p>O 어메이징한 주소</p>
+  </div>
+</div>
+
+<br>
 
 <div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
   <div class="swiper__wrapper">
