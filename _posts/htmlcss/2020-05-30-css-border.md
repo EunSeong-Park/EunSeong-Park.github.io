@@ -66,7 +66,7 @@ toc: true
 또, `border-color`가 지정되지 않은 경우, 그 값은 부모로부터 상속받는다.
 
 ## border-style
-`border-color`는 테두리의 스타일, 혹은 모양을 결정하는 속성이다. 
+`border-color`는 테두리의 스타일, 혹은 모양을 결정하는 속성이다. __다른 테두리 속성을 지정하기 전에 스타일이 먼저 지정되어야 한다.__ 
 
 Keyword | Description
 ---|---
