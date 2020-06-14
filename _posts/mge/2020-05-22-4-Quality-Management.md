@@ -54,7 +54,7 @@ $\bar{X}$는 샘플의 일부를 따와 평균을 낸 sample mean이다.
 - CL: $\bar{\bar{X}}$
 - LCL/UCL: $\bar{\bar{X}} \pm 3\sigma_{\bar{X}} $
 
-$\sigma{\bar{X}}$는 $\frac{\hat{\sigma}_ {X}}{\sqrt{n}}$을 통해 추정될 수 있다.
+$\sigma_{\bar{X}}$는 $\frac{\hat{\sigma}_ {X}}{\sqrt{n}}$을 통해 추정될 수 있다.
 
 좀 더 깔끔하게 정리하면 다음과 같다.
 
@@ -67,7 +67,7 @@ $\sigma{\bar{X}}$는 $\frac{\hat{\sigma}_ {X}}{\sqrt{n}}$을 통해 추정될 �
 
 [출처](http://www.moonrepeat.org/wiki/doku.php?id=x_bar_%EA%B4%80%EB%A6%AC%EB%8F%84)
 
-다음과 같은 프로세스가 있다고 생각해보자. CL은 각 샘플 그룹이 가지는 평균($\bar{x}$)의 평균, 57.6051이다. 또, 샘플 전체의 $\bar{R}$은 0.354로, 이를 이용해 UCL과 LCL을 구할 수 있다. $CL \pm A_2\bar{R} = 57.3933, 57.8169$
+위와 같은 프로세스가 있다고 생각해보자. CL은 각 샘플 그룹이 가지는 평균($\bar{x}$)의 평균, 57.6051이다. 또, 샘플 전체의 $\bar{R}$은 0.354로, 이를 이용해 UCL과 LCL을 구할 수 있다. $CL \pm A_2\bar{R} = 57.3933, 57.8169$
 
 이렇게 데이터가 주어졌을 때, control chart는 어떻게 그릴까? 엑셀을 사용하는 방법도 있지만, [Minitab](http://datalabs.co.kr/html/support/DemoDownload.php)이라는 유용한 도구가 있다. 심심하면 써보자.
 
