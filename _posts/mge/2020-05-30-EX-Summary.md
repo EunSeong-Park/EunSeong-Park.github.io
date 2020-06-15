@@ -1,5 +1,5 @@
 ---
-title: "[OM EX] Summary
+title: "[OM EX] Summary"
 tags: Management-Engineering OM
 toc: true
 ---
