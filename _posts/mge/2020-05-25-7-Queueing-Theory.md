@@ -53,7 +53,7 @@ toc: true
 - $W$: 고객 각각의 대기 시간의 평균. 서비스 자체의 시간을 포함한다.
 - $W_q$: 고객 각각의 대기 시간의 평균. 서비스 자체의 시간은 제외한다.
 
-## Queueing Model
+## Queuing Model
 대기열 모델은 __M/M/s__ 와 같이 표현될 수 있다. 각 글자가 의미하는 바는 다음과 같다.
 
 - 1st: distribution of interarrival time
