@@ -39,7 +39,7 @@ Forecasting은 어떻게 이루어질까? 정성적(qualitative)인 방법과 �
 우선, error, $e_t$를 $e_t = D_t - F_t$라 정의한다.
 
 - Mean Error: 각 항목의 error의 평균이다. 즉, $ME = \frac{\sum e_t}{n}$
-- Mean Absolute Error: 각 항목의 error의 절댓값의 평균이다. 즉, $MAE = \frac{\sum |e_t|}{n}$
+- Mean Absolute Error: 각 항목의 error의 절댓값의 평균이다. 즉, $MAE = \frac{\sum \vert e_t \vert}{n}$
 - Mean Squared Error: 각 항목의 제곱의 평균이다. 즉, $MSE = \frac{\sum e_t^2}{n}$
 
 ## Time Series Analysis
