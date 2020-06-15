@@ -1,5 +1,5 @@
 ---
-title: "[OM 7] Queueing Theory"
+title: "[OM 7] Queuing Theory"
 tags: Management-Engineering OM
 toc: true
 ---
@@ -30,7 +30,7 @@ toc: true
 - 대기열을 완전히 없애기 위해 서버를 늘리면 비용이 너무 크게 발생한다. 또, 상대적으로 대기열이 적거나 없는 시간엔 서버의 낭비가 발생한다.
 - 서비스나 절차에 내재된 필연적인 지연 및 대기가 존재한다.
 
-대기열 이론(queueing theory)은 대기열로 인한 손실과 서비스 채널의 증가로 인한 비용 사이의 적절한 합의점을 찾는 것을 도와준다.
+대기열 이론(queuing theory)은 대기열로 인한 손실과 서비스 채널의 증가로 인한 비용 사이의 적절한 합의점을 찾는 것을 도와준다.
 
 ![](/imgs/mge/om29.png)
 
