@@ -1,5 +1,5 @@
 ---
-title: "Apache OpenWhisk를 통한 FaaS 서버리스 컴퓨팅"
+title: "OpenWhisk를 통한 FaaS 서버리스 컴퓨팅"
 tags: OpenWhisk FaaS Serverless Cloud-Computing
 toc: true
 ---
@@ -14,7 +14,7 @@ toc: true
 - BaaS: 위치 서비스, 인증 및 암호화, DB 등 각종 서비스를 클라우드 플랫폼에서 API의 형태로 제공해주어, 개발자는 백엔드 영역의 디테일에 대한 부담을 줄일 수 있다.
 - FaaS: 개발자에 의해 함수가 작성되어, 이는 특정 이벤트 발생 시 호출되는 event-driven한 방식이다. HTTP 요청, DB 갱신 등의 이벤트에 의해서도, 일정 주기에 따라서도 호출될 수 있다.
 
-많은 대형 클라우드 provider들이 FaaS를 지원하는 플랫폼을 제공한다. AWS Lambda, MS의 Azure Function, IBM+Apache의 OpenWhisk 등이 그 예시다.
+많은 대형 클라우드 provider들이 FaaS를 지원하는 플랫폼을 제공한다. AWS Lambda, MS의 Azure Function, Apache OpenWhisk 등이 그 예시다.
 
 
 # Features of FaaS
@@ -34,4 +34,5 @@ toc: true
 하지만 그러한 문제점에도 불구하고 FaaS는 충분히 매력적이다. (직접 써보면 더더욱 그러함을 느낄 수 있다!) 이제, OpenWhisk를 중심으로 FaaS의 특징과 동작 방식을 간단히 알아보도록 하자.
 
 
-# Apache OpenWhisk
+# OpenWhisk
+[IBM Cloud Function](https://cloud.ibm.com/functions/)은 오픈 소스인 [Apache Openwhisk](https://github.com/apache/openwhisk)를 기반으로 한 FaaS 플랫폼이다. 
