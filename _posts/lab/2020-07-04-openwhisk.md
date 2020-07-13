@@ -35,4 +35,30 @@ toc: true
 
 
 # OpenWhisk
-[IBM Cloud Function](https://cloud.ibm.com/functions/)은 오픈 소스인 [Apache Openwhisk](https://github.com/apache/openwhisk)를 기반으로 한 FaaS 플랫폼이다. 
+[IBM Cloud Function](https://cloud.ibm.com/functions/)은 오픈 소스인 [Apache Openwhisk](https://github.com/apache/openwhisk)를 기반으로 한 FaaS 플랫폼이다. 가입하면 부분 무료로 사용할 수 있다. 비용이 상당한 함수를 반복적/주기적으로 호출하지 않는 이상 무료로 봐도 무방하다.
+
+![](/imgs/lab/faas1.png)
+
+위와 같이 CLI를 사용할 수도 있지만, 웹 브라우저에서도 직접 함수를 포함한 액션(action)을 작성하고, 트리거를 설정하고 호출하는 일련의 과정을 모두 할 수 있다. 여기서는 웹 브라우저에서 OpenWhisk를 사용해보자.
+
+FaaS와 OpenWhisk에 대한 설명과 사용법은 [여기](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-getting-started)에 굉장히 잘 설명되어 있다. 그래서 기본적인 부분만 짚어보며 OpenWhisk를 사용해볼 것이다.
+
+## Action
+__액션(action)은 실행되는 함수들을 포함하는 작은 코드 단위다.__ IBM Cloud Function에서는 JS, Ruby, Python, Go 등 다양한 언어를 지원하고, 각 액션에 대한 메모리/시간 제한 등을 설정할 수 있다. 액션은 코드로 제공될 수도, Docker image로 제공될 수도 있다. Docker image같은 경우엔 CLI를 사용하자.
+
+![](/imgs/lab/faas2.png)
+
+웹에서는 액션 탭에서 액션을 작성 및 관리할 수 있다. <u>Create</u>에서 액션을 작성해보자. 간결한 형태의 에디터가 제공되므로, 간단한 함수라면 직접 웹에서 코딩할 수 있다.
+
+![](/imgs/lab/faas3.png)
+
+주석에 나와있듯이, 함수의 매개변수(parameter)와 리턴(return)값은 JSON 형태여야 한다. 또, 파라미터를 임의로 주어 실행할 수 있다. 여기서는 별도의 파라미터 없이 위의 코드를 그대로 사용한다.
+
+![](/imgs/lab/faas4.png)
+
+와! 새로운 액션이 생겼다. 앞서 언급했듯 메모리와 시간 제한을 설정할 수 있으니 필요하다면 한 번 시도해보자.
+
+## Event & Trigger
+__이벤트(event)는 단어 그대로 내/외부에서 발생한 어떠한 사건이다.__ 어떤 데이터베이스의 레코드 변경이 될 수도, Github에서의 새로운 커밋, 또는 HTTP 요청 등이 될 수도 있고, 단순한 주기적인 클러킹이 될 수도 있다. 
+
+이러한 이벤트는 트리거
