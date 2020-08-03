@@ -218,4 +218,9 @@
       font-weight: map-get($base, font-weight-bold);
     }
   }
+  p {
+    font-size: 10px;
+    line-height: normal;
+
+  }
 }
