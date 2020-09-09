@@ -28,7 +28,7 @@ __Scala__ 는 Object-oriented한 성질과 functional한 성질을 함께 가지
 ## Expressions & Hello, World!
 표현식(expression)은 연산 가능한 명령문이자 코드 조각이다. 가령,
 
-```Scala
+```scala
 1+1
 "hi"
 'a'
@@ -36,17 +36,25 @@ __Scala__ 는 Object-oriented한 성질과 functional한 성질을 함께 가지
 
 등은 모두 표현식으로 볼 수 있다. 표현식은 `println` 함수에 의해 콘솔에서 출력될 수 있다.
 
-```Scala
+```scala
 println(1024)
 println(5 * 5)
 ```
 
 이제, `println`을 이용해 `Hello, World!`를 여러 방법으로 출력해보자.
 
-```Scala
+```scala
 println("Hello, World!")
 println("Hello, " + "World!")
 ```
 
 위에서 볼 수 있듯, (Python 처럼) 문자열의 concatenation이 가능하다. 와, 편리하다!
 
+## Value & Variable
+값(value)은 `val` 키워드에 의해, 변수(variable)는 `var` 키워드에 의해 선언된다.
+
+
+
+
+## `println`
+주로 `println`을 사용하겠지만, `print`, `printf` 또한 사용 가능하다! 하지만 이들이 동작하는 방식(개행 여부, 타입 등)은 꽤 다르다. `println`은 Python의 `print`만큼 편리하다. 
