@@ -23,3 +23,30 @@ __Scala__ 는 Object-oriented한 성질과 functional한 성질을 함께 가지
 
 
 # Basics
+여기서는 [scalafiddle.io](https://scalafiddle.io/)에서 코드를 돌릴 예정이다. Scala 버전은 2.12, Scala.js 버전은 0.6.x를 사용한다.
+
+## Expressions & Hello, World!
+표현식(expression)은 연산 가능한 명령문이자 코드 조각이다. 가령,
+
+```Scala
+1+1
+"hi"
+'a'
+```
+
+등은 모두 표현식으로 볼 수 있다. 표현식은 `println` 함수에 의해 콘솔에서 출력될 수 있다.
+
+```Scala
+println(1024)
+println(5 * 5)
+```
+
+이제, `println`을 이용해 `Hello, World!`를 여러 방법으로 출력해보자.
+
+```Scala
+println("Hello, World!")
+println("Hello, " + "World!")
+```
+
+위에서 볼 수 있듯, (Python 처럼) 문자열의 concatenation이 가능하다. 와, 편리하다!
+
