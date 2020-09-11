@@ -137,7 +137,7 @@ println(f" $x \t $y \t $z%f \t $z%.2f")
 ## Block
 블록(block)은 여러 개의 표현식을 감쌀 수 있다. Curly bracket(`{`, `}`)으로 표현한다.
 
-블록은 마지막 줄의 표현식의 값을 가진다. 이것이 (러프하게 말하면) 블록의 리턴값이라고 볼 수도 있을 것 같다.
+블록은 __마지막 줄의 표현식의 값을 가진다.__ 이것이 (러프하게 말하면) 블록의 리턴값이라고 볼 수도 있을 것 같다.
 ```scala
 println({
 	val x = 1 + 1
@@ -145,4 +145,118 @@ println({
 	x + 2
 })
 ```
-위 코드는 정확히 `3`을 출력한다.
+`println`은 위 코드는 정확히 `3`을 출력한다.
+
+여기서, 값 `x`는 블록 내에서만 유효하다. Scope에 유의하자.
+
+```scala
+val x = {
+  val y = 1
+  y+1
+}
+println(x) // 2
+println(y) // Error (not found)
+```
+
+# Functions / Methods
+## Functions
+함수는 파라미터를 가지는 __표현식__ 이다. `=>` 를 사용하여, 그것의 왼쪽에 받을 파라미터를, 오른쪽에 그 함수가 가질 값의 표현식을 명시한다.
+
+물론, 여러 파라미터를 받을 수 있다.
+
+```scala
+val add1 = (x: Int) => x + 1
+val add2 = (x: Int, y: Int) => x + y
+println(s"${add1(1)} ${add2(1, 2)}") // 2 3
+```
+
+파라미터의 타입을 명시해주어야 한다는 점을 주의하자. Type Safety!
+
+```scala
+// 블록 또한 사용할 수 있다.
+println({ 
+	val add = (x: Int) => {
+	x + 1
+	x + 2
+	}
+	add(7)
+})
+
+
+// 값이 아닌, 변수로 사용할 수도 있다.
+var add1 = (x: Int) => x + 1
+add1 = (x: Int) => x + 2
+
+println(add1(0)) // 2
+
+
+// 파라미터를 생략할 수도 있다.
+println({
+	val get1 = () => 1
+	get1()
+})
+```
+
+## Methods
+Scala에서 메소드는 우리가 다른 언어에서 사용하는 언어와 조금 더 비슷한 것처럼 보인다. (주관적인 생각이다) 함수와 비슷하게 동작하지만, 몇 가지 측면에선 다르다. 여기선 자세히 다루지 않고, 용법만을 알아볼 것이다. 우선, 메소드를 정의하는 것으로 시작해보자.
+
+```scala
+def add(x: Int): Int = x + 1
+println(add(1))
+```
+
+위처럼, `[Name](Paramter): (Return Type) (Body)`와 같은 형식으로 정의할 수 있다. 몇 가지 예제를 통해 그 특성을 알아보자.
+
+```scala
+// 물론, 여러 파라미터를 받을 수 있다.
+def add(x: Int, y: Int): Int = x + y
+println(add(1, 2)) // 3
+
+
+// 여러 파라미터 리스트를 가질 수도 있다.
+def linear(x: Int, y: Int)(a: Int): Int = a * x + y
+println(linear(3, 5)(2)) // 11
+
+
+// 파라미터 리스트를 아예 가지지 않을 수도 있다.
+def noparam: Int = 1 + 2
+println(noparam) // 3
+
+
+// 타입 생략이 가능하다.
+def infer(x: Int, y: Int) = x + y
+println(infer(3, 2)) // 5
+
+def noparam2 = 1 + 2
+println(noparam2) // 3
+```
+
+
+# Conditionals
+Scala에선 `if` 조차도 표현식이다. 와우! ... 그런데 어째서?
+
+```scala
+println({
+	val x = if (true) 1 else 2
+	val y = if (0 == 3) 2 else 1
+	val z = if (true && true) 5
+	val w = if (false) 5
+	s"${x} ${y} ${z} ${w}"
+}) // 1 1 5 undefined
+```
+
+결국 `if` 도 조건에 따라 값이 할당되는 표현식일 뿐이다. 여러 방법으로 조건식을 사용해보자.
+
+```scala
+val iseven = (num: Int) => if (num % 2 == 0) true else false
+println(s"${iseven(1)} ${iseven(2048)}") // false true
+
+println(
+if (true) {
+	val x = 5
+	x + 4}
+else {
+	val y = 7
+	y + 5
+}) // 9
+```
