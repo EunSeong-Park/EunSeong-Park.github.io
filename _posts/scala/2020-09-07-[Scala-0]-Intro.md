@@ -59,7 +59,7 @@ println("Hello, " + "World!")
 ```scala
 val x = 1	
 val y = 3 + 8	// 표현식으로도 값을 선언할 수 있다.
-println(y)		// 11
+println(y)	// 11
 ```
 
 값은 reassignment가 불가능한, immutable한 특성을 가지고 있다. 즉, 위와 같은 코드를 실행시킨 뒤,  `x = 5`처럼 값을 수정할 수 없다. (오류를 발생시킨다)
@@ -85,7 +85,7 @@ Scala, C, C++ 등은 정적 타입 언어다. 타입 에러를 비교적 일찍 
 
 ### Scala Types
 
-![](/imgs/scala/01.png)
+![](/imgs/scala/1.png)
 
 Scala에서의 모든 데이터는 타입에 대응한다. 최상위(root) 타입으로 `Any`가 있고, 이는 value type인 `AnyVal`과 reference type인 `AnyRef`이란 서브 타입들로 나눌 수 있다. 상위 타입은 그것의 서브 타입을 위한 메소드를 포함한다. (예를 들어, `toString`은 Int에서도, Short에서도 사용할 것이다.)
 
