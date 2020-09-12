@@ -56,10 +56,72 @@ int add_1_pure(int a){
 결국 1급 함수의 부분집합 정도로 봐도 무방한 셈이다. 이렇게 일반화된 함수는 매우 다양한 방법으로 활용될 수 있다. 그런데, Scala에선 어떨까?
 
 ```scala
+// 데이터 구조에 함수를 할당할 수 있다.
+val addone = (x: Int) => x + 1
+val addtwo = (x: Int) => x + 2
+
+val addoneone = addone 
+val addlist = List(addone, addtwo) // 리스트에도 할당 가능하다.
+
+println(addone(5)) // 6
+println(addoneone(5)) // 6
+println(addlist(0)(2), addlist(1)(3)) // (3,5)
+
+
+// 함수를 파라미터로 사용할 수 있다.
+val moreadder = (adder: (Int) => Int, x: Int) => adder(x) + 1
+
+println(moreadder(addone, 4)) // 6
+
+
+// 함수를 리턴값으로 사용할 수 있다.
+def sumup(n: Int): Int = if (n >= 1) n + sumup(n-1) else 0
+
+println(sumup(100))
 ```
 
+이러한 특징은 함수의 reusability를 향상시켜준다. 예를 들어, $x^3 + y^3 + z^3$을 계산하는 함수를 만든다고 해보자.
 
+```scala
+def naive(x: Int, y: Int, z: Int): Int = x * x * x + y * y * y + z * z * z
 
+println(naive(1,2,3)) // 36
+```
 
+이렇게 다시 작성하면 어떨까?
 
+```scala
+def cube(x: Int): Int = x * x * x
+def better(x: Int, y: Int, z: Int) = cube(x) + cube(y) + cube(z)
 
+println(better(1,2,3)) // 36
+```
+
+## Closures
+클로저(closure)를 알기 위해, 먼저 예시를 살펴보자.
+
+```scala
+var tip = 1000
+val price = (x: Int) => x + tip
+```
+
+여기서 우린 `tip`과 `x`에 주목하자. `x`는 그 함수에 귀속되어 있고, 그 스코프 내에서 유효하다. 하지만 `tip`은 다른데, 함수 밖에서 정의되고, 그렇기에 그 값이 변경될 수 있다. 이 때, `price`를 클로저(closure)라고 부른다.
+
+여기서 흥미로운 점이 있는데, 클로저는 이렇게 스코프 밖에서 정의된 변수에 대해, 그 변수 자체를 가져옴으로써 (not value) 외부 변화에 반응할 수 있다. 예를 들어,
+
+```scala
+var tip = 1000
+val price = (x: Int) => x + tip
+
+println(price(5000)) // 6000
+
+tip = 2000
+println(price(5000)) // 7000
+```
+
+## Loop
+맨 앞의 내용을 떠올려보면, Scala는 `var` 사용을 지양하는 방향으로 사용될 것을 권장하는 것 같다. 그런데 대부분의 루프가 counter variable이 있다는 점을 생각하면, 루프 사용도 권장되지 않는 게 아닌가?
+
+그래서 우리는 대신 재귀(recursion)를 사용한다. 띠용? 패턴 매칭 등을 통해 대부분의 문제를 재귀로 해결할 수 있긴 하다. 하지만 너무 깊은 재귀는 스택을 터뜨린다는 걱정이 있을 것이다. 이는 tail-recursion을 이용해 스택을 재사용하는 것으로 해결한다.
+
+루프의 재귀로의 변환, tail-recursion 등은 이미 배운 내용이고, 지엽적인 부분이라 생각해 넘어간다.
