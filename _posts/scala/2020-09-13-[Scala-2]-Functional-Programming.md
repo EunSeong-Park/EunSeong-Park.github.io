@@ -32,7 +32,7 @@ tags: Scala
 ## Pure Function
 두 함수를 살펴보자.
 
-```C++
+```c
 int add_1(int * a){
 	a += 1;
 	return a;
