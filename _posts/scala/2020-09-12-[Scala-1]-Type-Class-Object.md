@@ -236,7 +236,7 @@ class Class3 extends Plus{
 
 리스트는 (axiom에 의해 리스트 집합에 속하는) 빈 리스트(`nil`)에서 시작하여, 리스트 집합과 어떤 한 원소를 합친 것도 리스트라고 정함으로써 정의된다. 가령 정수 리스트를 예시로 한다면,
 
-> $l \to nil \, | \, n \bullet l, n \in \Bbb{Z}$
+> $l \to nil \vert n \bullet l, n \in \Bbb{Z}$
 
 이를 직접 구현해보자.
 
