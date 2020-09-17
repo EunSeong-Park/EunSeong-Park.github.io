@@ -1,5 +1,5 @@
 ---
-title : "[Scala 2] Functional Programming"
+title : "[Scala 2] Functional Programming Basic"
 tags: Scala
 ---
 
