@@ -149,27 +149,105 @@ $$
 
 이러한 방식으로, (좀 더 간단하게 구할 수 있는) 작은 행렬식을 여러 번 계산하는 것으로 큰 행렬의 행렬식을 구할 수 있다. 어느 정도 recursive한 셈이다. 그런데, 그러면 $1 \times 1$까지 줄여야 하나? 너무 비효율적이고 계산이 너무 많아지는 거 아닌가? 싶은데, 작은 행렬을 구하기 위한 간단한 공식들이 있다.
 
-- $A = (a_{11})$의 행렬식은 $a_{11}$이다.
-- $A = \begin{pmatrix} a_{11}&a_{12}\\a_{21}&a_{22} \end{pmatrix}$의 행렬식은 $a_{11}a_{22} - a_{12}a_{21}$이다. 대각선 방향으로 원소를 곱해 빼준다고 생각하면 된다.
+$$det(A) = \vert a_{11}\vert = a_{11} $$
+
+$$det(A) = \begin{vmatrix} a_{11}&a_{12} \\ a_{21} & a_{22} \end{vmatrix} = a_{11}a_{22} - a_{12}a_{21}$$
 
 $3 \times 3$행렬도 있지만, 여기서 mathjax로 쓰다가 혈압올라서 그만뒀다. [Arrow Method](https://www.coolmath.com/algebra/14-determinants-cramers-rule/02-determinants-3x3-method-1-01)를 참고하자. 아무튼 $2 \times 2$ 행렬의 경우, 행렬식을 구하기가 상대적으로 쉬우니, 보통 $2 \times 2$까지 분할해서 행렬식을 구한다.
 
 예제로 딱... 딱 하나만 해보자. 아래 행렬식을 계산해보자.
-$ det(A) = \begin{vmatrix} 3 & 2 & 7 \\
-1 & 1 & 3 \\
-5 & 5 & -6
-\end{vmatrix}$
 
-$= 3\begin{vmatrix}
-1&3\\
-5&6
-\end{vmatrix} -2\begin{vmatrix}
-1&3\\
-5&-6
-\end{vmatrix} + 7\begin{vmatrix}
-1&1\\
-5&5
-\end{vmatrix}$
-$
-= -27 + 42 + 0 = -15
-$
+$$
+det(A) \;= {\begin{vmatrix} 3 & 2 & 7 \\
+            1 & 1 & 3 \\
+            5 & 5 & -6
+            \end{vmatrix}} \\
+\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;{=3 {\begin{vmatrix}
+        1&3\\
+        5&-6
+        \end{vmatrix}}
+    -2 {\begin{vmatrix}
+        1&3\\
+        5&-6
+        \end{vmatrix}}
+    +7 {\begin{vmatrix}
+        1&1\\
+        5&5
+        \end{vmatrix}}} \\
+\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;= -63 + 42 + 0 \\
+= -21
+$$
+
+왜 align이 안먹히냐... 아무튼 이렇게 구할 수 있다.
+
+## Rank
+이제 행렬을 row vector, 혹은 column vector의 집합으로 보자. 결국 벡터도 $n \times 1$, 혹은 $1 \times n$의 행렬로 볼 수 있기 때문에, 그렇게 이상한 일은 아니다.
+
+벡터를 알아보면서, 우리는 벡터들이 선형 독립(LI)일 조건에 대해서도 살펴보았다. Rank는 그 행렬을 구성하는 벡터 집합에서, 선형 독립인 벡터 부분 집합의 **최대** 원소 수를 의미한다. Row vector를 기준으로 하면 row rank, column vector를 기준으로 하면 column rank다.
+
+Rank엔 몇 가지 흥미로운 성질이 있다. 
+
+- Rank, $r(A)$는 반드시 $min\{ m, n \}$보다 작거나 같다. 행렬 사이즈를 초과해서 벡터를 가질 순 없기 때문이다.
+- 모든 행렬에 대하여, 한 행렬의 Row rank와 column rank는 항상 같다. (Rank theorem)
+
+그리고 $r(A) = min\{ m, n \}$이면, $r(A)$는 full rank라고 한다.
+
+## Matrix Multiplication
+두 행렬 간의 곱셈도 가능한데, 여기엔 조건이 있다.
+
+> $m \times n$ 행렬 $A$와 $x \times y$ 행렬 $B$에 대하여, $n = x$일 때 행렬의 곱이 정의되며, 행렬 곱의 크기는 $m \times y$다.
+
+Vector의 inner product도 비슷한 맥락에서 바라볼 수 있다. Row vector에 column vector를 곱하므로 $(1 \times n) \times (n \times 1)$인 셈이기 때문이다. 그 결과도 $(1 \times 1)$이고.
+
+그래서 행렬 곱은 어떻게 구하냐? 하면 다음과 같이 정의된다.
+
+$A_{m\times n}B_{n\times l} = [c_{ij}]_{m \times l}$
+
+여기서 $c_{ij}$는 $A$의 $i^{th}$ row, $B$의 $j^{th}$ column의 inner product다. 즉, inner product를 $m \times l$번 해서 $m \times l$ 사이즈의 행렬을 얻는다.
+
+예시는 풀지 않는다. 쓰다가 늙어 죽을지도 몰라...
+
+## Inverse Matrix & Singularity
+어떤 행렬 $A$에 대한 행렬곱, $AB = BA = I$를 만족하도록 하는 행렬 $B$를 $A$의 역행렬(inverse matrix)이라 한다.
+
+역행렬도 존재하기 위한 조건이 있다. 기본적으로 역행렬이 존재하는 행렬은 정사각행렬이다. 왜냐? (marginal 하니 넘어가려면 넘어가자)
+
+> 우선, 행렬 $A$가 $m \times n$이라면, $AB$가 정의되기 위해 B는 $n \times l$의 크기를 가져야 하는데, 결과가 identity matrix이므로, (정사각이기 때문에) $m = l$이어야 한다. 그리고 $BA$도 정의되어야 하고, 그 결과에 의한 identity의 사이즈도 $AB$의 것과 같아야 하므로, $m=l=n$이다. 즉, $A$는 정사각행렬이다.
+
+정사각행렬이라고 반드시 역행렬이 있는 건 아님에 주의하자. 아무튼 정사각행렬임이 보장되었으니, 행렬식도 구할 수 있을 것이다. 다음 두 statement는 서로 동치다.
+
+- $det(A) \ne 0$ (non-singular)
+- $A$ has its own inverse matrix, $A^{-1}$
+
+이 때, $det(A)$가 $0$일 때, 그 행렬은 singular하다고 하며, 그렇지 않으면 non-singular하다고 한다. 즉, 행렬식을 구해보면 역행렬의 존재성을 할 수 있다는 사실!
+
+역행렬을 구하는 건 어떻게 할까? 많은 방법이 있지만, 가장 쉬운 방법은 인터넷에 떠돌아다니는 행렬 계산기를 쓰는 거다. 그래서 나도 내 손으로 역행렬을 구한 지 몇 년이 되었는데, 아무튼 주로 두 방법을 쓰니 알아서 살펴보자. 차마 내 손으론 못쓰겠다...
+
+- [Cramer's Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule)
+- [Gauss-Jordan Elimination](https://www.mathsisfun.com/algebra/matrix-inverse-row-operations-gauss-jordan.html)
+
+## Elementary Row Operation
+Elementary row operation은 행(row) 단위로 수행할 수 있는 연산을 의미한다. 이게 왜 중요하냐? 하면, 이 연산들은 수행해도 행렬이 가지는 주요 성질들을 변화시키지 않기 때문이다. 행렬식, 역행렬의 존재성, rank 등 많은 것을 보존하는 연산이다. 또, 이는 상당히 유용한데, 성질을 보존하므로 우리가 계산하기 쉬운 형태로 행렬을 변형할 기회를 주기 때문이다.
+
+- $kR_i \to R_i$: $i^{th}$ row에 scalar $k$를 곱한다.
+- $R_i + R_j \to R_{i}$: 다른 row에 어떤 row를 더한다.
+- $R_i + kR_j \to R_{i}$: 다른 row에 어떤 row의 scalar multiplication을 더한다.
+
+Gauss-Jordan Elimination도 elementary row operation을 사용하고, 후에 언급할 RREF도 이걸로 구하고, 정말 쓸 곳이 많은 연산이다.
+
+또, 이렇게 $A$에 elementary row operation을 통해 $B$를 얻을 수 있다면, 그 둘은 row-equivalent하다고 한다. 이 연산이 많은 성질을 보존하므로, row-equivalent하면 그 성질들 또한 공유한다고 볼 수 있다.
+
+## Equivalence Theorem
+임의의 정사각($n \times n$) 행렬 $A$에 대하여, $A$는 다음과 같은 성질은 모두 만족하거나, 모두 만족하지 않는다. 다 볼 필요는 없다. 수 십 개의 동치 명제들이 있는데, 몇 개만 가져와봤다.
+
+- $det(A) \ne 0$
+- $Ax = 0$에서 $x$는 반드시 trivial solution($x = \vec 0$)만을 가진다.
+- $A$의 역행렬이 존재한다. (invertible)
+- $r(A) = n$
+- 모든 linear system $Ax=b$에 대해, $x$는 unique solution을 가진다.
+- A는 $I_n$과 row-equivalent하다.
+
+다시 말하면, 행렬식 하나만 구해도 그 행렬의 많은 걸 알 수 있다. 그런데 singular하면 그건 또 그것대로 골때리게 되는 셈이지.
+
+
+# Solving Linear Systems
