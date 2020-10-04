@@ -259,3 +259,4 @@ Gauss-Jordan Elimination도 elementary row operation을 사용하고, 후에 언
 # Solving Linear Systems
 정말 힘든 시간이었다. 이제 배경지식을 쌓았으니 linear system을 풀어보자!
 
+
