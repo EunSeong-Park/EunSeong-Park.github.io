@@ -207,6 +207,12 @@ $A_{m\times n}B_{n\times l} = [c_{ij}]_{m \times l}$
 
 예시는 풀지 않는다. 쓰다가 늙어 죽을지도 몰라...
 
+행렬 곱을 알았으니, identity matrix를 다시 살펴보자. Identity matrix는 다음과 같은 성질을 만족한다. 크기가 맞는 행렬 $A$에 대하여,
+
+- $AI = IA = A$
+
+또, 행렬곱은 일반적으로 결합법칙은 성립하나 교환법칙이 성립하지 않는다. 뒤에서 볼 역행렬과 단위행렬이 조금 특이한 케이스다.
+
 ## Inverse Matrix & Singularity
 어떤 행렬 $A$에 대한 행렬곱, $AB = BA = I$를 만족하도록 하는 행렬 $B$를 $A$의 역행렬(inverse matrix)이라 한다.
 
@@ -251,3 +257,5 @@ Gauss-Jordan Elimination도 elementary row operation을 사용하고, 후에 언
 
 
 # Solving Linear Systems
+정말 힘든 시간이었다. 이제 배경지식을 쌓았으니 linear system을 풀어보자!
+
