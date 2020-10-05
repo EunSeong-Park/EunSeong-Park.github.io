@@ -187,10 +187,10 @@ $$
 
 Rank엔 몇 가지 흥미로운 성질이 있다. 
 
-- Rank, $r(A)$는 반드시 $min\{ m, n \}$보다 작거나 같다. 행렬 사이즈를 초과해서 벡터를 가질 순 없기 때문이다.
+- Rank, $r(A)$는 반드시 $min \{ m, n \} $보다 작거나 같다. 행렬 사이즈를 초과해서 벡터를 가질 순 없기 때문이다.
 - 모든 행렬에 대하여, 한 행렬의 Row rank와 column rank는 항상 같다. (Rank theorem)
 
-그리고 $r(A) = min\{ m, n \}$이면, $r(A)$는 full rank라고 한다.
+그리고 $r(A) = min \{ m, n \} $이면, $r(A)$는 full rank라고 한다.
 
 ## Matrix Multiplication
 두 행렬 간의 곱셈도 가능한데, 여기엔 조건이 있다.

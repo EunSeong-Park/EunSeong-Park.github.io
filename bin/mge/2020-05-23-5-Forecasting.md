@@ -45,7 +45,7 @@ Forecasting은 어떻게 이루어질까? 정성적(qualitative)인 방법과 �
 ## Time Series Analysis
 시계열 분석(time series analysis)은 과거의 데이터를 바탕으로 미래의 데이터를 예측하는 방법이다. 물론 이는 과거와 미래가 어느 정도 일관성있게 흘러감을 가정한다. 또, 이는 다른 변수에 의존하지 않고 오직 시간에 따른 데이터만을 고려한다.
 
-시계열을 graphic하게 분석하면 그 데이터의 동향이 어떤지, 어떤 주기성과 특징을 가지는지 한 눈에 알아볼 수 있다.
+시계열을 graphical하게 분석하면 그 데이터의 동향이 어떤지, 어떤 주기성과 특징을 가지는지 한 눈에 알아볼 수 있다.
 
 - Trend: long-term movement in data
 - Seasonality: short-term regular variations in data
