@@ -1,5 +1,5 @@
 ---
-title: "Intro to Linear Algebra"
+title: "Solving Linear System"
 tags: Linear-Algebra Management-Engineering
 toc: true
 ---
@@ -259,4 +259,156 @@ Gauss-Jordan Elimination도 elementary row operation을 사용하고, 후에 언
 # Solving Linear Systems
 정말 힘든 시간이었다. 이제 배경지식을 쌓았으니 linear system을 풀어보자!
 
+다음과 같은 simultaneous linear equation을 푼다고 가정하자.
 
+$$
+\begin{matrix}
+a_{11}x_1 + a_{12}x_2 + \cdots a_{1n}x_n = b_1 \\
+a_{21}x_1 + a_{22}x_2 + \cdots a_{2n}x_n = b_2 \\
+\cdots \\
+a_{m1}x_1 + a_{m2}x_2 + \cdots a_{mn}x_n = b_m
+\end{matrix}
+$$
+
+이를 행렬 형태로 변환하여, 다음과 같이 나타낼 수 있다.
+
+$$
+\mathbf{Ax}=
+\begin{pmatrix}
+a_{11}&a_{21}&\cdots&a_{n1}\\
+a_{12}&a_{22}&\cdots&a_{n2}\\
+\cdots&\cdots&\cdots&\cdots\\
+a_{1m}&a_{2m}&\cdots&a_{nm}
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\ \cdots \\ x_n
+\end{pmatrix} =
+\begin{pmatrix}
+b_1\\b_2\\ \cdots \\ b_m
+\end{pmatrix} = \mathbf b
+$$
+
+왜냐? 행렬곱을 해보면 똑같이 나온다... 이게 더 이쁘기도 하고.
+
+## Existence of Solution
+주어진 linear system의 해의 존재성을 파악하기 위한 여러 방법이 있다.
+
+우선 rank를 이용해보자. $m \times n$ 행렬 $\mathbf A$와 $\mathbf A$, $\mathbf b$를 붙여 만든 augmented matrix $\mathbf A \vert \; \mathbf b$에 대해, 각각의 rank를 계산한다.
+
+- $r(A) = r(A \vert\; b) = n$: Linear system은 consistent하고, unique solution을 가진다.
+- $r(A) = r(A \vert\; b) < n$: Linear system은 consistent하고, infinite solution을 가진다.
+- $r(A) < r(A \vert\; b) = r(A) + 1$: Linear system은 inconsistent하고, solution을 가지지 않는다.
+
+결국, $\mathbf b$가 $A$의 column vector 간의 linear combination으로 만들어질 수 있다면 해가 존재하는 셈이다. (역도 성립한다.)
+
+더 간단한 방법으로, (정사각행렬의 경우) 위에서 언급한 동치 명제들을 이용할 수도 있다.
+
+- $det(A) \ne 0$
+- $Ax = 0$에서 $x$는 반드시 trivial solution($x = \vec 0$)만을 가진다.
+- $A$의 역행렬이 존재한다. (invertible)
+- $r(A) = n$
+- 모든 linear system $Ax=b$에 대해, $x$는 unique solution을 가진다.
+- A는 $I_n$과 row-equivalent하다.
+
+간단히 행렬식만 확인하면 된다. 와!
+
+## Solution
+### Unique Solution
+$\mathbf {Ax = b}$가 unique solution을 가지고 (non-singular), A는 정사각행렬인 경우를 알아보자. 아이디어는 간단하다. $\mathbf {Ax=b}$라면, $\mathbf{A^{-1}(Ax) = A^{-1}b}$고 (non-singular이므로 역행렬이 반드시 존재한다.) 이 식을 교환법칙을 이용해 정리하면, $\mathbf {(A^{-1}A)x = Ix=x=A^{-1}b}$다. 즉, 역행렬을 구하고, 거기다 $\mathbf {b}$를 곱하면 된다.
+
+역행렬은 알아서 구하면 되는데, Gauss-Jordan Elimination을 추천하고, 난 행렬 계산기를 사용할 예정이다.
+
+### Infinite Solution
+$\mathbf {A}$가 역행렬을 가지지 않는다면 참 난감하다. $det(A) = 0$이어서 가지지 않을 수도(singular), 아니면 정사각행렬이 아니어서(non-square) 가지지 않을 수도 있다. 이번엔 $r(A) = k < n$이어서 infinite solution인 경우를 알아보자. 우리는 이 system에서 general solution을 찾는 게 목표다.
+
+가장 간단한 방법으로, 주어진 $\mathbf {A, b}$에 대한 augmented matrix, $\mathbf {A \vert\; b}$의 RREF(Reduced Row Echelon Form)를 만드는 것으로 해결해보자.
+
+#### RREF
+RREF는 다음을 조건을 만족하는 행렬 형태다.
+
+1. 각 row에 대해, 가장 먼저 나타나는 non-zero element는 반드시 1이다. 이를 pivot이라고 하자.
+2. 어떤 $i^{th}$ row에 pivot이 있었다면, $j^{th} (> i)$ row는 (만약 존재한다면) 반드시 $i^{th}$ row의 pivot보다 오른쪽에 위치한다.
+3. Pivot이 없는 row는 zero-row-vector고, 이는 반드시 pivot이 있는 row의 아래에 위치한다.
+4. Pivot을 포함하는 column에서, pivot을 제외한 모든 원소는 0이다.
+
+1, 2, 3, 4번을 모두 만족하면 RREF, 1, 2, 3번을 만족하면 REF(Row Echelon Form)이라고 한다. 주어진 행렬에 대하여 RREF는 유일하나, REF는 그렇지 않다. 몇 가지 예시를 들어보자.
+
+$$\begin{pmatrix}
+1&2&3&4\\
+0&0&1&2\\
+0&0&0&0
+\end{pmatrix}
+$$
+
+위 행렬은 REF이나, RREF는 아니다. 두 번째 row의 pivot이 있는 column에 pivot 외의 non-zero element가 있기 때문이다.
+
+$$\begin{pmatrix}
+1&2&0&4\\
+0&0&1&2\\
+0&0&0&0
+\end{pmatrix}
+$$
+
+반면, 위 행렬은 RREF다.
+
+#### Getting General Solution by RREF
+다시 원점으로 돌아와, 우리는  $\mathbf {A \vert\; b}$의 RREF를 만드는 것으로 해결한다고 했다. 왜냐? RREF로 만들면 해가 명확하게 드러나기 때문이다. 예를 들어, 다음과 같이 RREF로 만든 linear system을 생각해보자.
+
+
+$$\begin{pmatrix}
+1&0&2&0 &\vert\; 13\\
+0&1&1&0&\vert \; 25\\
+0&0&0&1 &\vert \; 18\\
+\end{pmatrix}
+$$
+
+솔루션이 꽤 명확히 보인다. Pivot을 기준으로 식을 정리하면 된다.
+
+$$\begin{pmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{pmatrix}=
+\begin{pmatrix}
+13-2x_3\\25-x_3\\x_3\\18
+\end{pmatrix}
+$$
+
+여기서 $x_3$이 흥미로운데, 이를 free variable로 여겨, 다른 변수가 그것에 관한 식으로 해를 구성할 수 있도록 할 수 있다. 즉, $x_3 = t$로 놓으면,
+
+$$\begin{pmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{pmatrix}=
+\begin{pmatrix}
+13-2t\\25-t\\t\\18
+\end{pmatrix}=
+\begin{pmatrix}
+13\\25\\0\\18
+\end{pmatrix}+t
+\begin{pmatrix}
+-2\\-1\\1\\0
+\end{pmatrix}
+$$
+
+이렇게 general solution을 구할 수 있게 되었다!! 여기서 free variable을 0으로 놓고 나온 solution, $(13, 25, 0, 18)^T$를 basic solution, $x_B$라 하고, free variable이 아닌 변수들을 basic variable이라 하자. 또, free variable이 구성하는 벡터를 $x_N$과 같이 나타낼 것이다.
+
+$$x_B = \begin{pmatrix}
+13\\25\\0\\18
+\end{pmatrix}, x_N=
+\begin{pmatrix}
+x_3
+\end{pmatrix}$$
+
+### Infeasible Solution
+이 또한 RREF로 간단히 확인할 수 있다. 위와 같은 방식으로 RREF를 만들었는데, $\mathbf A$의 row vector가 zero vector인데, 그 행의 $\mathbf b$ 원소가 non-zero다? 그러면 우리는 해가 없다고 결론 지을 수 있다. 다음과 같은 상황이다.
+
+$$\begin{pmatrix}
+1&0&2&3 &\vert\; 2\\
+0&1&2&6&\vert \; 1\\
+0&0&0&0 &\vert \; 1\\
+\end{pmatrix}
+$$
+
+$0x_1 + 0x_2+0x_3+0x_4 = 1 $의 해를 찾는 것과 같은 일이다. 당연하게도 해가 있을 수 없다.
+
+
+# 마치며
+결국 행렬 계산기를 쓰는 게 정신 건강에 이롭다. 이론적 배경과 솔루션을 구하는 과정만 잘 숙지해놓고, 계산기를 열심히 쓰자.
