@@ -29,14 +29,25 @@ $\psi_i = \phi^i, \text{ where } \phi \in (-1, 1)$인 경우의 linear process�
 
 $$ Y_t = e_t + \phi e_{t-1} + \phi^2 e_{t-2} + \cdots$$
 
-먼저, mean을 구해보자. Mean의 linearity와 화이트 노이즈의 zero-mean 특성에 의하여, $E(Y_t) = E(e_t + \phi e_{t-1} + \cdots) = 0 + 0 + \cdots = 0$이다.
+먼저, mean을 구해보자. Mean의 linearity와 화이트 노이즈의 zero-mean 특성에 의하여, 
 
-Variance는 어떨까? $Var(aX+b) = a^2Var(X)$임을 기억하자. 그에 따라, $Var(Y_t) = Var(e_t + \phi e_{t-1} + \phi^2 e_{t-2} + \cdots)$ $=Var(e_t) + \phi^2 Var(e_{t-1}) + \cdots$ $=\sigma_e^2(1+\phi^2 +\phi^4 + \cdots)=$ $\sigma_e^2 \over 1-\phi^2$와 같이 표현할 수 있다. 여기서 $sigma_e^2$는 화이트 노이즈의 variance다.
+$$E(Y_t) = E(e_t + \phi e_{t-1} + \cdots) = 0 + 0 + \cdots = 0$$
+
+Variance는 어떨까? $Var(aX+b) = a^2Var(X)$임을 기억하자. 그에 따라,
+
+$$Var(Y_t) \begin{align} = Var(e_t + \phi e_{t-1} + \phi^2 e_{t-2} + \cdots) \\ & =Var(e_t) + \phi^2 Var(e_{t-1}) + \cdots \\ & =\sigma_e^2(1+\phi^2 +\phi^4 + \cdots)=\\ & {\sigma_e^2 \over 1-\phi^2}$$
+
 
 이제 인접한 시점에서의 시계열 데이터 간의 covariance와 correlation을 구해보자. 먼저 covariance는 다음과 같다.
 
 $$ Cov(Y_t) \begin{align}
-& 
-&
+& = Cov(e_t + \phi e_{t-1} + \cdots ,e_{t-1} + \phi e_{t-2} + \cdots) \\ 
+& = Cov(\phi e_{t-1}, e_{t-1}) + Cov(\phi^2e_{t-2}, e_{t-2}) + \cdots \\
+& = \phi \sigma_e^2(1+\phi^2 + \phi^4 + \cdots) \\
+&= {\phi \sigma_e^2 \over 1-\phi^2}
 \end{align}
 $$
+
+자연스럽게, correlation은 다음과 같이 나온다.
+
+$$$$
