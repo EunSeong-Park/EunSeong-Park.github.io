@@ -35,12 +35,18 @@ $$E(Y_t) = E(e_t + \phi e_{t-1} + \cdots) = 0 + 0 + \cdots = 0$$
 
 Variance는 어떨까? $Var(aX+b) = a^2Var(X)$임을 기억하자. 그에 따라,
 
-$$Var(Y_t) \begin{align} = Var(e_t + \phi e_{t-1} + \phi^2 e_{t-2} + \cdots) \\ & =Var(e_t) + \phi^2 Var(e_{t-1}) + \cdots \\ & =\sigma_e^2(1+\phi^2 +\phi^4 + \cdots)=\\ & {\sigma_e^2 \over 1-\phi^2}$$
+$$
+ \begin{align} Var(Y_t) & = Var(e_t + \phi e_{t-1} + \phi^2 e_{t-2} + \cdots) \\
+& =Var(e_t) + \phi^2 Var(e_{t-1}) + \cdots \\
+& =\sigma_e^2(1+\phi^2 +\phi^4 + \cdots) \\
+& = {\sigma_e^2 \over 1-\phi^2}
+\end{align}
+$$
 
 
 이제 인접한 시점에서의 시계열 데이터 간의 covariance와 correlation을 구해보자. 먼저 covariance는 다음과 같다.
 
-$$ Cov(Y_t) \begin{align}
+$$ \begin{align} Cov(Y_t) 
 & = Cov(e_t + \phi e_{t-1} + \cdots ,e_{t-1} + \phi e_{t-2} + \cdots) \\ 
 & = Cov(\phi e_{t-1}, e_{t-1}) + Cov(\phi^2e_{t-2}, e_{t-2}) + \cdots \\
 & = \phi \sigma_e^2(1+\phi^2 + \phi^4 + \cdots) \\
