@@ -1,5 +1,5 @@
 ---
-title: "[OS 1] Overview"
+title: "[OS 1] Overview of OS"
 tags: OS
 toc: true
 ---
@@ -138,9 +138,64 @@ API를 통해 시스템 콜을 시도하면, 커널 모드에서 시스템 콜 �
 ## Storage Management
 OS는 **파일(file)**로 일컬어지는 저장공간의 단위를 적절히 관리한다. 디렉터리로 파일들을 구조화하는 것도, 파일 시스템을 세우고 관리하는 것도 OS의 역할 중 하나다.
 
+# OS Structure
+OS는 그 종류와 목적에 따라 서로 다른 구조와 동작 방식을 가진다. 특히 범용 OS는 굉장히 큰 규모를 가진 복잡한 프로그램이다. 
+
+OS는 주로 다음과 같은 구조를 가질 수 있다.
+
+- **Simple structure**
+- **More complex structure**
+- **Layered structure**
+- **Microkernel**
+- **Kernel module**
+- **Hybrid**
+
+## Simple Structure : MS-DOS
+MS-DOS와 같은 간단한 OS는 모듈로 분할되어있지 않고, 적은 공간으로 대부분의 기능을 지원하는 방향으로 설계되었다. 
+
+![](/imgs/os/os54.png)
+
+## More Complex Structure : UNIX
+UNIX OS는 두 개의 separable part로 구성된다.
+
+- **System Program**
+- **Kernel**
+
+**커널(kernel)**은 시스템 콜 인터페이스와 물리적 하드웨어 사이의 거의 모든 것을 포함하는 것으로, 파일 시스템, 스케줄링, 메모리 관리와 같은 OS function을 제공한다.
+
+![](/imgs/os/os55.png)
+
+## Layered Structure
+OS가 다수의 레이어(layer)로 모듈화되어 분할되는 방식이다.
+
+![](/imgs/os/os56.png)
+
+모듈이면 모듈이지, 왜 레이어 형태를 가지느냐?라는 의문이 들 수 있다. Layered 모델의 중요한 성질 중 하나는 계층(hierarchy) 구조다. Higher layer는 그 아래의 레이어에 직접적으로 접근하거나 조작할 수 없다. 대신, 필요한 경우 낮은 계층의 레이어는 높은 계층을 위한 인터페이스를 제공함으로써 자신의 기능을 사용할 수 있도록 해준다.
+
+이러한 방식은 낮은 계층의 레이어를 보호함과 동시에 모듈러리티도 보장해준다.
+
+## Microkernel System Structure
+Mach 등과 같은 **마이크로커널(microkernel)** 구조는 기존 구조에서 커널의 (상당 부분의) 일부를 다른 곳으로 전가해, 커널 자체의 규모를 줄인 형태다. 가령 시스템 콜, 디바이스 관리, 파일 시스템 등을 유저 모드로 넘길 수 있다.
+
+이러한 방식은 안정성, 확장성, 이식성을 좋게 한다. 하지만 유저-커널 간 통신에 의한 오버헤드가 커진다는 단점도 존재한다.
+
+![](/imgs/os/os57.png)
+
+## Modules
+현대 OS는 **loadable kernel module**을 채택하여 구현한다. 객체 지향적인 approach를 따라, 각각의 컴포넌트가 분리 가능하고, 커널에서 필요할 때 로드하는 등, 레이어와 비슷하지만 조금 더 유연하다는 특징을 가진다. Linux, Solaris 등이 대표적인 예시다.
+
+![](/imgs/os/os58.png)
+
+## Hybrid Systems
+사실 오늘날의 OS는 순수하게 하나의 모델을 채택해 구현된 경우가 드물다. 모델들을 적당히 결합해 장점을 최대한 살리고, 단점을 최대한 보완하는, hybrid 방식을 사용한다.
+
+![](/imgs/os/os59.png)
+
+위 사진은 Mac OS X의 구조다. 전반적으로 layered한 느낌을 주는데, Mach 마이크로커널을 포함하며, 동적으로 로드할 수 있는 kernel extension들도 포함한다. 말 그대로 짬뽕인 셈이다.
+
 
 # 마치며
-지금까지 OS에 관해 매우 넓게 오버뷰를 해보았다. 이제부터 하나하나 알아가도록 하자.
+지금까지 OS에 관해 매우 넓게 오버뷰를 해보았다. 이제부터 하나하나 알아가도록 하자. 
 
 
 <!--
