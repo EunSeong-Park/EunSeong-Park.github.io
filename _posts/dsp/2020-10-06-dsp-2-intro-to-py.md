@@ -5,7 +5,7 @@ toc: true
 ---
 
 # Intro
-우선, 여기선 Python을 사용할 예정이므로, 기본적인 관련 지식을 충분히 확인하고 가도록 하자. Python의 기본적인 특징과, 자료형(data type), 제어문 등을 알아볼 것이다. 이러니까 초등학생용 파이썬 강좌같다...
+우선, 여기선 Python을 사용할 예정이므로, 기본적인 관련 지식을 충분히 확인하고 가도록 하자. Python의 기본적인 특징과, 아주 기초적인 요소들을 알아볼 것이다. 어째 초등학생용 파이썬 강좌같다...
 
 아, 그리고 여기선 Python 3.8을 사용할 예정이다. 아무튼 시작!
 
@@ -125,5 +125,13 @@ print((a|b) - c)    # {4,5,6}
 **딕셔너리(dictionary)**는 해시 테이블(hash table), 혹은 맵(map)의 역할을 하는 자료형이다. 각 원소는 `(key, value)` 쌍으로 구성되며, `key`는 딕셔너리 내에서 유일하나, `value`는 그럴 필요는 없다.
 
 ```python
+inventory = {
+    'ham': 10,
+    'onion': 5,
+    'bread': 2,
+    'meat': 10
+}
+print(inventory['ham'])             # 10
+print(list(inventory.items())[2])   # ('bread', 2)
 
 ```
