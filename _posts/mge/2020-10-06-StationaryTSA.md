@@ -9,12 +9,12 @@ toc: true
 
 시작 전에, 다음과 같은 노테이션을 사용하자.
 
-{$Y_t$}: Observed time series
-{$e_t$}: Unobserved white noise series (seq. of i.i.d., zero-mean RV)
+- {$Y_t$}: Observed time series
+- {$e_t$}: Unobserved white noise series (seq. of i.i.d., zero-mean RV)
 
 
 # General Linear Process
-General linear process, {$Y_t$}는 현재와 과거의 화이트 노이즈의 선형 결합(linear combination)으로 나타내어진다:
+**General linear process**, {$Y_t$}는 현재와 과거의 화이트 노이즈의 선형 결합(linear combination)으로 나타내어진다:
 
 $$Y_t = e_t + \psi_1e_{t-1}+\psi_2e_{t-2} + \cdots$$
 
@@ -69,11 +69,11 @@ $Corr(Y_t, Y_s) =$ $\frac{Cov(Y_t, Y_s)}{\sqrt{Var(Y_t)Var(Y_s)}} = $ $\frac{\ga
 이렇게 돌아보면, 왜 이 프로세스가 정상적(stationary)인지 알 수 있다. Mean이 일정하고(0), autocovariance가 time lag, $k$에만 의존하기 때문이다. 와, 소름!
 
 ## Stationarity of General Linear Process
-General linear process는 정상적이다. 왜냐? weak stationarity의 두 조건을 만족하기 때문이다! 위에서와 같은 이유로 $E(Y_t) = 0$이고, autocovariance, $\gamma_k = Cov(Y_t, Y_{t-k}) = \sigma_e^2\sum_{i=0}^\infty \psi_i \psi_{i+k}$이기 때문이다. 계산은 생략...
+**General linear process는 정상적이다.** 왜냐? weak stationarity의 두 조건을 만족하기 때문이다! 위에서와 같은 이유로 $E(Y_t) = 0$이고, autocovariance, $\gamma_k = Cov(Y_t, Y_{t-k}) = \sigma_e^2\sum_{i=0}^\infty \psi_i \psi_{i+k}$이기 때문이다. 계산은 생략...
 
 
 # Moving Average Processes
-MA 프로세스는 non-zero weight가 유한함을 가정하고, 다음과 같이 표현될 수 있다.
+**MA **프로세스는 non-zero weight가 유한함을 가정하고, 다음과 같이 표현될 수 있다.
 
 $$Y_t = e_t - \theta_1e_{t-1} - \theta_2e_{t-2} - \cdots - \theta_qe_{t-q}$$
 
@@ -90,15 +90,15 @@ $$Y_t = e_t - \theta e_{t-1}$$
 
 $$E(Y_t) = E(e_t - \theta e_{t-1}) = 0$$
 
-$$\begin{align}Var(Y_t)  & = E(e_t - \theta e_{t-1}) = 0\\
+$$\begin{aligned}Var(Y_t)  & = E(e_t - \theta e_{t-1}) = 0\\
 & = Var(e_t) + \theta^2 Var(e_{t-1}) \\
-& = -\theta \sigma_e^2 \end{align}$$
+& = -\theta \sigma_e^2 \end{aligned}$$
 
-$$\begin{align} Cov(Y_t, Y_{t-1})
+$$\begin{aligned} Cov(Y_t, Y_{t-1})
 & = Cov(e_t-\theta e_{t-1}, e_{t-1} -\theta e_{t-2}) \\
 & = Cov(-\theta e_{t-1}, e_{t-1}) \\
 & = -\theta \sigma_e^2
-\end{align}$$
+\end{aligned}$$
 
 $$ Cov(Y_t, Y_{t-2}) = Cov(e_t-\theta e_{t-1}, e_{t-2} - \theta e_{t-3}) = 0$$ 
 
@@ -122,7 +122,7 @@ $$Y_t = e_t - \theta e_{t-1} - \theta_2 e_{t-2}$$
 
 
 # AutoRegressive Process
-AR 프로세스는 단어 그대로 스스로에 대한 regression이라 할 수 있다. 일반적으로($p$-order) 다음과 같이 표현된다.
+**AR** 프로세스는 단어 그대로 스스로에 대한 regression이라 할 수 있다. 일반적으로($p$-order) 다음과 같이 표현된다.
 
 $$Y_t = \phi_1Y_{t-1} + \phi_2Y_{t-2} + \cdots + \phi_pY_{t-p} + e_t$$
 
@@ -131,14 +131,14 @@ $$Y_t = \phi_1Y_{t-1} + \phi_2Y_{t-2} + \cdots + \phi_pY_{t-p} + e_t$$
 이번엔 $AR(1)$, $AR(2)$를 따로 살펴보진 않을 것이다. 너무 수식 쓰기 힘들어...
 
 ## Stationarity of AR Process
-모든 AR 프로세스가 정상적이진 않음을 주의하자. Stationarity를 확인하는 과정이 추가적으로 필요하다.
+**모든 AR 프로세스가 정상적이진 않음**을 주의하자. Stationarity를 확인하는 과정이 추가적으로 필요하다.
 
 주어진 AR 프로세스에 대한 정상성을 찾기 위한 좋은 방법이 있다. 바로 AR Characteristic Equation을 사용하는 것인데, 다음 방정식의 근들이 모두 복소 평면의 단위원 밖에 있으면 된다. 역도 성립한다.
 
 $1-\phi_1x - \phi_2x^2 - \cdots - \phi_p x^p = 0$
 
 ## Yule-Walker Equations
-Yule-Walker equations는 AR의 autocorrelation과 autocovariance를 구하기 위해 사용되는 방정식이다. 적당히 유도해보자.
+**Yule-Walker equations**는 AR의 autocorrelation과 autocovariance를 구하기 위해 사용되는 방정식이다. 적당히 유도해보자.
 
 우선, general $AR(p)$ process에 대해, $Y_{t-k}$를 곱해주자.
 
@@ -159,5 +159,164 @@ $$
 
 이렇게 $\mathbf \rho$가 unknown으로 존재하는 linear system이 만들어졌다.
 
+# AutoRegressive Moving Average Process
+뭐 이런 혼종이 다있냐... 아무튼 **ARMA** 프로세스는 AR과 MA의 특성을 나누어 가진 프로세스다. 즉, 부분적으로 AR이고, 부분적으로 MA다. 지금까지의 프로세스와 비교하여 조금 더 일반화된 형태다.
+
+$$\begin{aligned}Y_t & = \phi_1Y_{t-1} + \phi_2Y_{t-2} + \cdots + \phi_pY_{t-p} \\ & + e_t - \theta_1e_{t-1} - \theta_2e_{t-2} - \cdots - \theta_qe_{t-q}
+\end{aligned}
+$$
+
+이렇게 정의된 {$Y_t$}는 $ARMA(p,q)$와 같이 표현된다.
+
+## ARMA(1,1) Model
+$ARMA(1,1)$은 다음과 같이 나타낼 수 있다.
+
+$$Y_t = \phi Y_{t-1} + e_t - \theta e_{t-1}$$
+
+ARMA에도 Yule-Walker equation을 적용할 수 있다. 그 전에, $E(e_tY_t) = \sigma_e^2$, $E(e_{t-1}Y_t) = (\phi-\theta)\sigma_e^2$라는 사실을 알아두자. 그럼 $Y_{t-k}$를 곱한 다음 expectation을 때리면,
+
+$$\begin{aligned}E(Y_{t-k}Y_t)& = E(\phi Y_{t-k} Y_{t-1} + Y_{t-k}e_t - \theta Y_{t-k}e_{t-1})\\
+& = \phi E(Y_{t-k}Y_{t-1}) + \sigma_e^2 - (\phi - \theta)\sigma_e^2\end{aligned}
+$$
+$$
+\begin{aligned}
+for\;k = 0; \quad& \gamma_0 = \phi \gamma_1 + (1-\theta(\phi - \theta))\sigma_e^2 \\
+for\;k = 1; \quad& \gamma_1 = \phi \gamma_0 - \theta \sigma_e^2 \\
+for\;k \ge 2; \quad& \gamma_k = \phi \gamma_{k-1}
+\end{aligned}
+$$
+
+이를 풀면, 다음과 같이 표현할 수 있다.
+
+$$
+\gamma_0 = \frac{1-2\phi\theta + \theta^2}{1-\phi^2} \sigma_e^2 \newline \; \newline
+\rho_k = \frac{(1-\theta\phi)(\phi-\theta)}{1-2\theta\phi + \theta^2}\phi^{k-1}\quad(for\;k\ge 1)
+$$
+
+## ARMA(p, q) Model
+일반적인 ARMA 모델에 대한 건 증명 없이 받아들이자...
+
+우선, 다음 두 문장은 동치다.
+
+- $ARMA(p,q)$는 정상적이다(stationary).
+- AR characteristic equation, $\phi(x) = 0$의 모든 근의 복소평면 위에서의 크기가 1을 초과한다.
+
+만약 주어진 ARMA가 정상성 조건을 만족할 경우, 이는 $\psi$를 계수로 하는 general linear process로 표현될 수 있다.
+
+- $\psi_0 = 1$
+- $\psi_1 = -\theta_1 + \phi_1$
+- $\psi_2 = -\theta_2 + \phi_2 + \phi_1\psi_1$
+- $\cdots$
+- $\psi_j = -\theta_j + \phi_p\psi_{j-p}+\phi_{p-1}\psi_{j-p+1}+\cdots+\phi_1\psi_{j-1}$
+
+또, 이러한 경우, ACF는 다음과 같이 표현된다.
+
+$$\rho_k = \phi_1\rho_{k-1} + \phi_2\rho_{k-2} + \cdots + \phi_p\rho_{k-p}\quad for\;k>q$$
+
+...슬슬 머리가 깨질 것 같다.
+
+
+# Invertibility
+## General Linear Process Representation
+정상성이 보장된 경우의 $AR(p)$ 프로세스는 general linear process form으로 표현될 수 있다. 어떻게? 바로 $\psi$를 계수로 삼아서!
+
+$$Y_t = e_t + \psi_1 e_{t-1} + \psi_2 e_{t-2} + \cdots$$
+
+하지만 각각의 $\psi$는 $\phi_1, \cdots, \phi_p$의 함수로, 굉장히 복잡한 형태를 띠고 있다. 하지만 많은 사람들이 열심히 다 구해놔서 레퍼런스를 찾으면 된다!
+
+위에서 언급하였듯, ARMA또한 정상성이 보장되었다면 general linear process with $\psi$-coefficient로의 표현이 가능하다. 또, 비슷한 맥락에서, 이들을 infinite-order MA로도 나타낼 수 있을 것이다.
+
+그런데 여기서 궁금한 점은 이거다. **"그럼 MA 프로세스를 AR로 나타낼 수도 있나?"**
+
+## Invertibility Example: MA(1)
+**MA(1)** 모델을 생각해보자.
+
+$$Y_t = e_t - \theta e_{t-1}$$
+
+이는 $e_t = Y_t + \theta e_{t-1}$와 같고, $e_{t-1} = Y_{t-1} + \theta e_{t-2}$라는 점을 생각하면, 다음과 같이 나타낼 수 있다.
+
+$$e_t = Y_t + \theta Y_{t-1} + \theta^2 e_{t-2}$$
+
+더욱 확장하여, $\vert \theta \vert < 1$이어서 수렴성이 보장된다면, 
+
+$$e_t = Y_t + \theta Y_{t-1} + \theta^2Y_{t-2} + \theta^3Y_{t-3} + \cdots$$
+
+또는 다음과 같이 표현할 수도 있다.
+
+$$Y_t = (-\theta Y_{t-1}-\theta^2Y_{t-2} - \cdots) + e_t$$
+
+띠용? 어느새 AR이 되었다!?
+
+다음 두 명제는 동치임이 알려져있다.
+
+- $MA(1)$은 가역이다.
+- $\vert \theta \vert < 1$이다.
+
+## General MA / ARMA Process
+일반적인 $MA(q)$, 또는 $ARMA(p,q)$ 모델에 대해서, **MA characteristic polynomial**을 다음과 같이 정의한다.
+
+$$\theta(x) = 1 - \theta_1x - \cdots - \theta_q x^q$$
+
+그리고 **MA characteristic equation**은 $\theta(x) = 0$이다.
+
+다음 두 명제는 동치다.
+
+- 해당 프로세스는 가역이어서, $Y_t = \pi_1 Y_{t-1} + \pi Y_{t-2} + \cdots + e_t$를 만족하는 $\pi_i$가 존재한다.
+- MA characteristic equation의 모든 근이 복소평면 위에서 그 크기가 1을 초과한다.
+
+## ACF and Invertibility
+가역성에 대해 조심해야 할 사항이 조금 있다. 우선, 두 $MA(1)$ 모델을 보자.
+
+- $Y_t = e_t - \theta e_{t-1}$
+- $Y_t = e_t - \frac{1}{\theta} e_{t-1}$
+
+두 프로세스는 동일한 ACF를 가지지만, 전자만이 가역적이다.
+
+
+# Summary
+이번에 다룬 내용이 너무 많아서 간단히 한 번 요약해본다.
+
+### General Linear Process
+
+$$ Y_t = e_t + \psi_1 e_{t-1} + \psi_2 e_{t-2} + \cdots $$
+
+- **Stationary**
+- $E(Y_t) = 0$
+- $\gamma_k = \sigma_e^2 \sum_{i=0}^\infty \psi_i\psi_{i+k}\quad for\;k \ge 0$
+
+### Moving Average Process
+
+$$Y_t = e_t - \theta_1e_{t-1} - \theta_2e_{t-2} - \cdots - \theta_qe_{t-q}$$
+
+- **Stationary**
+- **$MA(q)$에서, $q$ 이후로 autocorrelation은 $0$**
+- **MA characteristic equation 조건을 만족하면 AR 형태로 변환 가능.**
+
+#### MA Characteristic Equation
+$$\theta(x)=1-\theta_1 x - \theta_2 x^2 - \theta_3 x^3 - \cdots - \theta_q x^q = 0$$
+
+### AutoRegressive Process
+$$Y_t = \phi_1Y_{t-1} + \phi_2Y_{t-2} + \cdots + \phi_pY_{t-p} + e_t$$
+
+- **AR characteristic equation을 통해 정상성 확인 가능.**
+- **Yule-Walker equation을 통해 autocorrelation과 autocovariance 계산 가능.**
+- **정상성이 보장된 경우 MA, general linear process 형태로 변환 가능.**
+
+#### AR Characteristic Equation
+
+$$\phi(x) = 1-\phi_1 x - \phi_2 x^2 - \cdots - \phi_p x^p = 0$$
+
+### AutoRegressive Moving Average Process
+$$\begin{aligned}Y_t & = \phi_1Y_{t-1} + \phi_2Y_{t-2} + \cdots + \phi_pY_{t-p} \\ &\; + e_t - \theta_1e_{t-1} - \theta_2e_{t-2} - \cdots - \theta_qe_{t-q}
+\end{aligned}
+$$
+
+- **AR characteristic equation을 통해 정상성 확인 가능.**
+- **정상성이 보장된 경우 MA, general linear process 형태로 변환 가능.**
+- **MA characteristic equation 조건을 만족하면 AR 형태로 변환 가능.**
+
+
 # 마치며
-수식을 너무 많이 써야 한다... 힘들어
+정말 길고 길었다... 아마 각 프로세스에서 특정 order의 형태와 성질, auto-covariance, auto-correlation 등을 모조리 기억하는 건 어려울 것이다. 하지만 대부분 이들을 유도하는 방식은 비슷하기 때문에, 필요에 따라 스스로 유도할 수 있는 정도만 되어도 괜찮을 것 같다. 
+
+그러기 위해선 각 프로세스의 정의, $Cov$, $\gamma$, $\rho$ 등의 성질 정도는 잘 알고 능숙하게 사용할 수 있어야 한다. 역시 기본이 중요하지 음음
