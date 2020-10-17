@@ -18,7 +18,7 @@ EDA와 달리, 이제 주어진 샘플을 통해 모집단의 특성을 **추론
 **무작위 샘플(random sample)**은 모집단으로부터 뽑아낸 IID 확률 변수의 집합이다. 즉,
 
 - $X_1, X_2, \cdots X_n$는 서로 독립이다.
-- 임의의$x \in mathbb R$에 대하여 $p_{X_1}(x) = \cdots = p_{X_n}(x)$
+- 임의의$x \in \mathbb R$에 대하여 $p_{X_1}(x) = \cdots = p_{X_n}(x)$
 
 Sample statistic과 population parameter 사이엔 어느 정도 관련이 있다. 
 
