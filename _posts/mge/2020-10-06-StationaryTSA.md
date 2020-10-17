@@ -189,8 +189,9 @@ $$
 이를 풀면, 다음과 같이 표현할 수 있다.
 
 $$
-\gamma_0 = \frac{1-2\phi\theta + \theta^2}{1-\phi^2} \sigma_e^2 \newline \; \newline
-\rho_k = \frac{(1-\theta\phi)(\phi-\theta)}{1-2\theta\phi + \theta^2}\phi^{k-1}\quad(for\;k\ge 1)
+\gamma_0 = \frac{1-2\phi\theta + \theta^2}{1-\phi^2} \sigma_e^2 $$
+
+$$\rho_k = \frac{(1-\theta\phi)(\phi-\theta)}{1-2\theta\phi + \theta^2}\phi^{k-1}\quad(for\;k\ge 1)
 $$
 
 ## ARMA(p, q) Model
