@@ -72,5 +72,52 @@ $$\sum_{k=1}^n \frac{1}{n-1}(X_k - \bar X)^2$$
 
 이제 그걸 어떻게 측정하느냐? [여기](https://eunseong-park.github.io/2020/04/25/Statistics-5-Statistical-Hypothesis.html#hypothesis-test)에 정리해놓았다.
 
+### Power
+**Power**는 실제로 $H_1$이 사실인 상황에서 $H_1$을 채택할 확률이다. 즉 $P(\text{Decision } H_1 \vert \text{Real } H_1)$인데, 이는 Type II error를 범할 확률을 $1$에서 뺀 것과 같다.
 
 
+# Testing in Python
+간단한 예시로 가설 검증을 해보자. Jupyter를 지킬 위에 바로 꽂아서 바로 돌릴 수 있으면 좋겠는데, 나중에 방법을 찾아봐야겠다. 아무튼 import부터!
+
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+```
+
+다음과 같은 상황을 가정해보자.
+
+> 어떤 모집단의 데이터의 평균은 $53$이라 알려져있고, 모집단의 표준 편차는 $4$라고 가정한다. 그런데 한 연구는 평균이 $53$보단 작다고 주장하고 싶어, $50$개의 샘플을 뽑아 평균을 내보았다. 가설 검정 시 사용한 $\alpha$는 $0.05$다.
+
+우리는 아래와 같이 가설을 세울 수 있다.
+
+- $H_0: \mu = 53$
+- $H_1: \mu < 53$
+
+샘플링한 데이터가 다음과 같다고 가정하자.
+
+```python
+samp = np.random.normal(loc=50, scale=5, size=50)
+mydat = pd.DataFrame(samp)
+sns.distplot(mydat, kde=False, bins=20)
+```
+![](/imgs/dsp/8.png)
+
+우린 여기서 Z를 test statistic으로 사용하여 P-value 테스트를 시행할 것이다. 이 샘플은 적당히 normal distribution으로 근사된다는 점과 $Z = \frac{\bar X - \mu}{\frac{\sigma}{\sqrt n}}$임을 기억하자.
+
+```python
+# Z-test
+Z = (np.mean(samp) - 53 / (4 / np.sqrt(len(samp)))
+# -5.785589362366275
+```
+
+P-value를 계산하기 위한 편리한 툴이 있다. 바로 `scipy`인데, 여기서 통계 도구만을 가져와 계산할 것이다. 
+
+```python
+import scipy.stats as stats
+
+p_val = stats.norm.cdf(Z)
+# 3.6129267278064018e-09
+```
+$0.05$보다 한없이 작다. 그래서 우린 $H_0$을 기각하고, $H_1$을 채택할 수 있다!
