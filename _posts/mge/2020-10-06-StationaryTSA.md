@@ -1,6 +1,6 @@
 ---
 title: "[Time Series Analysis 2] Stationary Time Series"
-tags: Time-Series-Analysis Management-Engineering
+tags: Time-Series-Analysis Management-Engineering Data-Science
 toc: true
 ---
 
@@ -73,7 +73,7 @@ $Corr(Y_t, Y_s) =$ $\frac{Cov(Y_t, Y_s)}{\sqrt{Var(Y_t)Var(Y_s)}} = $ $\frac{\ga
 
 
 # Moving Average Processes
-**MA **프로세스는 non-zero weight가 유한함을 가정하고, 다음과 같이 표현될 수 있다.
+**MA** 프로세스는 non-zero weight가 유한함을 가정하고, 다음과 같이 표현될 수 있다.
 
 $$Y_t = e_t - \theta_1e_{t-1} - \theta_2e_{t-2} - \cdots - \theta_qe_{t-q}$$
 
