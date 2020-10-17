@@ -171,7 +171,7 @@ $z = \frac{\hat{p}-p}{\frac{p(1-p)}{n}}$
 
 #### Using z-Test
 
-$2P(Z > z_{\frac{\alpha}{2}) = \alpha$
+$2P(Z > z_{\frac{\alpha}{2})} = \alpha$
 
 위 식을 만족하는 $z_{\frac{\alpha}{2}}$는 $1.96$이다. 즉 CV는 $\pm 1.96$이다. 이제 test value를 계산해보자.
 
@@ -202,7 +202,7 @@ $P-value = 2P(Z > test) = 2P(Z > 1.51) = 0.0656$
 - $H_0: \mu_x = \mu_y$
 - $H_1: \mu_x \ne \mu_y$
 
-만약 각 population의 sample에 대하여, $\bar{X}$와 $\bar{Y}$가 충분히 멀리 있다면, 가설을 기각해도 될 것처럼 보인다. 즉, 적당한 $c$를 잡아, $|\bar{X}-\bar{Y}| \ge c$일 때 $H_0$을 기각하고, 그렇지 않다면 기각하지 말자는 아이디어다.
+만약 각 population의 sample에 대하여, $\bar{X}$와 $\bar{Y}$가 충분히 멀리 있다면, 가설을 기각해도 될 것처럼 보인다. 즉, 적당한 $c$를 잡아, $\vert \bar{X}-\bar{Y}\vert \ge c$일 때 $H_0$을 기각하고, 그렇지 않다면 기각하지 말자는 아이디어다.
 
 여기서 중요한 점은, population은 normal하다는 가정이다. 즉, 우리는 $\bar{X}-\bar{Y}$에 대해 다음과 같은 특성을 생각해볼 수 있다. $n$은 $x$에 대한 sample size, $m$은 $y$에 대한 sample size다.
 
@@ -276,7 +276,7 @@ $n$ | 50 | 50
 $\bar{X}$ | 8.8 | 8.2
 $S^2$ | 4.5 | 5.4
 
-$TestValue = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{S_1^2}{n_1} + frac{S_2^2 }{m}}} = \frac{8.8 - 8.2}{\sqrt{\frac{4.5}{50} + frac{5.4}{50}}} = 1.3484$
+$TestValue = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{S_1^2}{n_1} + \frac{S_2^2 }{m}}} = \frac{8.8 - 8.2}{\sqrt{\frac{4.5}{50} + \frac{5.4}{50}}} = 1.3484$
 
 P-value 테스트를 해보자.
 
@@ -292,17 +292,17 @@ Population standard deviation을 모르는 위의 상황에서, 우리는 각각
 
 1번의 경우를 pooled하다고 하며, population standard deviation을 같다고 가정한다. 그렇다면 다음과 같이 confidence interval과 test statistic을 계산할 수 있다.
 
-$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}$, where $DoF = n_1+n_2 - 2$
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$, where $DoF = n_1+n_2 - 2$
 
-$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$
+$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$
 
 $s_p = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2-1)s_2^2}{n_1+n+2 -2}}$
 
 2번의 경우는 nonpooled하다고 하며, 다음과 같은 방식으로 CI와 test statistic을 계산한다.
 
-$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}$, where $DoF = min(n_1 - 1, n_2 - 1)$
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$, where $DoF = min(n_1 - 1, n_2 - 1)$
 
-$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
+$TestValue: t = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$
 
 어우 많이 복잡해졌다.. 예제를 풀며 익숙해져보자.
 
@@ -333,12 +333,10 @@ $TestValue = \frac{123-116}{\sqrt{46.9375} \sqrt{\frac{1}{10} + \frac{1}{8}}} = 
 
 $P = 2P(Z > 2.1540) < 0.025$
 
-덤으로 $95%$ confidence interval도 구해보자.
+덤으로 $95$% confidence interval도 구해보자.
 
-$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}$, where $DoF = n_1+n_2 - 2$
+$CI: (\bar{X_1} - \bar{X_2}) \pm t_{DoF, \frac{\alpha}{2}} s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$, where $DoF = n_1+n_2 - 2$
 
 이므로, 대입하면 $0.1105 < \mu_1 - \mu_2 < 13.8895$
 
 이는 0을 포함하지 않으므로, $H_0$을 기각할 수 있다고 볼 수 있다.
-
-### Equality of Population Proportion
