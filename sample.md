@@ -5,32 +5,6 @@ key: page-sample
 ---
 
 <style>
-  .swiper-demo {
-    height: 150px;
-  }
-  .swiper-demo .swiper__slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #fff;
-  }
-  .swiper-demo .swiper__slide:nth-child(even) {
-    background-color: #ff69b4;
-  }
-  .swiper-demo .swiper__slide:nth-child(odd) {
-    background-color: #2593fc;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(even) {
-    background-color: #312;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(odd) {
-    background-color: #123;
-  }
-  .swiper-demo--image .swiper__slide:nth-child(n) {
-    background-color: #000;
-  }
-
   /* DON'T USE JS TO THIS!! */
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
@@ -69,7 +43,7 @@ key: page-sample
 </style>
 
 # Sample
-Here is a sample. Check mobile / tablet / and desktop!
+Here is a sample. Check in mobile, tablet and desktop!
 
 ## Sample hyperlink button
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
@@ -109,4 +83,4 @@ Here is a sample. Check mobile / tablet / and desktop!
 
 ### 100 view-port width (optimized for mobile)
 
-<iframe width="100vw" height="56.25vw" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
