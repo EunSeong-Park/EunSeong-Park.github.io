@@ -98,7 +98,7 @@ Here is a sample. Check in mobile, tablet and desktop!
 
 ## Sample PDF Viewer (only for tablet / desktop)
 
-If the browser couldn't show the below PDF file, then [download](/contents/sample_material/sample_py.py) directly.
+If the browser couldn't show the below PDF file properly, then [download](/contents/sample_material/sample_py.py) PDF directly.
 
 <div stype="position: relative; height:0; padding-bottom: 56.25%;">
 <iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%" height="700"></iframe>
