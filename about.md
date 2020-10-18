@@ -92,7 +92,6 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 
 
 ### Experiences
-- **Enrolled **
 - **Majoring Computer Science and Engineering (2019.-)**
 - **Minoring Industrial Engineering (2019.-)**
 - **2019 World Friends ICT Volunteer in Ghana (2019.07-2019.08)**
