@@ -104,6 +104,8 @@ If the browser couldn't show the below PDF file properly, then [download](/conte
 <iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%" height="700"></iframe>
 </div>
 
+Adjust size according to the PDF file!!
+
 ## Sample paragraph
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
