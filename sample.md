@@ -69,7 +69,7 @@ key: page-sample
 </style>
 
 # Sample
-Here is a sample. Check in mobile, tablet and desktop!
+Here is a sample. Check in mobile, tablet and desktop! (only checked in desktop yet...)
 
 ## Sample hyperlink button
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
