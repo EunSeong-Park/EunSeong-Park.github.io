@@ -46,11 +46,11 @@ key: page-sample
 Here is a sample. Check in mobile, tablet and desktop!
 
 ## Sample hyperlink button
-<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Sample link 1</h5>
-    <p id="p_for_list">Sample description 1</p>
+    <p id="p_for_list">Move to dummy page!</p>
   </div>
 </div>
 
