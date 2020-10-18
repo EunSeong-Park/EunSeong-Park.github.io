@@ -75,7 +75,8 @@ key: page-about
 </style>
 
 
-<p style="font-size:2em;font-weight:bold;"align="center">Eunseong Park / 박은성</p>
+<p style="font-size:2em;font-weight:bold;", align="center">Eunseong Park / 박은성</p>
+
 <p align="center">
 <hr>
 <img src="/imgs/etc/3.png" style="border:none;">
