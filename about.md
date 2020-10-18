@@ -76,13 +76,19 @@ key: page-about
 <img src="/imgs/etc/3.png" style="border:none;">
 </p>
 
-**Email**: dmstjd517@unist.ac.kr
-**GitHub**: github.com/EunSeong-Park
+- <i class="fas fa-envelope-open-text"></i>: dmstjd517@unist.ac.kr
+- <i class="fab fa-github"></i>: github.com/EunSeong-Park
 
 ### 
 
 ### Interests
 ### Experiences
+- **2019 World Friends ICT Volunteer in Ghana (2019.07-2019.08)**
+  - App development education
+  - OpenCV education
+  - Automated agriculture project
+- **Internship in ISSL(2020.06-)**
+  - Trustworthiness of Serverless Computing
 ### Skills
 ### 
 
