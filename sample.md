@@ -79,8 +79,18 @@ Here is a sample. Check in mobile, tablet and desktop!
   </div>
 </div>
 
-## Sample Video clip
-
-### 100 view-port width (optimized for mobile)
+## Sample Video clip (480 width, 16:9)
 
 <iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Sample download link
+
+[naive link](/contents/sample_material/sample_py.py)
+
+<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+  <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">link via button</h5>
+    <p id="p_for_list">Download now!!</p>
+  </div>
+</div>
