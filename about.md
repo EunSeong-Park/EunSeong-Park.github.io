@@ -67,6 +67,11 @@ key: page-about
     border-right: 1px solid gray;
   }
 
+  a {
+    color: blue;
+    font-weight: normal;
+  }
+
 </style>
 
 
