@@ -1,6 +1,8 @@
 ---
 layout: article
 titles: "About"
+article_header:
+  type: cover
 key: page-about
 ---
 
