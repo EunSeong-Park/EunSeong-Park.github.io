@@ -80,7 +80,7 @@ Here is a sample. Check in mobile, tablet and desktop!
 </div>
 
 ## Sample Video clip (Responsive)
-<div style="position: relative; height:0; padding-bottom: 56.25%">
+<div style="position: relative; height:0;>
 <iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -97,6 +97,11 @@ Here is a sample. Check in mobile, tablet and desktop!
 </div>
 
 ## Sample PDF Viewer
+
 <iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%"></iframe>
+
+## Sample paragraph
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 
