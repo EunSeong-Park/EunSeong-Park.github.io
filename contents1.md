@@ -1,7 +1,7 @@
 ---
 layout: article
 titles: "Sample"
-key: page-about
+key: page-sample
 ---
 
 Yo
