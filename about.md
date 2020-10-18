@@ -83,7 +83,7 @@ key: page-about
 </div>
 
 
-- <i class="far fa-envelope"></i> <a style ="color:blue;" href = "dmstjd517@unist.ac.kr">dmstjd517@unist.ac.kr</a>
+- <i class="far fa-envelope"></i> <a style ="color:blue;" href = "mailto:dmstjd517@unist.ac.kr">dmstjd517@unist.ac.kr</a>
 - <i class="fab fa-github"></i> <a style ="color:blue;" href = "https://github.com/eunseong-park">github.com/Eunseong-Park</a>
 
 
