@@ -80,7 +80,7 @@ Here is a sample. Check in mobile, tablet and desktop!
 </div>
 
 ## Sample Video clip (Responsive)
-<div style="position: relative; height:0; padding-bottom: 270;">
+<div style="position: relative; height:0; padding-bottom: 56.25%;">
 <iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -100,7 +100,7 @@ Here is a sample. Check in mobile, tablet and desktop!
 
 If the browser couldn't show the below PDF file, then [download](/contents/sample_material/sample_py.py) directly.
 
-<div stype="position: relative; height:0;">
+<div stype="position: relative; height:0; padding-bottom: 56.25%;">
 <iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%" height=""></iframe>
 </div>
 
