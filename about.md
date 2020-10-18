@@ -85,7 +85,7 @@ key: page-about
 - <i class="fab fa-github"></i> github.com/EunSeong-Park
 
 
-I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in computer archtecture & system and data science. 
+I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in **computer archtecture & system** and **data science**. 
 
 
 
