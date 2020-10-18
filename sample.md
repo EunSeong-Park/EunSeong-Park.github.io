@@ -97,5 +97,6 @@ Here is a sample. Check in mobile, tablet and desktop!
 </div>
 
 ## Sample PDF Viewer
-<iframe src="https://docs.google.com/file/d/0B8aGkJVsdqiJamVpUnJ1TDlFbFU/preview" width="100%" height="100%"></iframe>
+<iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%"></iframe>
+
 
