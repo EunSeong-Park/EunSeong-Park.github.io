@@ -69,17 +69,13 @@ key: page-about
 
 </style>
 
-<br>
 
-<div class="grid scale">
-  <div class="cell cell--3"><img src="/imgs/etc/3.png" style="border:none;"></div>
-  <div class="cell cell--auto" style="padding-left: 12px;">
-    <h3>My name</h3>
-    <p>O 어메이징한 연락처</p>
-    <p>O 어메이징한 이메일</p>
-    <p>O 어메이징한 주소</p>
-  </div>
-</div>
+# <center>About Me</center>
+---
+<p align="center">
+<img src="/imgs/etc/3.png" style="border:none;">
+</p>
+
 
 <br>
 
