@@ -129,7 +129,8 @@ h6 {
 
 a {
   font-weight: map-get($base, font-weight-bold);
-  @include link-colors($main-color-1);
+  @include link-colors($blue);
+  // @include link-colors($main-color-1);
 }
 
 pre, code {
