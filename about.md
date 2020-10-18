@@ -74,15 +74,17 @@ key: page-about
 
 </style>
 
-<p style="font-size:2em;font-weight:bold;text-align=center;">Eunseong Park / 박은성</p>
+<div style = "text-align: center;">
+<p style="font-size:2em;font-weight:bold;">Eunseong Park / 박은성</p></div>
 
-<p text-align="center">
+
+<div style="text-align: center;">
 <img src="/imgs/etc/3.png" style="border:none;">
-</p>
+</div>
 
 
 - <i class="far fa-envelope"></i> [dmstjd517@unist.ac.kr](dmstjd517@unist.ac.kr)
-- <i class="fab fa-github"></i> [https://github.com/EunSeong-Park](github.com/Eunseong-Park)
+- <i class="fab fa-github"></i> [github.com/Eunseong-Park](https://github.com/Eunseong-Park)
 
 
 I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in **computer archtecture & system** and **data science**. 
