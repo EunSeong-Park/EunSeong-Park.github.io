@@ -109,7 +109,7 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 
 ### Honors & Awards & Scholarships
 - **유하푸른재단 2기 장학생 선발 (2018-)**
-- **2019 World Friends ICT 최우수상 (UNIST-GahU, 2019.12)**
+- **2019 World Friends ICT 최우수상 (UNIST-GhaU, 2019.12)**
 - **KT 그룹 희망나눔재단 장학생 선발 (2020.07)**
 
 ### Skills
