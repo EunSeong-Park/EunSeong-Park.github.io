@@ -105,10 +105,7 @@ Here is a sample. Check in mobile, tablet and desktop! (only checked in desktop 
   </div>
 </div>
 
-## Sample Video clip (Responsive)
-<div style="position: relative; height:0; padding-bottom: 30%;">
-<iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
 
 ## Sample download link
 
@@ -127,7 +124,7 @@ Here is a sample. Check in mobile, tablet and desktop! (only checked in desktop 
 If the browser couldn't show the below PDF file properly, then [download](/contents/sample_material/sample_py.py) PDF directly.
 
 <div stype="position: relative; height:0; padding-bottom: 56.25%;">
-<iframe src="https://eunseong-park.github.io/contents/sample_material/sample_pdf.pdf" width="100%" height="700"></iframe>
+<iframe src="https://github.com/EunSeong-Park/EunSeong-Park.github.io/raw/master/contents/sample_material/sample_pdf.pdf" width="100%" height="700"></iframe>
 </div>
 
 Adjust size according to the PDF file!!
@@ -154,7 +151,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
 </div>
 
-
+## Sample Video clip (Responsive)
+<div style="position: relative; height:0; padding-bottom: 30%;">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <!-- SCRIPT -->
 <script>
   {%- include scripts/lib/swiper.js -%}
