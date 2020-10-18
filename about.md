@@ -71,7 +71,6 @@ key: page-about
 
 
 # <center>Eunseong Park</center>
----
 <p align="center">
 <img src="/imgs/etc/3.png" style="border:none;">
 </p>
