@@ -82,7 +82,7 @@ key: page-about
 </div>
 
 <br>
-
+<!--
 <div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
   <div class="swiper__wrapper">
     <div class="swiper__slide">
@@ -100,7 +100,6 @@ key: page-about
   <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
   <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
 </div>
-
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
@@ -108,7 +107,6 @@ key: page-about
     <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
-
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
@@ -116,7 +114,6 @@ key: page-about
     <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
-
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/1.png"></div>
   <div class="cell cell--auto">
@@ -124,9 +121,7 @@ key: page-about
     <p id="p_for_list">어메이징한 부가설명</p>
   </div>
 </div>
-
-
-
+-->
 
 
 
