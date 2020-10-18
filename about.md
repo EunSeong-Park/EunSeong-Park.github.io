@@ -1,6 +1,6 @@
 ---
 layout: article
-titles: "About"
+titles: "About Me"
 key: page-about
 ---
 
@@ -70,12 +70,21 @@ key: page-about
 </style>
 
 
-# <center>About Me</center>
+# <center>Eunseong Park</center>
 ---
 <p align="center">
 <img src="/imgs/etc/3.png" style="border:none;">
 </p>
 
+**Email**: dmstjd517@unist.ac.kr
+**GitHub**: github.com/EunSeong-Park
+
+### 
+
+### Interests
+### Experiences
+### Skills
+### 
 
 <br>
 
