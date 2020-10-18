@@ -5,6 +5,32 @@ key: page-sample
 ---
 
 <style>
+  .swiper-demo {
+    height: 150px;
+  }
+  .swiper-demo .swiper__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .swiper-demo .swiper__slide:nth-child(even) {
+    background-color: #ff69b4;
+  }
+  .swiper-demo .swiper__slide:nth-child(odd) {
+    background-color: #2593fc;
+  }
+  .swiper-demo--dark .swiper__slide:nth-child(even) {
+    background-color: #312;
+  }
+  .swiper-demo--dark .swiper__slide:nth-child(odd) {
+    background-color: #123;
+  }
+  .swiper-demo--image .swiper__slide:nth-child(n) {
+    background-color: #000;
+  }
+
   /* DON'T USE JS TO THIS!! */
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
@@ -109,5 +135,21 @@ Adjust size according to the PDF file!!
 ## Sample paragraph
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
-
+## Sample Swiper
+<div class="swiper swiper--light my-3 swiper-demo swiper-demo--1">
+  <div class="swiper__wrapper">
+    <div class="swiper__slide">
+      Sample Swiper  
+    </div>
+    <div class="swiper__slide">
+      <a href="https://tianqi.name/jekyll-TeXt-theme/test/">Reference</a>
+    </div>
+    <div class="swiper__slide">Slide 3</div>
+    <div class="swiper__slide">Slide 4</div>
+    <div class="swiper__slide">Slide 5</div>
+    <div class="swiper__slide">Slide 6</div>
+    <div class="swiper__slide">Slide 7</div>
+  </div>
+  <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
+  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
+</div>
