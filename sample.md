@@ -107,4 +107,6 @@ Here is a sample. Check mobile / tablet / and desktop!
 
 ## Sample Video clip
 
-<iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### 100% width (optimized for mobile)
+
+<iframe width="100vw" height="56.25vw" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
