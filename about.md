@@ -83,8 +83,8 @@ key: page-about
 </div>
 
 
-<span style ="color:#0000FF;" href = "mailto:dmstjd517@unist.ac.kr"><i class="far fa-envelope"></i> dmstjd517@unist.ac.kr</span>
-<span style ="color:#0000FF;" href = "https://github.com/eunseong-park"><i class="fab fa-github"></i> github.com/Eunseong-Park</span>
+- <i class="far fa-envelope"></i> <a style ="color:#0000FF;" href = "mailto:dmstjd517@unist.ac.kr">dmstjd517@unist.ac.kr</a>
+- <i class="fab fa-github"></i> <a style ="color:#0000FF;" href = "https://github.com/eunseong-park">github.com/Eunseong-Park</a>
 
 
 I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in **computer archtecture & system** and **data science**. 
