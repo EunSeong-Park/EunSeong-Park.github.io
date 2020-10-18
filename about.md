@@ -102,9 +102,9 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
   - Trustworthiness of Serverless Computing
   
 ### Honors & Awards & Scholarships
-- **2019 World Friends ICT (UNIST-GahU, 최우수, 2019.12)**
-- **유하푸른재단 2기 장학생 (2018-)**
-- **KT 그룹 희망나눔재단 장학생 (2020.07)**
+- **2019 World Friends ICT 최우수상 (UNIST-GahU, 2019.12)**
+- **유하푸른재단 2기 장학생 선발 (2018-)**
+- **KT 그룹 희망나눔재단 장학생 선발 (2020.07)**
 
 ### Skills
 - **System Software Programming**
