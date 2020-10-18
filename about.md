@@ -75,10 +75,12 @@ key: page-about
 </style>
 
 
-# <center>Eunseong Park / 박은성</center>
+<p style="font-size:2em;font-weight:bold;"align="center">Eunseong Park / 박은성</p>
 <p align="center">
+<hr>
 <img src="/imgs/etc/3.png" style="border:none;">
 </p>
+
 
 - <i class="far fa-envelope"></i> dmstjd517@unist.ac.kr
 - <i class="fab fa-github"></i> github.com/EunSeong-Park
