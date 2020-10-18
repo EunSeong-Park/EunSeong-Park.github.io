@@ -75,7 +75,7 @@ key: page-about
 </style>
 
 
-# <center>Eunseong Park</center>
+# <center>Eunseong Park / 박은성</center>
 <p align="center">
 <img src="/imgs/etc/3.png" style="border:none;">
 </p>
@@ -83,9 +83,10 @@ key: page-about
 - <i class="fas fa-envelope-open-text"></i>: dmstjd517@unist.ac.kr
 - <i class="fab fa-github"></i>: github.com/EunSeong-Park
 
-### 
+I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**.  
 
-### Interests
+
+
 ### Experiences
 - **2019 World Friends ICT Volunteer in Ghana (2019.07-2019.08)**
   - App development education
@@ -93,8 +94,8 @@ key: page-about
   - Automated agriculture project
 - **Internship in ISSL(2020.06-)**
   - Trustworthiness of Serverless Computing
-### Skills
-### 
+### Awards & Scholarships
+- 유하푸른재단 2기 장학생
 
 <br>
 
