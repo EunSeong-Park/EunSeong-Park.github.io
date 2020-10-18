@@ -81,8 +81,8 @@ key: page-about
 </p>
 
 
-- <i class="far fa-envelope"></i> dmstjd517@unist.ac.kr
-- <i class="fab fa-github"></i> github.com/EunSeong-Park
+- <i class="far fa-envelope"></i> [dmstjd517@unist.ac.kr](dmstjd517@unist.ac.kr)
+- <i class="fab fa-github"></i> [https://github.com/EunSeong-Park](github.com/Eunseong-Park)
 
 
 I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in **computer archtecture & system** and **data science**. 
