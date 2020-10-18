@@ -95,3 +95,7 @@ Here is a sample. Check in mobile, tablet and desktop!
     <p id="p_for_list">Download now!!</p>
   </div>
 </div>
+
+## Sample PDF Viewer
+<iframe src="https://docs.google.com/file/d/0B8aGkJVsdqiJamVpUnJ1TDlFbFU/preview" width="100%" height="100%"></iframe>
+
