@@ -119,7 +119,7 @@ Here is a sample. It is optimized for desktop. (some modules may not be fitted i
   </div>
 </div>
 
-## Sample PDF Viewer (only for tablet / desktop)
+## Sample PDF Viewer
 
 If the browser couldn't show the below PDF file properly, then [download](/contents/sample_material/sample_py.py) PDF directly.
 
@@ -151,7 +151,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
 </div>
 
-## Sample Video clip (optimized for Desktop)
+## Sample Video clip
 <iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
