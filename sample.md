@@ -151,10 +151,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
 </div>
 
-## Sample Video clip (Responsive)
-<div style="position: relative; height:0; padding-bottom: 56.25%;">
+## Sample Video clip (optimized for Desktop)
 <iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+
 <!-- SCRIPT -->
 <script>
   {%- include scripts/lib/swiper.js -%}
