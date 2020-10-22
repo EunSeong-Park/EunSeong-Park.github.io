@@ -48,7 +48,7 @@ int add_1_pure(int a){
 
 
 ## First-Class / Higher-Order Function
-함수를 input(parameter)이나 return value로 가질 수 있는 함수들을 higher-order하다고 한다. 어? 이거 조금 1급 함수랑 비슷하지 않나? 싶은데, 이 또한 정리해보자.
+함수를 input(parameter)이나 return value로 가질 수 있는 함수들을 **higher-order**하다고 한다. 어? 이거 조금 1급 함수랑 비슷하지 않나? 싶은데, 이 또한 정리해보자.
 
 1. **First-class function**: 함수는 (다른 타입이 그렇듯) 표현식의 일종으로 작용하여, 어떤 함수를 파라미터, 리턴 값으로 사용할 수 있다. 또, 함수를 변수나 다른 데이터 구조에 할당하는 것도 가능하다.
 2. **Higher-order function**: 함수를 파라미터 / 리턴 값으로 사용할 수 있다. 
