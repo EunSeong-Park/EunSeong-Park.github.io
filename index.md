@@ -84,10 +84,7 @@ comment: false
 
 
 <div style="text-align: center;">
-
-![Image](/imgs/etc/3.png){:.circle.border.shadow}
-
-<!--<img src="/imgs/etc/3.png" style="border:none;">-->
+<img src="/imgs/etc/3.png" style="border:none;">
 </div>
 
 
