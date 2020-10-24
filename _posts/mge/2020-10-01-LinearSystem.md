@@ -62,7 +62,7 @@ $(2, 7) = 2e_1 + 7e_2$
 
 아니 그래서 선형 독립이 뭐냐? 하면... 다음과 같이 정의할 것이다.
 
-> 어떤 벡터 집합 $ S = \{ a_1, a_2, \cdots, a_n \}은 다음과 같은 성질을 만족할 때, linearly independent하다고 한다: <br><br> $\sum_{i=1}^n k_ia_i = \vec{0} \implies k_i = 0 \text{ for all } i = 1, 2, \cdots n$
+> 어떤 벡터 집합 $ S = $ {$ a_1, a_2, \cdots, a_n $} 은 다음과 같은 성질을 만족할 때, linearly independent하다고 한다:<br> $\sum_{i=1}^n k_ia_i = \vec{0} \implies k_i = 0 \text{ for all } i = 1, 2, \cdots n$
 
 이게 뭔 개소리냐? 하면, 결국 이들로 zero vector를 만들려면 scalar가 모두 0이어야 한다는 이야기고, 대우로 다시 말하면, scalar가 0이 하나라도 아니면 이들은 반드시 zero vector가 아니어야 한다는 얘기다.
 
