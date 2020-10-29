@@ -9,6 +9,9 @@ header: false
 <a class="button button--primary button--rounded button--xl" href="/itinerary">GO TO HOME</a>
 
 # Pre-Class Material
+## Reading Material
+
+
 The PDF viewer is optimized for Google Chrome (Desktop). If the browser couldn't show the below PDF file properly, then <a href="/contents/sample_material/sample_py.py"> download </a> the PDF file directly.
 
 <details><summary>View on Web Browser (for desktop)</summary>
@@ -17,7 +20,7 @@ The PDF viewer is optimized for Google Chrome (Desktop). If the browser couldn't
 </div>
 
 </details>
-## Reading Material
+
 ## Pre-Class Exercises
 
 # Recording
