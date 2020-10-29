@@ -114,7 +114,7 @@ comment: false
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.jpg"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">5. Pygame</h5>
     <p id="p_for_list">Python library for game and multimedia</p>
