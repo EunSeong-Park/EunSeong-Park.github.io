@@ -11,13 +11,9 @@ article_header:
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: /contents/sample_material/sample_bg.jpg
-comments: false
-comment: false
+comment: true
 ---
 
-A post has an article header overlay with a background image width customized header background.
-
-<!--more-->
 
 <style>
   .swiper-demo {
@@ -83,9 +79,12 @@ A post has an article header overlay with a background image width customized he
   }
 </style>
 
+# Intro
+
+
 # Class Materials
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
-  <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
+  <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">1. Introduction to Python [1]</h5>
     <p id="p_for_list">Basic concepts and skills for Python</p>
@@ -93,7 +92,7 @@ A post has an article header overlay with a background image width customized he
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
+  <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Introduction to Python [2] </h5>
     <p id="p_for_list">Functions and libraries</p>
@@ -114,5 +113,13 @@ A post has an article header overlay with a background image width customized he
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. OpenCV</h5>
     <p id="p_for_list">A computer-vision library for Python</p>
+  </div>
+</div>
+
+<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+  <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">5. Pygame</h5>
+    <p id="p_for_list">Python library for game and multimedia</p>
   </div>
 </div>
