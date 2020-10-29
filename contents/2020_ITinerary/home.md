@@ -68,7 +68,7 @@ header: false
   }
 </style>
 
-<div class="hero hero--dark" style='background-image: url("/contents/sample_material/sample_bg.png");'>
+<div class="hero hero--dark" style='background-image: url("/contents/sample_material/sample_bg.jpg");'>
   <div class="hero__content">
     <h3>World Friends ICT: ITinerary X (기관명)</h3>
     <p> Welcome to 어쩌구저쩌구 솰라솰라~</p>
