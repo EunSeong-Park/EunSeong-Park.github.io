@@ -3,7 +3,7 @@ layout: article
 key: page-itinerary-home
 header: false
 title: "ITinerary X (기관명)"
-permalink: /itinerary/index.html
+permalink: /itinerary/home
 article_header:
   type: overlay
   theme: dark
@@ -87,24 +87,24 @@ A post has an article header overlay with a background image width customized he
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">1. Introduction to Python</h5>
-    <p id="p_for_list">Intro to Python, preparation and "hello, world!"</p>
+    <h5 id="h_for_list">1. Introduction to Python [1]</h5>
+    <p id="p_for_list">Basic concepts and skills for Python</p>
   </div>
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">2. Deeper View in Python </h5>
-    <p id="p_for_list">Data types, conditionals and loops</p>
+    <h5 id="h_for_list">2. Introduction to Python [2] </h5>
+    <p id="p_for_list">Functions and libraries</p>
   </div>
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/1.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample link 3</h5>
-    <p id="p_for_list">Sample description 3</p>
+    <h5 id="h_for_list">3. Network Programming</h5>
+    <p id="p_for_list">Client-server communication</p>
   </div>
 </div>
 
@@ -112,7 +112,7 @@ A post has an article header overlay with a background image width customized he
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample link 4</h5>
-    <p id="p_for_list">Sample description 4</p>
+    <h5 id="h_for_list">4. OpenCV</h5>
+    <p id="p_for_list">A computer-vision library for Python</p>
   </div>
 </div>
