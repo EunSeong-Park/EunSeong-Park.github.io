@@ -3,7 +3,7 @@ layout: article
 key: page-itinerary-home
 header: false
 title: "ITinerary X (기관명)"
-permalink: /itinerary/home
+permalink: /itinerary
 article_header:
   type: overlay
   theme: dark
