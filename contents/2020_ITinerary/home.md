@@ -80,7 +80,7 @@ comment: false
 </style>
 
 # Class Materials
-<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">1. Python Basics [1]</h5>
@@ -88,7 +88,7 @@ comment: false
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Python Basics [2] </h5>
@@ -96,7 +96,7 @@ comment: false
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. Network Programming</h5>
@@ -105,7 +105,7 @@ comment: false
 </div>
 
 
-<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. OpenCV</h5>
@@ -113,7 +113,7 @@ comment: false
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">5. Pygame</h5>
