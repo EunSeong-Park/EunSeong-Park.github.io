@@ -2,7 +2,8 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: "World Friends ICT: ITinerary X (기관명)"
+title: "ITinerary X (기관명)"
+permalink: /itinerary/index.html
 article_header:
   type: overlay
   theme: dark
@@ -10,7 +11,12 @@ article_header:
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: /contents/sample_material/sample_bg.jpg
+comments: false
 ---
+
+A post has an article header overlay with a background image width customized header background.
+
+<!--more-->
 
 <style>
   .swiper-demo {
