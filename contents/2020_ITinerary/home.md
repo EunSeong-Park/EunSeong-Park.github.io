@@ -100,7 +100,7 @@ comment: false
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. Network Programming</h5>
-    <p id="p_for_list">Client-server communication</p>
+    <p id="p_for_list">Networking, client-server</p>
   </div>
 </div>
 
