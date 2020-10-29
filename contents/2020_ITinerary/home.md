@@ -2,7 +2,7 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: World Friends ICT: ITinerary X (기관명)
+title: "World Friends ICT: ITinerary X (기관명)"
 article_header:
   type: overlay
   theme: dark
