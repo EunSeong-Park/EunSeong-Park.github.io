@@ -92,7 +92,7 @@ comment: false
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Introduction to Python [2] </h5>
-    <p id="p_for_list">Functions and libraries</p>
+    <p id="p_for_list">Functions, Classes and libraries</p>
   </div>
 </div>
 
