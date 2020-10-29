@@ -2,6 +2,14 @@
 layout: article
 key: page-itinerary-home
 header: false
+title: World Friends ICT: ITinerary X (기관명)
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    src: /contents/sample_material/sample_bg.jpg
 ---
 
 <style>
@@ -75,6 +83,7 @@ header: false
   </div>
 </div>
 
+끼얏호~ 
 
 # Class Materials
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
