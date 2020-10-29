@@ -83,7 +83,7 @@ comment: false
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">1. Introduction to Python [1]</h5>
+    <h5 id="h_for_list">1. Python Basics [1]</h5>
     <p id="p_for_list">Basic concepts and skills for Python</p>
   </div>
 </div>
@@ -91,7 +91,7 @@ comment: false
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">2. Introduction to Python [2] </h5>
+    <h5 id="h_for_list">2. Python Basics [2] </h5>
     <p id="p_for_list">Functions, Classes and libraries</p>
   </div>
 </div>
@@ -121,4 +121,4 @@ comment: false
   </div>
 </div>
 
-# Others
+# Recordings
