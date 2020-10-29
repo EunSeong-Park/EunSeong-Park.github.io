@@ -79,9 +79,6 @@ comment: false
   }
 </style>
 
-
-
-
 # Class Materials
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
@@ -100,7 +97,7 @@ comment: false
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="cell cell--2"><img src="/imgs/etc/1.png"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. Network Programming</h5>
     <p id="p_for_list">Client-server communication</p>
@@ -109,7 +106,7 @@ comment: false
 
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="cell cell--2"><img src="/imgs/etc/2.png"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. OpenCV</h5>
     <p id="p_for_list">A computer-vision library for Python</p>
@@ -117,7 +114,7 @@ comment: false
 </div>
 
 <div class="grid" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame_small.gif"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.jpg"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">5. Pygame</h5>
     <p id="p_for_list">Python library for game and multimedia</p>
@@ -125,6 +122,3 @@ comment: false
 </div>
 
 # Others
-
-- [저작권 리포트](/itinerary/copyrights)
-- 
