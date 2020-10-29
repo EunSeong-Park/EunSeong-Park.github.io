@@ -12,6 +12,7 @@ article_header:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: /contents/sample_material/sample_bg.jpg
 comments: false
+comment: false
 ---
 
 A post has an article header overlay with a background image width customized header background.
@@ -81,17 +82,6 @@ A post has an article header overlay with a background image width customized he
     border-right: 1px solid gray;
   }
 </style>
-
-<!--
-<div class="hero hero--dark" style='background-image: url("/contents/sample_material/sample_bg.jpg");'>
-  <div class="hero__content">
-    <h3>World Friends ICT: ITinerary X (기관명)</h3>
-    <p> Welcome to 어쩌구저쩌구 솰라솰라~</p>
-  </div>
-</div>
--->
-
-끼얏호~ 
 
 # Class Materials
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
