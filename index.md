@@ -105,7 +105,7 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
   - Automated agriculture project
 - **Internship in ISSL(2020.06-)**
   - Trustworthiness of Serverless Computing
-- **IBM Cybersecurity Analyst Professional Certificate (2020.08.)**
+- **IBM Cybersecurity Analyst Professional Certificate (2020.08)**
 
 ### Honors & Awards & Scholarships
 - **유하푸른재단 2기 장학생 선발 (2018-)**

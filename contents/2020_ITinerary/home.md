@@ -79,6 +79,31 @@ comment: false
   }
 </style>
 
+# Welcome to the Course!
+Hello, This is team **ITinerary**. In this course, we will learn about the basic and application of **Python**. The course will cover:
+
+1. **Python Basics**: We can learn about fundamental concepts of Python and programming. Lots of exercises and examples to be familiar with Python programming are prepared!
+2. **Network Programming**: "How do we communicate each other?" After learning about commnication, we will implement communication application such as messenger.
+3. **OpenCV**: OpenCV provides some useful tools for computer vision. What can we do by using this?
+4. **Pygame**: Python programming no longer produces a boring program. We will make some funny game!
+
+# Guides
+## About Class
+Our class consists of three parts:
+
+- **Pre-class**: We will provide some exercises or materials to prepare the class. **Don't worry, it is not mandatory.** We expect that you guys can follow real-time class very well even if you skipped the pre-class. But this pre-class may be helpful for you!
+- **Real-time class**: We will meet on [Platform name] at every [class time]. Some lecture and lab session will be given. **Lab session** is a mini-project for exercising the concepts we covered. 
+- **Post-class**: After the class, we will post the recording, additional exercise / material. Like pre-class, **it is also not mandatory.** But reviewing with post-class will help you to fully acquire what you learned!
+
+## If you have some issues...
+
+- **Comments**: I opened the comment for each class material. If there are some typos, incorrect / unclear explanation or some question, feel free to ask me via comment. Disqus comment requires to sign up, but the task is easy and simple. (supports SNS account) **I recommend to use comment because it will be helpful to those who are having same / simillar issues!**
+- **WhatsApp**: some description blblblblblblblblah
+- **E-mail**: 
+  - **Eunseong Park**: ads
+  - **Jongmin Choi**: asd
+  - **Dohun Kim**: ads
+
 # Class Materials
 <div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
@@ -120,5 +145,3 @@ comment: false
     <p id="p_for_list">Python library for game and multimedia</p>
   </div>
 </div>
-
-# Recordings
