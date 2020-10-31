@@ -13,7 +13,8 @@ toc: true
 ## Line segment
 어떤 두 $x_1, x_2 \in E^n$에 대하여, 다음을 만족하는 집합을 **line segment**라 하자.
 
-> $L(x_1, x_2) = $ {$y: y=\alpha x_1 + (1-\alpha)x_2$} where $0\le\alpha\le 1$
+$L(x_1, x_2) = $ {$y: y=\alpha x_1 + (1-\alpha)x_2$} where $0\le\alpha\le 1$
+{:.success}
 
 위와 같은 정의는 우리가 일반적으로 생각하는 라인 세그먼트와 그 의미가 딱 들어맞는다. 라인 세그먼트를 두 점을 잇는 선 위의 점들의 집합으로 보면 직관적으로 이해할 수 있을 것이다.
 
@@ -21,7 +22,8 @@ toc: true
 ## Convex Set
 어떤 집합 $S \subset E^n$은 다음과 같은 조건을 만족할 때 **convex set**이라고 부를 수 있다.
 
-> For any $x_1, x_2 \in E^n$, $L(x_1, x_2) \subseteq S $
+For any $x_1, x_2 \in E^n$, $L(x_1, x_2) \subseteq S $
+{:.success}
 
 그럼 어떤 집합이 convex하고, 어떤 집합이 convex하지 않을까? 예시를 조금 살펴보자.
 
@@ -37,7 +39,8 @@ toc: true
 ## Convex Combination
 어떤 벡터, $x_1, x_2, \cdots, x_k \in E^n $에 대해, 다음과 같은 벡터 연산을 생각할 수 있다.
 
-> $\mathbf x= \alpha_1x_1 +\alpha_2x_2 + \cdots + \alpha_kx_k$ where $\alpha_i \ge 0 $ for $i=1,2,\cdots,k$ and $\alpha_1 + \alpha_2 + \cdots + \alpha_k = 1$
+$\mathbf x= \alpha_1x_1 +\alpha_2x_2 + \cdots + \alpha_kx_k$ where $\alpha_i \ge 0 $ for $i=1,2,\cdots,k$ and $\alpha_1 + \alpha_2 + \cdots + \alpha_k = 1$
+{:.success}
 
 다음과 같은 $\mathbf x$를 $x_1, x_2, \cdots, x_k$에 대한 **convex combination**이라고 부르자. 또, $ 0< \alpha < 1$, 즉, 등호를 허용하지 않는 convex combination은 **strict convex combination**이라고 부른다.
 
@@ -54,7 +57,8 @@ toc: true
 ## Extreme Point
 어떤 convex set, $S \subset E^n$에 대해, **extreme point(EP)**는 다음 조건을 만족하는 포인트, $\mathbf x$를 의미한다.
 
-> $\mathbf x$는 다른 두 포인트, $x_1, x_2 \in S$의 strict convex combination으로 표현될 수 없다.
+$\mathbf x$는 다른 두 포인트, $x_1, x_2 \in S$의 strict convex combination으로 표현될 수 없다.
+{:.success}
 
 ![](/imgs/mge/or3.png)
 
@@ -67,16 +71,15 @@ EP가 무수히 많은 경우도 있다.
 ## Adjacency
 우리는 두 EP에 대해, 인접한지 아닌지에 대한 여부를 직관적으로 판단할 수 있다. 가령 직사각형 모양 집합에서 대각선 방향으로 서로 바라보는 두 점은 인접하지 않을 것이다. 위의 삼각형 모양 예시에선 모든 EP가 서로 인접할 것이고.
 
-하지만 우리는 이 인접하다는 표현을 조금 더 명확히 하고 싶다, 어떻게?
-
-> 두 EP에 대한 라인 세그먼트가 해당 convex set의 모서리(edge)를 형성할 때, 두 EP는 **인접(adjacent)** 하다고 한다.
+하지만 우리는 이 인접하다는 표현을 조금 더 명확히 하고 싶다. 이제부터 두 EP에 대한 라인 세그먼트가 해당 convex set의 모서리(edge)를 형성할 때, 두 EP가 **인접(adjacent)** 하다고 부르자.
 
 상상 속에서 어떤 convex set과 그것의 EP들을 생각해보자. 직관과 딱 들어맞는 정의라고 할 수 있다!
 
 ## Hyperplane
 어떤 non-zero 벡터 $p \in E$에 대해, **hyperplane**, $H$는 다음과 같이 정의된다.
 
-> $H = $ {$x: x \in E^n, p\cdot x = k$}, where $k \in E$
+$H = $ {$x: x \in E^n, p\cdot x = k$}, where $k \in E$
+{:.success}
 
 즉, $p$와 $x$의 inner product가 상수가 되도록 하는 $x$의 집합이다. 
 
@@ -91,7 +94,8 @@ EP가 무수히 많은 경우도 있다.
 ## Unboundedness, Extreme Direction
 어떤 convex set은 유계가 아닐 수도 있다. 다음 조건을 만족할 때 우리는 집합 $S$를 **unbounded set**이라고 부른다.
 
-> 모든 $x \in S$와 scalar, $\lambda \ge 0$에 대해, $x + \lambda d \in S$인 $d$가 있다면 그 집합은 unbound하다. 
+모든 $x \in S$와 scalar, $\lambda \ge 0$에 대해, $x + \lambda d \in S$인 $d$가 있다면 그 집합은 unbound하다. 
+{:.success}
 
 ![](/imgs/mge/or5.png)
 
@@ -99,12 +103,14 @@ EP가 무수히 많은 경우도 있다.
 
 또, 어떤 EP, $x$와 ED, $d$에 대한 다음과 같은 집합을 $S$에서의 $x$, $d$에 대한 **extreme ray**라고 한다.
 
-> $R = $ {$x + \lambda d \in S, \lambda \ge 0$}
+$R = $ {$x + \lambda d \in S, \lambda \ge 0$}
+{:.success}
 
 ## Convex Cone
 다음과 같은 convex set, $C$를 **convex cone**이라고 부르자.
 
-> $x \in C \implies \alpha x \in C$ for all $\alpha \ge 0$
+$x \in C \implies \alpha x \in C$ for all $\alpha \ge 0$
+{:.success}
 
 그 정의에 의해, convex cone은 반드시 원점을 포함하고($\alpha =0$), 원점을 vertex로 하는 ray가 최소 하나 이상 존재한다.
 
@@ -121,7 +127,8 @@ EP가 무수히 많은 경우도 있다.
 ## Polyhedral Set / Cone
 유한한 half-space 간의 교집합(intersection)을 **polyhedral set**이라고 한다. 즉,
 
-> $S =  \bigcap_{i} $ {$x \in E^n: a_ix \le b_i$}
+$S =  \bigcap_{i} $ {$x \in E^n: a_ix \le b_i$}
+{:.success}
 
 ![](/imgs/mge/or6.png)
 
@@ -132,7 +139,8 @@ EP가 무수히 많은 경우도 있다.
 ### Representation Theorem
 Polyhedral set에 대한 괜찮은 정리가 하나 있다.
 
-> 어떤 집합 $S$가 non-empty, bounded인 polyhedral set이라면, **$S$의 모든 EP는 유한하면서 non-empty**고, (1) **모든 $x \in S$는 EP의 convex combination으로 표현될 수 있다**. (2)
+어떤 집합 $S$가 non-empty, bounded인 polyhedral set이라면, **$S$의 모든 EP는 유한하면서 non-empty**고, (1) **모든 $x \in S$는 EP의 convex combination으로 표현될 수 있다**. (2)
+{:.success}
 
 사실 이것은 우리가 bounded한 LP를 풀었을 때 자연스럽게 사용했던 정리다.  
 
