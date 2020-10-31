@@ -6,7 +6,7 @@ header: false
 ---
 <style>
   .swiper-demo {
-    height: 150px;
+    height: 400px;
   }
   .swiper-demo .swiper__slide {
     display: flex;
