@@ -2,7 +2,7 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: "ITinerary X University of Ghana"
+title: "ITinerary\nX\nUniversity of Ghana"
 permalink: /itinerary
 article_header:
   type: overlay
@@ -88,6 +88,9 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 4. **Pygame**: Python programming no longer produces a boring program. We will make some funny game!
 
 # Guides
+## Syllabus
+(some description)
+
 ## About the Class
 Our class consists of three parts:
 
