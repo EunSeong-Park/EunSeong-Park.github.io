@@ -2,7 +2,7 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: "ITinerary X (기관명)"
+title: "ITinerary X University of Ghana"
 permalink: /itinerary
 article_header:
   type: overlay
@@ -88,7 +88,7 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 4. **Pygame**: Python programming no longer produces a boring program. We will make some funny game!
 
 # Guides
-## About Class
+## About the Class
 Our class consists of three parts:
 
 - **Pre-class**: We will provide some exercises or materials to prepare the class. **Don't worry, it is not mandatory.** We expect that you guys can follow real-time class very well even if you skipped the pre-class. But this pre-class may be helpful for you!
