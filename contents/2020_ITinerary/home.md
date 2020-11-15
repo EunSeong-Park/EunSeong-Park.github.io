@@ -2,7 +2,7 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: "ITinerary\nX\nUniversity of Ghana"
+title: "ITinerary X University of Ghana"
 permalink: /itinerary
 article_header:
   type: overlay
