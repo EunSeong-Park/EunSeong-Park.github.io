@@ -102,20 +102,20 @@ $$\begin{aligned}
 ### ARIMA($p, 1, q$)
 먼저, **ARIMA**($p, 1, q$) 모델을 생각해보자. $d=1$이므로, $W_t = Y_t - Y_{t-1}$로 놓고 다음과 같은 식을 얻을 수 있다.
 
-$$W_t = \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \newline +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
+$$W_t = \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \\ +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
 
 또는 $W_t$의 정의에 따라 다음과 같이 쓸 수도 있다.
 
-$$Y_t - Y_{t-1} = \phi_1(Y_{t-1} - Y_{t-2}) + \phi_2(Y_{t-2}-Y_{t-3}) + \cdots + \phi_p(Y_{t-p}- Y_{t-p-1}) \newline +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
+$$Y_t - Y_{t-1} = \phi_1(Y_{t-1} - Y_{t-2}) + \phi_2(Y_{t-2}-Y_{t-3}) + \cdots + \phi_p(Y_{t-p}- Y_{t-p-1}) \\ +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
 
 마지막으로, 다음과 같이 정리한 형태를 **difference equation form**이라고 한다.
 
-$$Y_t = (1+\phi_1)Y_{t-1} + (\phi_2 - \phi_1)Y_{t-2} + \cdots + \phi_p Y_{t-p-1} \newline +e_t -\theta_1 e_{t-1} - \theta_2e_{t-2} - \cdots \theta_q e_{t-q}
+$$Y_t = (1+\phi_1)Y_{t-1} + (\phi_2 - \phi_1)Y_{t-2} + \cdots + \phi_p Y_{t-p-1} \\ +e_t -\theta_1 e_{t-1} - \theta_2e_{t-2} - \cdots \theta_q e_{t-q}
 $$
 
 이렇게 보면, **ARIMA**($p, 1, q$)의 difference equation form은 **ARMA**($p+1, q$)의 형태로 나타나는 것 같다. 그런데, 이것의 characteristic polynomial은...
 
-$$1-(1+\phi_1)x + (\phi_2 - \phi_1)x^2 + \cdots + (\phi_p-\phi_{p-1})x^p -\phi_px^{p+1} \newline = (1-\phi_1x-\phi_2x^2-\cdots-\phi_px^p)(1-x)$$
+$$1-(1+\phi_1)x + (\phi_2 - \phi_1)x^2 + \cdots + (\phi_p-\phi_{p-1})x^p -\phi_px^{p+1} \\ = (1-\phi_1x-\phi_2x^2-\cdots-\phi_px^p)(1-x)$$
 
 $x=1$이란 근이 명확히 있고, 이것으로부터 우리는 이 프로세스가 nonstationary임을 알 수 있다. 한편, $(1-x)$를 제외한 나머지는 stationary process, $\nabla Y_t$의 characteristic polynomial이기도 하다.
 
@@ -154,11 +154,11 @@ $$Y_t = 2Y_{t-1} -Y_{t-2} + e_t - \theta_1e_{t-1} - \theta_2 e_{t-2}$$
 ## Constant Terms in ARIMA
 **ARIMA**($p,d,q$) 모델에서, $\nabla^dY_t=W_t$는 stationary **ARMA**($p,q$) 프로세스다. 그런데 우리는 기본적으로 정상적인 모델은 zero mean을 가진다고 가정했는데, $W_t$가 nonzero mean, $\mu$를 가진다면?
 
-$$W_t -\mu = \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \newline +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
+$$W_t -\mu = \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \\ +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
 
 와 같이 나타내거나,
 
-$$W_t = \theta_0 + \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \newline +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
+$$W_t = \theta_0 + \phi_1W_{t-1} + \phi_2W_{t-2} + \cdots + \phi_pW_{t-p} \\ +e_t - \theta_1e_{t-1} - \theta_2e_{t-2}-\cdots - \theta_qe_{t-q}$$
 
 와 같이 constant term, $\theta_0$을 도입하는 방법도 있다.
 
