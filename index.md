@@ -106,7 +106,7 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 - **Internship in ISSL(2020.06-)**
   - Trustworthiness of Serverless Computing
 - **IBM Cybersecurity Analyst Professional Certificate (2020.08)**
-
+- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)**
 
 
 ### Honors & Awards & Scholarships
@@ -117,9 +117,8 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 ### Skills
 - **System Software Programming**
   - Intel SGX
-  - Assembly (x86-64, MIPS)
 - **Python Programming**
-  - OpenCV
+  - Computer Vision (OpenCV)
   - Data Science & Analysis
 - **Cloud Computing**
   - OpenWhisk

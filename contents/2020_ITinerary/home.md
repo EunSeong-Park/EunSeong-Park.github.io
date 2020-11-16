@@ -80,6 +80,9 @@ comment: false
 </style>
 
 # Welcome to the Course!
+
+(some video)
+
 Hello, This is team **ITinerary**. In this course, we will learn about the basic and application of **Python**. The course will cover:
 
 1. **Python Basics**: We can learn about fundamental concepts of Python and programming. Lots of exercises and examples to be familiar with Python programming are prepared!
