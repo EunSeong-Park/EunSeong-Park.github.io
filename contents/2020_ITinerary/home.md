@@ -2,7 +2,7 @@
 layout: article
 key: page-itinerary-home
 header: false
-title: "ITinerary: Basic Programming Course"
+title: "Basic Programming Course"
 permalink: /itinerary
 article_header:
   type: overlay
