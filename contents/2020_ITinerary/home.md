@@ -89,7 +89,7 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 
 # Guides
 ## Syllabus
-(some description)
+The syllabus is available [here](/contents/2020_ITinerary/assets/docs/syllabus.docx).
 
 ## About the Class
 Our class consists of three parts:
