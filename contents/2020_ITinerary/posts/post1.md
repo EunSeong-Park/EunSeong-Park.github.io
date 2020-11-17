@@ -1,5 +1,5 @@
 ---
-layout: article
+title: ""
 key: itinerary-post1
 permalink: /itinerary/posts/pythonbasic1
 header: false
