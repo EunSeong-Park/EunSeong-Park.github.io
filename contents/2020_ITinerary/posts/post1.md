@@ -74,6 +74,9 @@ comments: true
 
 
 # Pre-class
+
+abcd
+
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
@@ -82,4 +85,3 @@ comments: true
   </div>
 </div>
 
-[here](/contents/2020_ITinerary/assets/session_1_2/preclass.pdf).
