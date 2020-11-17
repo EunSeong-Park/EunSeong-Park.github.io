@@ -5,8 +5,6 @@ permalink: /itinerary/posts/pythonbasic1
 comments: true
 ---
 
-# Python Basics 1
-
 <style>
   .swiper-demo {
     height: 150px;
@@ -72,10 +70,10 @@ comments: true
 </style>
 
 ## Pre-class
-<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">1. Python Basics [1]</h5>
-    <p id="p_for_list">Basic concepts and skills for Python</p>
+    <h5 id="h_for_list">Pre-class PPT</h5>
+    <p id="p_for_list">Python Basics</p>
   </div>
 </div>
