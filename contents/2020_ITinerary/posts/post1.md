@@ -2,6 +2,7 @@
 layout: article
 key: itinerary-post1
 permalink: /itinerary/posts/pythonbasic1
+header: false
 comments: true
 ---
 
@@ -69,7 +70,10 @@ comments: true
   }
 </style>
 
-## Pre-class
+<a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
+
+
+# Pre-class
 <div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
