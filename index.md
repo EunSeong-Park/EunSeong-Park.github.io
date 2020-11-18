@@ -106,7 +106,7 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 - **Internship in ISSL(2020.06-)**
   - Trustworthiness of Serverless Computing
 - **IBM Cybersecurity Analyst Professional Certificate (2020.08)**
-- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)**
+- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)** [Link](https://eunseong-park.github.io/itinerary)
 
 
 ### Honors & Awards & Scholarships
