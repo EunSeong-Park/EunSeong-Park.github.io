@@ -100,13 +100,14 @@ I am a third-grade undergraduate student majoring **Computer Sceince & Engineeri
 - **Majoring Computer Science and Engineering (2019.-)**
 - **Minoring Industrial Engineering (2019.-)**
 - **2019 World Friends ICT Volunteer in Ghana (2019.07-2019.08)**
-  - App development education
+  - App development
   - OpenCV education
   - Automated agriculture project
 - **Internship in ISSL(2020.06-)**
   - Trustworthiness of Serverless Computing
 - **IBM Cybersecurity Analyst Professional Certificate (2020.08)**
-- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)** [Link](https://eunseong-park.github.io/itinerary)
+- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)** 
+  - Basic Python programming course [[Link]](https://eunseong-park.github.io/itinerary)
 
 
 ### Honors & Awards & Scholarships
