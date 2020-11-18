@@ -41,6 +41,8 @@ comments: true
   }
   div.cell img{
     border-right: 1px solid gray;
+    max-width: 100%;  
+    max-height: 100%;
   }
 </style>
 
