@@ -87,7 +87,7 @@ comments: true
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Supplement</h5>
-    <p id="p_for_list">More deeper explanation about the topic (not yet)</p>
+    <p id="p_for_list">More explanation about the topic (not yet)</p>
   </div>
 </div>
 
