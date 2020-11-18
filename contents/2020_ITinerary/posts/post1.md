@@ -48,15 +48,14 @@ comments: true
   .video-container {
     position: relative;
     width: 100%;
-    height: auto;
-    padding-top: 50%;
+    height: 0;
+    padding-bottom: 56.25%;
   }
 
-  iframe {
-    z-index: 1;
+  .video-container iframe {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
     width: 100%;
     height: 100%;
   }
@@ -122,4 +121,4 @@ some video
 
 ## Post-class: Assignment & Supplement
 
-(not yet)
+(not yet) abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz
