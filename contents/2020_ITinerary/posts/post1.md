@@ -119,6 +119,7 @@ some video
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
+
 ## Post-class: Assignment & Supplement
 
 (not yet)
