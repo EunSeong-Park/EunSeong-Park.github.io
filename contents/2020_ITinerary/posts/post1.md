@@ -91,9 +91,11 @@ comments: true
 </div>
 
 ## Pre-class Lecture Video
-
-some video
-
+<div style="width:100%;">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 
 ## In-class: Lab Session
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
