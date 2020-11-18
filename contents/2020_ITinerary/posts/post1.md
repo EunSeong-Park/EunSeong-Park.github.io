@@ -7,32 +7,6 @@ comments: true
 ---
 
 <style>
-  .swiper-demo {
-    height: 150px;
-  }
-  .swiper-demo .swiper__slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #fff;
-  }
-  .swiper-demo .swiper__slide:nth-child(even) {
-    background-color: #ff69b4;
-  }
-  .swiper-demo .swiper__slide:nth-child(odd) {
-    background-color: #2593fc;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(even) {
-    background-color: #312;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(odd) {
-    background-color: #123;
-  }
-  .swiper-demo--image .swiper__slide:nth-child(n) {
-    background-color: #000;
-  }
-
   /* DON'T USE JS TO THIS!! */
   #grid_for_list{
     box-shadow: 1px 1px 1px 1px #ccc;  
@@ -72,8 +46,8 @@ comments: true
 
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
-
-# Pre-class
+# Python Basics 1
+##  Pre-class
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
@@ -114,8 +88,3 @@ comments: true
     <p id="p_for_list">Move to dummy page!</p>
   </div>
 </div>
-
-# a
-
-# b
-# c
