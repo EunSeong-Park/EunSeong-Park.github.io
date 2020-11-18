@@ -92,7 +92,7 @@ comments: true
 
 ## Pre-class Lecture Video
 
-<iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+some video
 
 
 ## In-class: Lab Session
