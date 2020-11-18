@@ -49,13 +49,13 @@ comments: true
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
 # Python Basics 1
-##  Pre-class
+##  Pre-class Material
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Pre-class PPT</h5>
-    <p id="p_for_list">Python Basics</p>
+    <p id="p_for_list">The pre-class lecture video is made based on this</p>
   </div>
 </div>
 
@@ -63,30 +63,44 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
-    <p id="p_for_list">Python Basics</p>
+    <p id="p_for_list">Some exercises for you (not yet)</p>
   </div>
 </div>
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample link 1</h5>
-    <p id="p_for_list">Move to dummy page!</p>
+    <h5 id="h_for_list">Supplement</h5>
+    <p id="p_for_list">More deeper explanation about the topic (not yet)</p>
   </div>
 </div>
 
-<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
+## Pre-class Lecture Video
+
+<iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## In-class: Lab Session
+<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample link 1</h5>
-    <p id="p_for_list">Move to dummy page!</p>
+    <h5 id="h_for_list">Lab Session</h5>
+    <p id="p_for_list">(not yet)</p>
   </div>
 </div>
 
-<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
+<div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
+  <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Sample link 1</h5>
-    <p id="p_for_list">Move to dummy page!</p>
+    <h5 id="h_for_list">Sample Solution</h5>
+    <p id="p_for_list">It will be posted after (date) (not yet)</p>
   </div>
 </div>
+
+## Post-class: Recording
+
+<iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Post-class: Assignment & Supplement
+
+(not yet)
