@@ -64,13 +64,20 @@ comments: true
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
 # Python Basics 1
+## Pre-class Lecture Video
+<div style="width:100%;">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
 ##  Pre-class Material
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Pre-class PPT</h5>
-    <p id="p_for_list">The pre-class lecture video is made based on this</p>
+    <p id="p_for_list">The lecture video is based on this</p>
   </div>
 </div>
 
@@ -89,14 +96,6 @@ comments: true
     <p id="p_for_list">More explanation about the topic (not yet)</p>
   </div>
 </div>
-
-## Pre-class Lecture Video
-<div style="width:100%;">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
-
 ## In-class: Lab Session
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
