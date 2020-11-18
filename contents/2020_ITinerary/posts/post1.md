@@ -44,6 +44,7 @@ comments: true
     max-width: 100%;  
     max-height: 100%;
   }
+
   .video-container {
     position: relative;
     width: 100%;
@@ -113,10 +114,11 @@ some video
 </div>
 
 ## Post-class: Recording
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="width:100%;">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
-
 ## Post-class: Assignment & Supplement
 
 (not yet)
