@@ -44,6 +44,21 @@ comments: true
     max-width: 100%;  
     max-height: 100%;
   }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50%;
+  }
+
+  iframe {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
@@ -98,8 +113,9 @@ comments: true
 </div>
 
 ## Post-class: Recording
-
-<iframe width="336" height="189" src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Post-class: Assignment & Supplement
 

@@ -110,8 +110,8 @@ Our class consists of three parts:
   - **Jongmin Choi**: jm990621@unist.ac.kr
   - **Dohun Kim**: dohun1607@unist.ac.kr
 
-# Class Materials
-<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
+# Contents
+<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/pythonbasic1';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">1. Python Basics [1]</h5>
@@ -123,7 +123,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Python Basics [2] </h5>
-    <p id="p_for_list">Functions, Classes and libraries</p>
+    <p id="p_for_list">Functions, Classes and libraries (not yet)</p>
   </div>
 </div>
 
@@ -131,7 +131,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. Network Programming</h5>
-    <p id="p_for_list">Networking, client-server</p>
+    <p id="p_for_list">Networking, client-server (not yet)</p>
   </div>
 </div>
 
@@ -140,7 +140,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. OpenCV</h5>
-    <p id="p_for_list">A computer-vision library for Python</p>
+    <p id="p_for_list">A computer-vision library for Python (not yet)</p>
   </div>
 </div>
 
@@ -148,6 +148,6 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">5. Pygame</h5>
-    <p id="p_for_list">Python library for game and multimedia</p>
+    <p id="p_for_list">Python library for game and multimedia (not yet)</p>
   </div>
 </div>
