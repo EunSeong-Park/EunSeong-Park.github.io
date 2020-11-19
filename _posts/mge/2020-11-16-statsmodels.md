@@ -13,5 +13,19 @@ toc: true
 
 또, 가능하면 **Jupyter Notebook**을 사용해서 중간 과정들을 쉽게 살펴보도록 하자. (이 포스트에서도 Jupyter를 사용하고 그 결과를 캡처해 가져올 것이다.)
 
-## Getting Data
-먼저 분석할 데이터를 가져오자. 
+## Import
+우선, 필요한 라이브러리를 import하자.
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib as plt
+
+import statsmodels.api as sm
+from statsmodels.tsa.arima.model import ARIMA
+from statsmodels.graphics.api import qqplot
+```
+
+## Dataset
+우리는 sunspots 데이터셋을 가져와 사용할 것이다.
+
