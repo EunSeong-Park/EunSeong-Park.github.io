@@ -1,5 +1,5 @@
 ---
-title: "[Time Series Analysis EX 1] Statistical Modeling with statsmodels"
+title: "[Time Series Analysis EX 1] Statistical Modeling Using statsmodels"
 tags: Time-Series-Analysis Management-Engineering Data-Science Python
 toc: true
 ---
@@ -20,6 +20,7 @@ toc: true
 import numpy as np
 import pandas as pd
 import matplotlib as plt
+from scipy import stats
 
 import statsmodels.api as sm
 from statsmodels.tsa.arima.model import ARIMA
@@ -95,4 +96,48 @@ dat = dat.transform(lambda x: math.log2(x))
 여기선 추가적인 transformation을 적용하지 않는다. 즉, differencing도 하지 않으므로 일단은 **ARIMA($p,0,q$)**다.
 
 ## ACF / PACF
+**MA**, **AR** 성분을 확인하기 위해 **ACF**와 **PACF**를 플로팅해보자.
 
+```python
+sm.graphics.tsa.plot_acf(dat, lags=50)
+sm.graphics.tsa.plot_pacf(dat, lags=50)
+```
+
+![](/imgs/mge/tsa20.png)
+![](/imgs/mge/tsa21.png)
+
+파란 영역 내에 있는 점은 $0$과의 significant difference가 없다고 여길 수 있다. 여기서, ACF는 tail-off되는 양상을 보이고, PACF는 time lag, $2$ 이후로 cut-off되는 양상을 보인다. 즉, 이 두 그래프만을 봤을 때 우리는 우선 **ARIMA($2,0,0$)**을 candidate로 설정할 수 있다.
+
+## Fitting Models / Residual Analysis
+이제 **ARIMA($2,0,0$)**을 데이터에 피팅해보고, 잔차 분석(residual analysis)을 수행해보자.
+
+```python
+resid = ARIMA(dat, order=(2,0,0)).fit().resid
+```
+
+우선 잔차를 직접 플로팅해볼까?
+
+![](/imgs/mge/tsa22.png)
+
+정규성 검증은 아주 간단히 이루어진다. **scipy**의 `normaltest()`를 사용하자.
+
+```python
+stats.normaltest(resid)
+```
+
+아름다운 P-value다...
+```
+NormaltestResult(statistic=49.84412434485992, pvalue=1.501363733141781e-11)
+```
+
+마지막으로, 잔차의 **ACF** / **PACF**와 **Q-Q plot**을 그려보자.
+
+![](/imgs/mge/tsa23.png)
+![](/imgs/mge/tsa24.png)
+![](/imgs/mge/tsa25.png)
+
+꽤 괜찮게 모델링이 이루어진 것 같다!
+
+
+# 마치며
+생략한 부분이 조금 많은데, 문서를 잘 살펴보면 더 많은 유용한 도구를 찾아볼 수 있다. 아무튼 **statsmodels**는 통계적 분석을 위한 좋은 툴이므로 많이 활용해보자!
