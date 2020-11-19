@@ -27,5 +27,72 @@ from statsmodels.graphics.api import qqplot
 ```
 
 ## Dataset
-우리는 sunspots 데이터셋을 가져와 사용할 것이다.
+우리는 **sunspots** dataset을 가져와 사용할 것이다. [여기](https://www.statsmodels.org/stable/examples/notebooks/generated/tsa_arma_0.html)를 참고하여 작성했다.
+
+해당 dataset에 대한 정보는 `.NOTE`를 통해 볼 수 있다. 
+
+```python
+print(sm.datasets.sunspots.NOTE)
+```
+
+```
+::
+
+    Number of Observations - 309 (Annual 1700 - 2008)
+    Number of Variables - 1
+    Variable name definitions::
+
+        SUNACTIVITY - Number of sunspots for each year
+
+    The data file contains a 'YEAR' variable that is not returned by load.
+```
+
+이제 pandas DataFrame 포맷으로 가져오자.
+
+```python
+dat = sm.datasets.sunspots.load_pandas().data
+```
+
+```
+YEAR	SUNACTIVITY
+0	1700.0	5.0
+1	1701.0	11.0
+2	1702.0	16.0
+3	1703.0	23.0
+4	1704.0	36.0
+...	...	...
+304	2004.0	40.4
+305	2005.0	29.8
+306	2006.0	15.2
+307	2007.0	7.5
+308	2008.0	2.9
+309 rows × 2 columns
+```
+
+보기 좋게 바꿔주자.
+```python
+dat.index = pd.Index(sm.tsa.datetools.dates_from_range('1700', '2008'))
+del dat["YEAR"]
+```
+
+이제, 주어진 데이터를 플로팅해보자. 적당히 큰 사이즈로 출력하기 위해 `figsize`를 지정한다.
+
+```python
+dat.plot(figsize=(12,8))
+```
+
+![](/imgs/mge/tsa19.png)
+
+## Stationarity / Transformation
+**이 데이터는 정상적(stationary)인가?** 만약 정상적이지 않다면 우리는 추가적인 transformation을 수행할 수 있다. 가령 로거리듬(logarithm)을 사용하거나, $1^{st}$, $2^{nd}$ differencing을 적용할 수도 있다. 만약 differencing을 사용한다면, 우리는 **ARIMA**($p,d,q$) for nonzero $d$로 여기게 될 것이다.
+
+Transformation은 pandas DataFrame 레벨에서 수행할 수 있다. `DataFrame.transform(function)`은 DataFrame의 데이터 각각에 `function`을 적용함으로써 transformation을 가능케 한다. 만약 로거리듬을 적용한다면 다음과 같이 해볼 수 있을 것이다.
+
+```python
+dat = dat.transform(lambda x: math.log2(x))
+```
+
+여기선 추가적인 transformation을 적용하지 않는다. 즉, differencing도 하지 않으므로 일단은 **ARIMA($p,0,q$)**다.
+
+## ACF / PACF
 
