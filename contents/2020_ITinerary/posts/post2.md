@@ -63,7 +63,7 @@ comments: true
 
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
-# Networking
+# Network Programming
 ## Pre-class Lecture Video
 <div style="width:100%;">
   <div class="video-container">

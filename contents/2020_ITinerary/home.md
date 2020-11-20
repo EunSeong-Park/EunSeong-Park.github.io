@@ -111,43 +111,35 @@ Our class consists of three parts:
   - **Dohun Kim**: dohun1607@unist.ac.kr
 
 # Contents
-<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/pythonbasic1';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/itinerary/posts/pythonbasic';">
   <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">1. Python Basics [1]</h5>
+    <h5 id="h_for_list">1. Python Basics </h5>
     <p id="p_for_list">Basic concepts and skills for Python</p>
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
-  <div class="cell cell--2"><img src="/contents/sample_material/pylogo.png"></div>
-  <div class="cell cell--auto">
-    <h5 id="h_for_list">2. Python Basics [2] </h5>
-    <p id="p_for_list">Functions, Classes and libraries (not yet)</p>
-  </div>
-</div>
-
-<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/network';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">3. Network Programming</h5>
+    <h5 id="h_for_list">2. Network Programming</h5>
     <p id="p_for_list">Networking, client-server (not yet)</p>
   </div>
 </div>
 
 
-<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/opencv';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">4. OpenCV</h5>
+    <h5 id="h_for_list">3. OpenCV</h5>
     <p id="p_for_list">A computer-vision library for Python (not yet)</p>
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/sample';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/pygame';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">5. Pygame</h5>
+    <h5 id="h_for_list">4. Pygame</h5>
     <p id="p_for_list">Python library for game and multimedia (not yet)</p>
   </div>
 </div>
