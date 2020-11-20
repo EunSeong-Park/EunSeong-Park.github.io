@@ -1,7 +1,7 @@
 ---
 title: ""
 key: itinerary-post1
-permalink: /itinerary/posts/pythonbasic1
+permalink: /itinerary/posts/pythonbasic
 header: false
 comments: true
 ---
@@ -63,7 +63,7 @@ comments: true
 
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
-# Python Basics 1
+# Python Basics
 ## Pre-class Lecture Video
 <div style="width:100%;">
   <div class="video-container">
@@ -73,7 +73,7 @@ comments: true
 
 ##  Pre-class Material
 
-<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/preclass.pdf';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1/preclass.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Pre-class PPT</h5>
@@ -81,7 +81,7 @@ comments: true
   </div>
 </div>
 
-<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1_2/exercise.docx';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1/exercise.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
@@ -122,4 +122,4 @@ comments: true
 
 ## Post-class: Assignment & Supplement
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Will be uploaded in (date)!
