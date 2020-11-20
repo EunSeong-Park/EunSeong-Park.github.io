@@ -103,7 +103,7 @@ Our class consists of three parts:
 
 ## If you have some issues...
 
-- **Comments**: I opened the comment for each class material. If there are some typos, incorrect / unclear explanation or some question, feel free to ask me via comment. Disqus comment requires to sign up, but the task is easy and simple. (supports SNS account) **I recommend to use comment because it will be helpful to those who are having same / simillar issues!**
+- **Comments**: I opened the comment for each class material. If there are some typos, incorrect / unclear explanation or some question, feel free to ask me via comment. Disqus comment requires to sign up, but the task is easy and simple. (supports SNS account) **I recommend to use comment because it will be helpful to those who are having same / similar issues!**
 - **WhatsApp**: (some description)
 - **E-mail**: 
   - **Eunseong Park**: dmstjd517@unist.ac.kr
