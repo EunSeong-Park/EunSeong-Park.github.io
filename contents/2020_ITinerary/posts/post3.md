@@ -65,6 +65,8 @@ comments: true
 
 # OpenCV
 ## Pre-class Lecture Video
+
+(It will be uploaded on Dec 3)
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -114,6 +116,8 @@ comments: true
 </div>
 
 ## Post-class: Recording
+(It will be uploaded after the class)
+
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,4 +126,4 @@ comments: true
 
 ## Post-class: Assignment & Supplement
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+(It will be uploaded after the class)

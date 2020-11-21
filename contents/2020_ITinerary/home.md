@@ -143,3 +143,12 @@ Our class consists of three parts:
     <p id="p_for_list">Python library for game and multimedia (not yet)</p>
   </div>
 </div>
+
+# Timeline
+- **2020-11-14**: S1 pre-class PPT uploaded
+- **2020-11-15**: "Python Basics" sessions are merged (S1)
+- **2020-11-15**: S1 pre-class PPT updated
+- **2020-11-15**: S2 pre-class PPT uploaded
+- **2020-11-16**: Session page is updated
+  - Fixed some bug in comment, video clip
+- **2020-11-18**: S3 pre-class PPT uploaded

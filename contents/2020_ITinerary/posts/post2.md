@@ -65,6 +65,8 @@ comments: true
 
 # Network Programming
 ## Pre-class Lecture Video
+(It will be uploaded on Dec 1)
+
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -114,6 +116,8 @@ comments: true
 </div>
 
 ## Post-class: Recording
+(It will be uploaded after the class)
+
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,4 +126,4 @@ comments: true
 
 ## Post-class: Assignment & Supplement
 
-Will be uploaded in (date)!
+(It will be uploaded after the class)
