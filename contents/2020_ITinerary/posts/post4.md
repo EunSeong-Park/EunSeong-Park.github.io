@@ -64,6 +64,9 @@ comments: true
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
 # Pygame
+## Introduction
+(later...)
+
 ## Pre-class Lecture Video
 (It will be uploaded on Dec 5)
 
