@@ -145,10 +145,11 @@ Our class consists of three parts:
 </div>
 
 # Timeline
+- **2020-11-14**: Syllabus v1 uploaded
 - **2020-11-14**: S1 pre-class PPT uploaded
 - **2020-11-15**: "Python Basics" sessions are merged (S1)
 - **2020-11-15**: S1 pre-class PPT updated
 - **2020-11-15**: S2 pre-class PPT uploaded
-- **2020-11-16**: Session page is updated
+- **2020-11-16**: Session page updated
   - Fixed some bug in comment, video clip
 - **2020-11-18**: S3 pre-class PPT uploaded

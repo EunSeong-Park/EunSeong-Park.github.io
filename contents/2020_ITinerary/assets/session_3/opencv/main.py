@@ -1,3 +1,18 @@
+print("hello")  # This is for printing hello
+'''
+The following function
+prints "hello" !
+'''
+print("hello")
+# print("hello")
+
+
+
+
+
+
+
+
 import cv2
 
 
@@ -21,11 +36,15 @@ while cap.isOpened():
     isSuccess, frame = cap.read()
     if isSuccess:
         cv2.imshow('Video', frame)
-        key = cv2.waitKey(1000//60)
+        key = cv2.waitKey(1000 // 60)
         if key == 27:
             break
+
+cap.release()
+cv2.destroyAllWindows()
+
+'''
         elif key == 32:
             print("captured")
             cv2.imwrite("capture/temp1.png", cv2.flip(frame, 1))
-cap.release()
-cv2.destroyAllWindows()
+'''
