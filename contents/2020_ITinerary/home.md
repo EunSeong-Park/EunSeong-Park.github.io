@@ -123,7 +123,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Network Programming</h5>
-    <p id="p_for_list">Networking, client-server (not yet)</p>
+    <p id="p_for_list">Networking, client-server</p>
   </div>
 </div>
 
@@ -132,7 +132,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. OpenCV</h5>
-    <p id="p_for_list">A computer-vision library for Python (not yet)</p>
+    <p id="p_for_list">A computer-vision library for Python</p>
   </div>
 </div>
 
@@ -140,7 +140,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. Pygame</h5>
-    <p id="p_for_list">Python library for game and multimedia (not yet)</p>
+    <p id="p_for_list">Python library for game and multimedia</p>
   </div>
 </div>
 
@@ -153,3 +153,4 @@ Our class consists of three parts:
 - **2020-11-16**: Session page updated
   - Fixed some bug in comment, video clip
 - **2020-11-18**: S3 pre-class PPT uploaded (not completed)
+- **2020-11-21**: S3 pre-class PPT completed
