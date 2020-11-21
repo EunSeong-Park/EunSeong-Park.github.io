@@ -101,7 +101,7 @@ Our class consists of three parts:
 - **Real-time class**: We will meet on **Zoom** at every [class time]. Some lecture and lab session will be given. **Lab session** is a mini-project for exercising the concepts we covered. 
 - **Post-class**: After the class, we will post the recording, additional materials. Like pre-class, **it is also not mandatory.** But reviewing with post-class will help you to fully acquire what you learned!
 
-## If you have some issues...
+## If you have any issues...
 
 - **Comments**: I opened the comment for each class material. If there are some typos, incorrect / unclear explanation or some question, feel free to ask me via comment. Disqus comment requires to sign up, but the task is easy and simple. (supports SNS account) **I recommend to use comment because it will be helpful to those who are having same / similar issues!**
 - **WhatsApp**: (some description)
