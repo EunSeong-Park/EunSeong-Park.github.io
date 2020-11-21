@@ -67,11 +67,13 @@ comments: true
 ## Pre-class Lecture Video
 (It will be uploaded on Dec 5)
 
+<!--
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
+-->
 
 ##  Pre-class Material
 
@@ -111,19 +113,19 @@ comments: true
   <div class="cell cell--2"><img src="/imgs/etc/3.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Sample Solution</h5>
-    <p id="p_for_list">It will be posted after (date) (not yet)</p>
+    <p id="p_for_list">It will be uploaded on Dec 7</p>
   </div>
 </div>
 
 ## Post-class: Recording
 (It will be uploaded after the class)
-
+<!--
 <div style="width:100%;">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
-
+-->
 ## Post-class: Assignment & Supplement
 
 (It will be uploaded after the class)
