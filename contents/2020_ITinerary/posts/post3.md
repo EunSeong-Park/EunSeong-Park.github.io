@@ -64,6 +64,9 @@ comments: true
 <a class="button button--primary button--rounded button--xl" href="/itinerary">HOME</a>
 
 # OpenCV
+## Introduction
+(later...)
+
 ## Pre-class Lecture Video
 
 (It will be uploaded on Dec 3)
