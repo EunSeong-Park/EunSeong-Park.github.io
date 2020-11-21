@@ -154,3 +154,4 @@ Our class consists of three parts:
   - Fixed some bug in comment, video clip
 - **2020-11-18**: S3 pre-class PPT uploaded (not completed)
 - **2020-11-21**: S3 pre-class PPT completed
+- **2020-11-22**: Session page updated

@@ -103,6 +103,7 @@ comments: true
     <p id="p_for_list">More explanation about the topic (not yet)</p>
   </div>
 </div>
+
 ## In-class: Lab Session
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/labsession.png"></div>
