@@ -122,6 +122,7 @@ comments: true
 
 ## Post-class: Recording
 (It will be uploaded after the class)
+
 <!--
 <div style="width:100%;">
   <div class="video-container">
@@ -129,6 +130,7 @@ comments: true
   </div>
 </div>
 -->
+
 ## Post-class: Assignment & Supplement
 
 (It will be uploaded after the class)
