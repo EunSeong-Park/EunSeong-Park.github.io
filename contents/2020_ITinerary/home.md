@@ -98,7 +98,7 @@ The syllabus is available [here](/contents/2020_ITinerary/assets/docs/syllabus.d
 Our class consists of three parts:
 
 - **Pre-class**: We will provide some exercises or materials to prepare the class. **Don't worry, it is not mandatory.** We expect that you guys can follow real-time class very well even if you skipped the pre-class. But this pre-class may be helpful for you!
-- **Real-time class**: We will meet on [Platform name] at every [class time]. Some lecture and lab session will be given. **Lab session** is a mini-project for exercising the concepts we covered. 
+- **Real-time class**: We will meet on **Zoom** at every [class time]. Some lecture and lab session will be given. **Lab session** is a mini-project for exercising the concepts we covered. 
 - **Post-class**: After the class, we will post the recording, additional materials. Like pre-class, **it is also not mandatory.** But reviewing with post-class will help you to fully acquire what you learned!
 
 ## If you have some issues...
