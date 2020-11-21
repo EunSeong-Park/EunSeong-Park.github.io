@@ -66,6 +66,7 @@ comments: true
 # Network Programming
 ## Pre-class Lecture Video
 (It will be uploaded on Dec 1)
+
 <!--
 <div style="width:100%;">
   <div class="video-container">

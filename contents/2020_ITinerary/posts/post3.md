@@ -67,6 +67,7 @@ comments: true
 ## Pre-class Lecture Video
 
 (It will be uploaded on Dec 3)
+
 <!--
 <div style="width:100%;">
   <div class="video-container">
@@ -74,6 +75,7 @@ comments: true
   </div>
 </div>
 -->
+
 ##  Pre-class Material
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_3/preclass.pdf';">
