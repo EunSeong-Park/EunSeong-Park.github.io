@@ -81,14 +81,14 @@ comment: false
 
 # Welcome to the Course!
 
-(some video)
+(Introduction video will be uploaded soon)
 
 Hello, This is team **ITinerary**. In this course, we will learn about the basic and application of **Python**. The course will cover:
 
-1. **Python Basics**: We can learn about fundamental concepts of Python and programming. Lots of exercises and examples to be familiar with Python programming are prepared!
-2. **Network Programming**: "How do we communicate each other?" After learning about commnication, we will implement communication application such as messenger.
-3. **OpenCV**: OpenCV provides some useful tools for computer vision. What can we do by using this?
-4. **Pygame**: Python programming no longer produces a boring program. We will make some funny game!
+- **Python Basics**
+- **Network Programming**
+- **OpenCV**
+- **PyGame**
 
 # Guides
 ## Syllabus
@@ -104,7 +104,7 @@ Our class consists of three parts:
 ## If you have any issues...
 
 - **Comments**: I opened the comment for each class material. If there are some typos, incorrect / unclear explanation or some question, feel free to ask me via comment. Disqus comment requires to sign up, but the task is easy and simple. (supports SNS account) **I recommend to use comment because it will be helpful to those who are having same / similar issues!**
-- **WhatsApp**: (some description)
+- **WhatsApp**; (It will be announced soon)
 - **E-mail**: 
   - **Eunseong Park**: dmstjd517@unist.ac.kr
   - **Jongmin Choi**: jm990621@unist.ac.kr
@@ -155,3 +155,4 @@ Our class consists of three parts:
 - **2020-11-18**: S3 pre-class PPT uploaded (not completed)
 - **2020-11-21**: S3 pre-class PPT completed
 - **2020-11-22**: Session page updated
+- **2020-11-23**: Session page updated
