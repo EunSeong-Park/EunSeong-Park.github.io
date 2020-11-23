@@ -93,7 +93,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
-    <p id="p_for_list">Some exercises for you (not yet)</p>
+    <p id="p_for_list">Some exercises for you (NA)</p>
   </div>
 </div>
 
@@ -101,7 +101,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Supplement</h5>
-    <p id="p_for_list">More explanation about the topic (not yet)</p>
+    <p id="p_for_list">More explanation about the topic (NA)</p>
   </div>
 </div>
 

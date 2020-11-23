@@ -65,7 +65,7 @@ comments: true
 
 # Pygame
 ## Introduction
-**PyGame library provides various tools for multimedia and game.** What do you want to make with this? After some exercises, you can make a fun game with YOUR OWN IDEA! 
+**Pygame library provides various tools for multimedia and game.** What do you want to make with this? After some exercises, you can make a fun game with YOUR OWN IDEA! 
 
 ## Pre-class Lecture Video
 (It will be uploaded on Dec 5)
@@ -84,7 +84,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Pre-class PPT</h5>
-    <p id="p_for_list">The lecture video is based on this</p>
+    <p id="p_for_list">The lecture video is based on this (NA)</p>
   </div>
 </div>
 
@@ -92,7 +92,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
-    <p id="p_for_list">Some exercises for you (not yet)</p>
+    <p id="p_for_list">Some exercises for you (NA)</p>
   </div>
 </div>
 
@@ -100,7 +100,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Supplement</h5>
-    <p id="p_for_list">More explanation about the topic (not yet)</p>
+    <p id="p_for_list">More explanation about the topic (NA)</p>
   </div>
 </div>
 

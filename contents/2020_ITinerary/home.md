@@ -156,3 +156,4 @@ Our class consists of three parts:
 - **2020-11-21**: S3 pre-class PPT completed
 - **2020-11-22**: Session page updated
 - **2020-11-23**: Session page updated
+- **2020-11-24**: Some minor changes in main page
