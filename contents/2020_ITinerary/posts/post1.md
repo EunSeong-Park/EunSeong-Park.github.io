@@ -65,7 +65,7 @@ comments: true
 
 # Python Basics
 ## Introduction
-(later...)
+**What is programming, and what is Python?** We will learn about basics of programming, with Python. This session includes fundamental concepts such as data types, functions, and classes. There are a lot of things to learn, but we expect that you will be able to fully understand them via Lab session.
 
 ## Pre-class Lecture Video
 
@@ -110,7 +110,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/labsession.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Lab Session</h5>
-    <p id="p_for_list">(not yet)</p>
+    <p id="p_for_list">It will be uploaded on Dec 6</p>
   </div>
 </div>
 
@@ -118,7 +118,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Sample Solution</h5>
-    <p id="p_for_list">It will be uploaded on Dec 1</p>
+    <p id="p_for_list">It will be uploaded on Dec 7</p>
   </div>
 </div>
 

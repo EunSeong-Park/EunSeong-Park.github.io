@@ -65,7 +65,7 @@ comments: true
 
 # Pygame
 ## Introduction
-(later...)
+**PyGame library provides various tools for multimedia and game.** What do you want to make with this? After some exercises, you can make a fun game with YOUR OWN IDEA! 
 
 ## Pre-class Lecture Video
 (It will be uploaded on Dec 5)
@@ -109,7 +109,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/labsession.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Lab Session</h5>
-    <p id="p_for_list">(not yet)</p>
+    <p id="p_for_list">It will be uploaded on Dec 9</p>
   </div>
 </div>
 
@@ -117,7 +117,7 @@ comments: true
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Sample Solution</h5>
-    <p id="p_for_list">It will be uploaded on Dec 7</p>
+    <p id="p_for_list">It will be uploaded on Dec 10</p>
   </div>
 </div>
 
