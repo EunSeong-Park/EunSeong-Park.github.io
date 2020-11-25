@@ -67,6 +67,8 @@ comments: true
 ## Introduction
 **What is programming, and what is Python?** We will learn about basics of programming, with Python. This session includes fundamental concepts such as data types, functions, and classes. There are a lot of things to learn, but we expect that you will be able to fully understand them via Lab session.
 
+Even if you have no experience in programming, that's okay. We will provide many supplements and exercise, and help you solve any problems and issues!
+
 ## Pre-class Lecture Video
 
 (It will be uploaded on Nov 29)
