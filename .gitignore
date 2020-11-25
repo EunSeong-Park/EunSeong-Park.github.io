@@ -26,7 +26,6 @@ _site/
 .jekyll-metadata
 .jekyll-cache/
 
-docs/
-contents/**/*.avi
-contents/**/*.mp4
-contents/**/venv/
+/contents/**/*.avi
+/contents/**/*.mp4
+/contents/**/venv/
