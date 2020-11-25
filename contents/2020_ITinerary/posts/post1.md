@@ -71,15 +71,11 @@ Even if you have no experience in programming, that's okay. We will provide many
 
 ## Pre-class Lecture Video
 
-(It will be uploaded on Nov 29)
-
-<!--
 <div style="width:100%;">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/gcQXgC5RHq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
--->
 
 ##  Pre-class Material
 
