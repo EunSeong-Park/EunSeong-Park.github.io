@@ -50,7 +50,7 @@ comments: true
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    border: 1px 1px 1px 1px #ff0000;
+    border: 1px 1px 1px 1px #ccc;
     
   }
 
@@ -60,7 +60,7 @@ comments: true
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px 1px 1px 1px #00ff00;
+    margin: 3px 3px 3px 3px;
   }
 </style>
 
