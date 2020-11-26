@@ -119,6 +119,31 @@ Our class consists of three parts:
   </div>
 </div>
 
+<div class="grid" id="grid_for_list" onclick="location.href='#';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">2. Network Programming</h5>
+    <p id="p_for_list">It will be available on Nov 30</p>
+  </div>
+</div>
+
+<div class="grid" id="grid_for_list" onclick="location.href='#';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">3. OpenCV</h5>
+    <p id="p_for_list">It will be available on Dec 2</p>
+  </div>
+</div>
+
+<div class="grid" id="grid_for_list" onclick="location.href='#';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">4. Pygame</h5>
+    <p id="p_for_list">It will be available on Dec 4</p>
+  </div>
+</div>
+
+<!--
 <div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/network';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
@@ -143,6 +168,7 @@ Our class consists of three parts:
     <p id="p_for_list">Python library for game and multimedia</p>
   </div>
 </div>
+-->
 
 # Timeline
 - **2020-11-14**: Syllabus uploaded (v1)
@@ -162,3 +188,4 @@ Our class consists of three parts:
 - **2020-11-26**: Session page updated
 - **2020-11-26**: S1 supplement uploaded
 - **2020-11-26**: Submission box added  
+- **2020-11-27**: Session 1 completed
