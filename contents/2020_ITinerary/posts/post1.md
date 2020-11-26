@@ -92,7 +92,7 @@ Even if you have no experience in programming, that's okay. We will provide many
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/write.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
-    <p id="p_for_list">Some exercises for you (NA)</p>
+    <p id="p_for_list">Exercises for you</p>
   </div>
 </div>
 
