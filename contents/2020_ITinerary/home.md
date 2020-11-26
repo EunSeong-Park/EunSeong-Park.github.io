@@ -151,7 +151,6 @@ Our class consists of three parts:
 - **2020-11-15**: S1 pre-class PPT updated
 - **2020-11-15**: S2 pre-class PPT uploaded
 - **2020-11-16**: Session page updated
-  - Fixed some bug in comment, video clip
 - **2020-11-18**: S3 pre-class PPT uploaded (not completed)
 - **2020-11-21**: S3 pre-class PPT completed
 - **2020-11-22**: Session page updated
