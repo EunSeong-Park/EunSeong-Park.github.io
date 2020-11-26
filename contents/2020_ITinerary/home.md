@@ -161,3 +161,4 @@ Our class consists of three parts:
 - **2020-11-25**: S1 pre-class lecture video uploaded
 - **2020-11-26**: Session page updated
 - **2020-11-26**: S1 supplement uploaded
+- **2020-11-26**: Submission box added  
