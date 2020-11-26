@@ -160,3 +160,5 @@ Our class consists of three parts:
 - **2020-11-24**: Syllabus updated (v2)
 - **2020-11-24**: S4 pre-class PPT uploaded
 - **2020-11-25**: S1 pre-class lecture video uploaded
+- **2020-11-26**: Session page updated
+- **2020-11-26**: S1 supplement uploaded
