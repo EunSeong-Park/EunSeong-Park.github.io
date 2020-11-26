@@ -113,6 +113,14 @@ Even if you have no experience in programming, that's okay. We will provide many
   </div>
 </div>
 
+<div class="grid scale" id="grid_for_list" onclick="location.href='https://script.google.com/macros/s/AKfycbzs-EnI2x-sri8vjy1xPi4eOSkjdWa-Gbs0aaz9PXbtDw3nfmjI/exec';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/submit.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Code Submission</h5>
+    <p id="p_for_list">You can submit your code in here.</p>
+  </div>
+</div>
+
 ## Post-class: Recording
 
 (It will be uploaded after the class)
