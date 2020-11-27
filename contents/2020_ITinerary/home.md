@@ -95,7 +95,19 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 The syllabus is available [here](assets/docs/syllabus.pdf).
 
 ## Announcements
+<summary><b>View</b></summary>
+<h4>201127</h4>
+Hi all,
 
+The tentative schedule is as follows:
+
+![](/contents/2020_ITinerary/assets/imgs/announce/a.png)
+
+So each contents will be available on Nov 28, Nov 30, Dec 2, and Dec 4, respectively. 
+
+Also, we will inform the schedule about real-time class as soon as it is determined.
+
+</details>
 
 ## About the Class
 Our class consists of three parts:
