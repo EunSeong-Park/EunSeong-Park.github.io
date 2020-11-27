@@ -90,12 +90,12 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 - **OpenCV**
 - **PyGame**
 
-
-
-
 # Guides
 ## Syllabus
 The syllabus is available [here](assets/docs/syllabus.pdf).
+
+## Announcements
+
 
 ## About the Class
 Our class consists of three parts:
@@ -172,7 +172,7 @@ Our class consists of three parts:
 </div>
 -->
 
-# Timeline
+<!--
 - **2020-11-14**: Syllabus uploaded (v1)
 - **2020-11-14**: S1 pre-class PPT uploaded
 - **2020-11-15**: "Python Basics" sessions are merged (S1)
@@ -191,3 +191,5 @@ Our class consists of three parts:
 - **2020-11-26**: S1 supplement uploaded
 - **2020-11-26**: Submission box added  
 - **2020-11-27**: Session 1 completed
+
+-->
