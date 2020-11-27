@@ -95,6 +95,7 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 The syllabus is available [here](assets/docs/syllabus.pdf).
 
 ## Announcements
+<details>
 <summary><b>View</b></summary>
 <h4>201127</h4>
 Hi all,
