@@ -9,8 +9,9 @@ header: false
 <a class="button button--primary button--rounded button--xl" href="/itinerary">GO TO HOME</a>
 
 # Announcements
-<summary>View
+
 <details>
+<summary><h3>Announcement</h3>/summary>
 <h4>201127</h4>
 This is a sample. Thank you.
 
@@ -18,4 +19,3 @@ This is a sample. Thank you.
 This is another sample. Thank you.
 
 </details>
-</summary>
