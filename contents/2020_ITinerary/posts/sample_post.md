@@ -11,7 +11,7 @@ header: false
 # Announcements
 
 <details>
-<summary>**Announcement**</summary>
+<summary><b>Announcement</b></summary>
 <h4>201127</h4>
 This is a sample. Thank you.
 
