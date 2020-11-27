@@ -79,7 +79,7 @@ comment: false
   }
 </style>
 
-**Please vote via [link](https://forms.gle/mxjm57SDhKBi2Va86) to determine our real-time class time.**
+**(IMPORTANT NOTICE) Please vote via [link](https://forms.gle/mxjm57SDhKBi2Va86) to determine our real-time class time.**
 {:.warning}
 
 # Welcome to the Course!
