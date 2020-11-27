@@ -8,3 +8,16 @@ header: false
 
 <a class="button button--primary button--rounded button--xl" href="/itinerary">GO TO HOME</a>
 
+# Announcements
+<summary>
+<details>View
+<h4>201127</h4>
+This is a sample. Thank you.
+<hr>
+
+<h4>201128</h4>
+This is another sample. Thank you.
+<hr>
+
+</details>
+</summary>
