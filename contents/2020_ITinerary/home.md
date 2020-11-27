@@ -90,6 +90,9 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 - **OpenCV**
 - **PyGame**
 
+
+
+
 # Guides
 ## Syllabus
 The syllabus is available [here](assets/docs/syllabus.pdf).
@@ -97,9 +100,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## About the Class
 Our class consists of three parts:
 
-- **Pre-class**: We will provide some exercises or materials to prepare the class. **Don't worry, it is not mandatory.** We expect that you guys can follow real-time class very well even if you skipped the pre-class. But this pre-class may be helpful for you!
-- **Real-time class**: We will meet on **Zoom** at every [class time]. Some lecture and lab session will be given. **Lab session** is a mini-project for exercising the concepts we covered. 
-- **Post-class**: After the class, we will post the recording, additional materials. Like pre-class, **it is also not mandatory.** But reviewing with post-class will help you to fully acquire what you learned!
+- **Pre-class**: We adopted **flipped learning** for this program. In the pre-class of each session, we will provide several exercises or supplement materials to prepare the class. Because of the short period of this program, we are trying to help you study in the pre-class as much as possible. So, please refer the materials, solve the exercises we provided, and **feel free to ask us** via comments. 
+- **Real-time class**: We will meet on **Zoom** (The class time is not determined yet). In the class, we will review the lecture we covered, and hold an lab session. In the **Lab session**, you can apply the concepts and skills you learned, by implementing several mini-projects. 
+- **Post-class**: After the class, we will post the recording, additional materials, and sample solutions for the lab session. Reviewing the contents may be helpful to you, so we strongly recommend to do that! 
 
 ## If you have any issues...
 
