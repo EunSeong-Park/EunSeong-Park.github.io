@@ -191,5 +191,4 @@ Our class consists of three parts:
 - **2020-11-26**: S1 supplement uploaded
 - **2020-11-26**: Submission box added  
 - **2020-11-27**: Session 1 completed
-
 -->
