@@ -77,6 +77,21 @@ comment: false
   div.cell img{
     border-right: 1px solid gray;
   }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+  
+  }
 </style>
 
 **(IMPORTANT NOTICE) Please visit the [link](https://forms.gle/mxjm57SDhKBi2Va86) and fill out your available time AS SOON AS YOU SEE THIS, to determine our real-time class time.**
@@ -84,7 +99,11 @@ comment: false
 
 # Welcome to the Course!
 
-(Introduction video will be uploaded soon)
+<div style="width:100%; ">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/gcQXgC5RHq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 
 Hello, This is team **ITinerary**. In this course, we will learn about the basic and application of **Python**. The course will cover:
 
@@ -92,6 +111,7 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 - **Network Programming**
 - **OpenCV**
 - **PyGame**
+
 
 # Guides
 ## Syllabus
