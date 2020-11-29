@@ -69,7 +69,6 @@ comments: true
 
 
 ## Pre-class Lecture Video
-(It will be uploaded on Dec 1)
 
 <div style="width:100%;">
   <div class="video-container">
@@ -80,7 +79,7 @@ comments: true
 ##  Pre-class Material
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_2/preclass.pdf';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt_icon.png"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/ppt.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Pre-class PPT</h5>
     <p id="p_for_list">The lecture video is based on this</p>
@@ -88,7 +87,7 @@ comments: true
 </div>
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_2/exercise.pdf';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/write.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Exercises</h5>
     <p id="p_for_list">Exercises for you</p>
@@ -96,7 +95,7 @@ comments: true
 </div>
 
 <div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_2/supplement.pdf';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pdf_icon.png"></div>
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/books.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">Supplement</h5>
     <p id="p_for_list">Additional explanation about the topic</p>
