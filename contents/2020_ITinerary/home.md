@@ -133,11 +133,11 @@ Our class consists of three parts:
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='#';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/network';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">2. Network Programming</h5>
-    <p id="p_for_list">It will be available on Nov 30</p>
+    <p id="p_for_list">Networking, client-server model, socket</p>
   </div>
 </div>
 
@@ -157,15 +157,9 @@ Our class consists of three parts:
   </div>
 </div>
 
-<!--
-<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/network';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/Ego_network.png"></div>
-  <div class="cell cell--auto">
-    <h5 id="h_for_list">2. Network Programming</h5>
-    <p id="p_for_list">Networking, client-server</p>
-  </div>
-</div>
 
+
+<!--
 
 <div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/opencv';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
