@@ -122,6 +122,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201130</h4>
+Now, session 2, network programming is available, good luck!
+
 <h4>201128</h4>
 As you can see from the IMPORTANT NOTICE. We made a survey to find an available real-time class time. You can visit <a href="https://forms.gle/mxjm57SDhKBi2Va86">here.</a> Please do this as soon as possible.
 
