@@ -79,7 +79,7 @@ comment: false
   }
 </style>
 
-**(IMPORTANT NOTICE) Please visit the [link](https://forms.gle/mxjm57SDhKBi2Va86) and fill out your available time, to determine our real-time class time.**
+**(IMPORTANT NOTICE) Please visit the [link](https://forms.gle/mxjm57SDhKBi2Va86) and fill out your available time AS SOON AS YOU SEE THIS, to determine our real-time class time.**
 {:.error}
 
 # Welcome to the Course!
@@ -103,7 +103,7 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 <details>
 <summary><b>View</b></summary>
 <h4>201128</h4>
-As you can see from the IMPORTANT NOTICE. We made a survey to find an available real-time class time. You can visit <a href="https://forms.gle/mxjm57SDhKBi2Va86">here.</a> Please do this by Dec 1.
+As you can see from the IMPORTANT NOTICE. We made a survey to find an available real-time class time. You can visit <a href="https://forms.gle/mxjm57SDhKBi2Va86">here.</a> Please do this as soon as possible.
 
 <h4>201127</h4>
 Hi all. Each sessions will be available on Nov 28, Nov 30, Dec 2, and Dec 4, respectively.  Also, we will inform the schedule about real-time class as soon as it is determined. Thank you.

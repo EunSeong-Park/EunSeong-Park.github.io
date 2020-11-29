@@ -12,9 +12,11 @@ last_mouse_pos = (0, 0)
 my_rect = pygame.Rect(300, 300, 200, 200)
 my_enemy = pygame.Rect(0, 0, 200, 200)
 img = pygame.image.load("cat.png")
+print(type(img))
 
 my_font_1 = pygame.font.Font(None, 24)
 my_font_2 = pygame.font.SysFont("Arial", 24)
+print(type(my_font_1))
 
 
 to_move = [0, 0]
