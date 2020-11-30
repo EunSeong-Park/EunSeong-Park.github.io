@@ -94,10 +94,9 @@ comment: false
   }
 </style>
 
-<!--
-**(IMPORTANT NOTICE) Please visit the [link](https://forms.gle/mxjm57SDhKBi2Va86) and fill out your available time AS SOON AS YOU SEE THIS, to determine our real-time class time.**
+
+**(NOTICE) Now, session 2, network programming is available, good luck!**
 {:.error}
--->
 
 
 # Welcome to the Course!
@@ -139,7 +138,7 @@ Hi all. Each sessions will be available on Nov 28, Nov 30, Dec 2, and Dec 4, res
 Our class consists of three parts:
 
 - **Pre-class**: We adopted **flipped learning** for this program. In the pre-class of each session, we will provide several exercises or supplement materials to prepare the class. Because of the short period of this program, we are trying to help you study in the pre-class as much as possible. So, please refer the materials, solve the exercises we provided, and **feel free to ask us** via comments. 
-- **Real-time class**: We will meet on **Zoom** (The class time is not determined yet). In the class, we will review the lecture we covered, and hold an lab session. In the **Lab session**, you can apply the concepts and skills you learned, by implementing several mini-projects. 
+- **Real-time class**: We will meet on **Zoom** at **10:00AM to 1:00PM (GMT)**. In the class, we will review the lecture we covered, and hold an lab session. In the **Lab session**, you can apply the concepts and skills you learned, by implementing several mini-projects. 
 - **Post-class**: After the class, we will post the recording, additional materials, and sample solutions for the lab session. Reviewing the contents may be helpful to you, so we strongly recommend to do that! 
 
 ## If you have any issues...
