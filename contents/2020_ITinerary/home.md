@@ -129,7 +129,7 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 Now, session 2, network programming is available, good luck!
 
 <h4>201128</h4>
-As you can see from the IMPORTANT NOTICE. We made a survey to find an available real-time class time. You can visit <a href="https://forms.gle/mxjm57SDhKBi2Va86">here.</a> Please do this as soon as possible.
+Now, session 1, Python basics is available.
 
 <h4>201127</h4>
 Hi all. Each sessions will be available on Nov 28, Nov 30, Dec 2, and Dec 4, respectively.  Also, we will inform the schedule about real-time class as soon as it is determined. Thank you.
