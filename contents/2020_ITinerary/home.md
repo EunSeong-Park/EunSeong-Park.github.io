@@ -94,8 +94,11 @@ comment: false
   }
 </style>
 
+<!--
 **(IMPORTANT NOTICE) Please visit the [link](https://forms.gle/mxjm57SDhKBi2Va86) and fill out your available time AS SOON AS YOU SEE THIS, to determine our real-time class time.**
 {:.error}
+-->
+
 
 # Welcome to the Course!
 
