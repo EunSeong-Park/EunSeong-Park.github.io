@@ -95,7 +95,7 @@ comment: false
 </style>
 
 
-**(NOTICE) Now, session 2, network programming is available, good luck!**
+**(Recent Notice) Syllabus is updated**
 {:.error}
 
 
@@ -124,6 +124,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201130</h4>
+We inform that the syllabus is updated. Session 4 starts one-day earlier. It is to give you sufficient time for exercising by yourself, and preparing the real-time class. Thank you.
+
 <h4>201130</h4>
 Now, session 2, network programming is available, good luck!
 
