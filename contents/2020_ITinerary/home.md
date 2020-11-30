@@ -119,7 +119,7 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 ## Syllabus
 The syllabus is available [here](assets/docs/syllabus.pdf).
 
-![](/contents/2020_ITinerary/assets/imgs/announce/a.png)
+<img style="border: none;" src="/contents/2020_ITinerary/assets/imgs/announce/a.png">
 
 ## Announcements
 <details>
