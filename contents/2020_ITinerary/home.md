@@ -99,7 +99,7 @@ comment: false
 {:.error}
 
 
-# Welcome to the Course!
+## Welcome to the Course!
 
 <div style="width:100%; ">
   <div class="video-container">
@@ -115,7 +115,6 @@ Hello, This is team **ITinerary**. In this course, we will learn about the basic
 - **PyGame**
 
 
-# Guides
 ## Syllabus
 The syllabus is available [here](assets/docs/syllabus.pdf).
 
