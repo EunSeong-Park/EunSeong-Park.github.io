@@ -95,7 +95,7 @@ comment: false
 </style>
 
 
-**(Recent Notice) Syllabus is updated**
+**(Recent Notice) Session 3, OpenCV is available, now!**
 {:.error}
 
 
@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201202</h4>
+Now, session 3, OpenCV is available.
+
 <h4>201130</h4>
 We inform that the syllabus is updated. Session 4 starts one-day earlier. It is to give you sufficient time for exercising by yourself, and preparing the real-time class. Thank you.
 
@@ -168,11 +171,11 @@ Our class consists of three parts:
   </div>
 </div>
 
-<div class="grid" id="grid_for_list" onclick="location.href='#';">
+<div class="grid" id="grid_for_list" onclick="location.href='/itinerary/posts/opencv';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/opencv.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">3. OpenCV</h5>
-    <p id="p_for_list">It will be available on Dec 2</p>
+    <p id="p_for_list">A computer-vision library for Python</p>
   </div>
 </div>
 
