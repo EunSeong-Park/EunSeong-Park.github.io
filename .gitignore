@@ -28,4 +28,7 @@ _site/
 
 /contents/**/*.avi
 /contents/**/*.mp4
+/contents/**/*.mp3
+/contents/**/*.wav
+
 /contents/**/venv/
