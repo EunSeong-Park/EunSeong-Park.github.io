@@ -1,5 +1,5 @@
 ---
-title: "[Time Series Analysis 7] forcasting"
+title: "[Time Series Analysis 7] Forecasting"
 tags: Time-Series-Analysis Management-Engineering Data-Science
 toc: true
 ---
