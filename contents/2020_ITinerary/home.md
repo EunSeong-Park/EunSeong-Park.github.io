@@ -183,7 +183,7 @@ Our class consists of three parts:
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/pygame.png"></div>
   <div class="cell cell--auto">
     <h5 id="h_for_list">4. Pygame</h5>
-    <p id="p_for_list">It will be available on Dec 4</p>
+    <p id="p_for_list">It will be available on Dec 3</p>
   </div>
 </div>
 
