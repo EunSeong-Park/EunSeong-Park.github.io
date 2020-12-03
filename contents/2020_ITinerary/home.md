@@ -95,7 +95,7 @@ comment: false
 </style>
 
 
-**(Recent Notice) Session 3, OpenCV is available, now!**
+**(Recent Notice) Session 4, Pygame is available, now!**
 {:.error}
 
 
@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201203</h4>
+Now, session 4, Pygame is available, good luck!
+
 <h4>201202</h4>
 Now, session 3, OpenCV is available.
 
