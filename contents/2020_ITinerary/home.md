@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201204</h4>
+Simple and naive sample solution for 1.EX and 3.EX is uploaded. We think it is sufficient to help you come up with idea.
+
 <h4>201203</h4>
 Now, session 4, Pygame is available, good luck!
 
