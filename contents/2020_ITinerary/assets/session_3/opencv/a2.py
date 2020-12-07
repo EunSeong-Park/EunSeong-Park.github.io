@@ -13,8 +13,6 @@ def get_point_on_circle(center, radius, theta):
 img = np.zeros((600, 600,3), np.uint8)
 img[:, :] = [255, 255, 255]
 
-
-
 while True:
     tmp_s = (time.time() % 628) * 3
     tmp_m = tmp_s / 60

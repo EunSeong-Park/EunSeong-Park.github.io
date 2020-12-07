@@ -95,7 +95,7 @@ comment: false
 </style>
 
 
-**(Recent Notice) Session 4, Pygame is available, now!**
+**(IMPORTANT NOTICE) We will meet on Zoom at every 10:00AM - 1:00PM** [link](https://us02web.zoom.us/j/9965189658?pwd=dGxPY1o4clZENnlvWC9MTW5aY09XUT09)
 {:.error}
 
 
@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201208</h4>
+The lab session will be held at every 10:00AM - 1:00PM (GMT). You can access to the classroom via the [link](https://us02web.zoom.us/j/9965189658?pwd=dGxPY1o4clZENnlvWC9MTW5aY09XUT09)
+
 <h4>201204</h4>
 Simple and naive sample solution for 1.EX and 3.EX is uploaded. We think it is sufficient to help you come up with idea.
 
