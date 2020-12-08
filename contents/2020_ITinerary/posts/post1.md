@@ -145,7 +145,6 @@ Even if you have no experience in programming, that's okay. We will provide many
   </div>
 </div>
 
-aXk_IisP2eE
 
 ## Post-class: Sample Solution
 
