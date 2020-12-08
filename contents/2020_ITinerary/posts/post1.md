@@ -144,7 +144,21 @@ Even if you have no experience in programming, that's okay. We will provide many
 
 ## Post-class: Sample Solution
 
-(It will be uploaded after the class)
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1/sample_solution.tar';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Sample Solution for the lab session</h5>
+    <p id="p_for_list"> .tar file</p>
+  </div>
+</div>
+
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_1/sample_solution.zip';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Sample Solution for the lab session</h5>
+    <p id="p_for_list"> .zip file</p>
+  </div>
+</div>
 
 <!--
 <div class="grid scale" id="grid_for_list" onclick="location.href='https://eunseong-park.github.io/contents/sample_material/sample_post1.html';">

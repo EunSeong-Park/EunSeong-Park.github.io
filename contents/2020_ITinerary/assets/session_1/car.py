@@ -21,7 +21,10 @@ class Car:
     if fuel < 20 %, print this:
     "WARNING: remaining fuel is too low"
     '''
-    pass
+    print("Car name: " + self.name)
+    print("Mileage:  " + str(self.mileage) + "km/L")
+    print("Fuel:     " + str(self.fuel) + "L" + " / " + str(self.max_fuel) + "L")
+    print("Distance: " + str(self.dist) + "km")
 
   def brrr(self, km):
     '''
@@ -31,10 +34,20 @@ class Car:
       - if the fuel is empty, then you cannot go more
         (+ print, "EMPTY!")
     '''
-    pass
+    for i in range(km):
+        if self.fuel > 1 / self.mileage: # it can go
+            self.fuel = self.fuel - 1 / self.mileage
+            self.dist = self.dist + 1
+        else: # it cannot go
+            break
+    self.status()
 
   def gas_station(self):
-    '''
-    Re-fuel. Don't worry, it is free.
-    '''
-    pass
+    self.fuel = self.max_fuel
+    self.status()
+
+benz = Car("Benz", 25, 100)
+benz.brrr(10000)
+benz.gas_station()
+benz.brrr(1000)
+benz.gas_station()
