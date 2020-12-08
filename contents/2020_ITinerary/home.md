@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201209</h4>
+Session 1 recording is uploaded. Thank you!
+
 <h4>201208</h4>
 The lab session will be held at every 10:00AM - 1:00PM (GMT). You can access to the classroom via the <a href='https://us02web.zoom.us/j/9965189658?pwd=dGxPY1o4clZENnlvWC9MTW5aY09XUT09'>link</a>
 
