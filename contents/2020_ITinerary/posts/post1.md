@@ -132,15 +132,20 @@ Even if you have no experience in programming, that's okay. We will provide many
 
 
 ## Post-class: Recording
-(It will be uploaded after the class)
 
-<!--
 <div style="width:100%;">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/aXk_IisP2eE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
--->
+
+<div style="width:100%;">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/5iFmd9ZKPXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+aXk_IisP2eE
 
 ## Post-class: Sample Solution
 
