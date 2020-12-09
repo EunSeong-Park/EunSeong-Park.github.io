@@ -113,16 +113,35 @@ comments: true
 
 
 ## Post-class: Recording
-(It will be uploaded after the class)
 
-<!--
 <div style="width:100%;">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/6TWJaFD6R2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/3m6pFNXaafk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
--->
+
+
+<div style="width:100%;">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/ckIKboN0DfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
 
 ## Post-class: Assignment & Supplement
 
-(It will be uploaded after the class)
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_2/net/lab_server.py';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Sample Solution for the lab session</h5>
+    <p id="p_for_list">Server</p>
+  </div>
+</div>
+
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_2/net/lab_client.py';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/idea.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Sample Solution for the lab session</h5>
+    <p id="p_for_list">Client</p>
+  </div>
+</div>

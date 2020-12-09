@@ -3,12 +3,10 @@ from select import select
 import sys
 import time
 
-HOST = '127.0.0.1'
+HOST = '192.168.30.33'
 PORT = 56789
 BUFSIZE = 1024
 ADDR = (HOST, PORT)
-
-hp = 10000
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
 
@@ -26,7 +24,7 @@ while True:
     #    continue
 
 
-    if time.time() - s > 3:
+    if True: #time.time() - s > 3:
         s = time.time()
         clientSocket.send("Normal".encode())
         print(clientSocket.recv(1024).decode())
@@ -34,7 +32,7 @@ while True:
 
 
     #clientSocket.send(message.encode())
-    #msg = clientSocket.recv(1024).decode()
+    #msg = clientSocket .recv(1024).decode()
     #print("[System]", msg)
 
 

@@ -2,6 +2,7 @@ from socket import *
 from select import *
 import sys
 import random
+import time
 
 HOST = ''
 PORT = 56789
@@ -15,9 +16,12 @@ serverSocket.bind(ADDR)
 serverSocket.listen(30)
 connection_list = [serverSocket]
 print('[SYSTEM] Waiting...')
-
+s = time.time()
 
 while connection_list:
+    if time.time() - s < 1:
+        continue
+    s = time.time()
     try:
         read_socket, write_socket, error_socket = select(connection_list, [], [], 1)
 
@@ -65,12 +69,6 @@ while connection_list:
                     elif skill == "Normal":
                         hp -= int(30 * damage)
                         msg += "NORMAL ATTACK!"
-                    elif skill == "ADmiN":
-                        hp -= 1700
-                        msg += "ADMIN ATTACK"
-                    elif skill == "ADmiNGOD":
-                        hp -= 18631
-                        msg += "ADMIN ATTACK2"
                     else:
                         msg += "Nothing happened..."
                     if hp <= 0:
