@@ -124,6 +124,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 <details>
 <summary><b>View</b></summary>
 <h4>201209</h4>
+Session 2 recording is uploaded. Thank you!
+
+<h4>201209</h4>
 Session 1 recording is uploaded. Thank you!
 
 <h4>201208</h4>
