@@ -139,7 +139,7 @@ comments: true
 </div>
 -->
 
-## Post-class: Sample Solution
+## Post-class: Assignment & Supplement
 
 (It will be uploaded after the class)
 
