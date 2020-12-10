@@ -103,19 +103,19 @@ comments: true
 </div>
 
 ## In-class: Lab Session
-<div class="grid scale" id="grid_for_list" onclick="location.href='#';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_3/labsession.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/labsession.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Lab Session</h5>
-    <p id="p_for_list">It will be uploaded on Dec 9</p>
+    <h5 id="h_for_list">Lab Session PPT</h5>
+    <p id="p_for_list">PPT</p>
   </div>
 </div>
 
-<div class="grid scale" id="grid_for_list" onclick="location.href='#';">
-  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/submit.png"></div>
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_3/opencv/lab.py';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/prog.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Code Submission</h5>
-    <p id="p_for_list">You can submit your code in here.</p>
+    <h5 id="h_for_list">Lab Session</h5>
+    <p id="p_for_list">Skeleton code</p>
   </div>
 </div>
 

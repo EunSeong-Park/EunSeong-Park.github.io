@@ -10,13 +10,6 @@ def list_compare(a, b):
             return False
     return True
 
-'''
-It returns 4-tuple(x,y,w,z) of face region.
-
-How to use?
-x, y, w, h = get_face_rect(some_image)
-if it cannot find, just return (0,0,0,0)
-'''
 def get_face_rect(img):
     f = haar_face.detectMultiScale(img,
                                    scaleFactor=1.05,
@@ -34,11 +27,7 @@ def get_face_rect(img):
     else:
         return max_wh_rect
 
-'''
-It returns the image, mosaic applied.
-area should be 4-tuple, (x, y, w, h)
-'''
-def mosaic(img, area):
+def pixelate(img, area):
     x,y,w,h = area
     a = img[y:y+h, x:x+w]
     a = cv2.resize(a, (10, 10))
@@ -56,8 +45,8 @@ while cap.isOpened():
     if ret:
         area = get_face_rect(frame)
         if not list_compare(area, (0,0,0,0)):
-            print(area)
-            mosaic(frame, area)
+            #print(area)
+            pixelate(frame, area)
             #frame = mosaic(frame, area)
         cv2.imshow("Window", frame)
 

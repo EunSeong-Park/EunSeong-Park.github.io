@@ -1,5 +1,6 @@
 import cv2
 
+
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)  # width
 cap.set(4, 480)  # height
@@ -11,6 +12,7 @@ recording = False
 while cap.isOpened():
     isSuccess, frame = cap.read()
     if isSuccess:
+
         cv2.imshow('Video', frame)
 
         key = cv2.waitKey(1000 // 30)
