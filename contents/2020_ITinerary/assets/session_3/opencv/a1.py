@@ -38,7 +38,7 @@ def get_face_rect(img):
 It returns the image, mosaic applied.
 area should be 4-tuple, (x, y, w, h)
 '''
-def mosaic(img, area):
+def pixelate(img, area):
     x,y,w,h = area
     a = img[y:y+h, x:x+w]
     a = cv2.resize(a, (10, 10))
@@ -57,8 +57,8 @@ while cap.isOpened():
         area = get_face_rect(frame)
         if not list_compare(area, (0,0,0,0)):
             print(area)
-            mosaic(frame, area)
-            #frame = mosaic(frame, area)
+            pixelate(frame, area)
+
         cv2.imshow("Window", frame)
 
         key = cv2.waitKey(1000 // 30)

@@ -38,7 +38,7 @@ def get_face_rect(img):
 
 def pixelate(img, area):
     '''
-    It returns the image, mosaic applied.
+    It modifies the image, pixelation applied.
     area should be 4-tuple, (x, y, w, h)
     '''
     x,y,w,h = area
