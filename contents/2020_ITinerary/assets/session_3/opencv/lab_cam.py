@@ -45,16 +45,14 @@ while cap.isOpened():
     if ret:
         area = get_face_rect(frame)
         if not list_compare(area, (0,0,0,0)):
-            #print(area)
             pixelate(frame, area)
-            #frame = mosaic(frame, area)
         cv2.imshow("Window", frame)
 
         key = cv2.waitKey(1000 // 30)
         if key == 27: # ESC
             break
         if key == 32: # spacebar
-            pass
+            cv2.imwrite("Captured.png", frame)
 
 cap.release()
 cv2.destroyAllWindows()
