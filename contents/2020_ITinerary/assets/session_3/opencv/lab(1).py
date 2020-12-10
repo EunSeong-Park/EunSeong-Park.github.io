@@ -13,7 +13,7 @@ def list_compare(a, b):
 
 def get_face_rect(img):
     '''
-    It returns 4-tuple(x,y,w,h) of face region.
+    It returns 4-tuple(x,y,w,z) of face region.
 
     How to use?
     x, y, w, h = get_face_rect(some_image)
@@ -22,7 +22,7 @@ def get_face_rect(img):
     f = haar_face.detectMultiScale(img,
                                    scaleFactor=1.05,
                                    minNeighbors=5,
-                                   minSize=(30, 30),
+                                   minSize=(100, 100),
                                    flags=cv2.CASCADE_SCALE_IMAGE)
     max_wh = 0
     max_wh_rect = (0,0,0,0)
@@ -43,7 +43,7 @@ def pixelate(img, area):
     '''
     x,y,w,h = area
     a = img[y:y+h, x:x+w]
-    a = cv2.resize(a, (30, 30))
+    a = cv2.resize(a, (10, 10))
     a = cv2.resize(a, (w, h), cv2.INTER_AREA)
     img[y:y+h, x:x+w] = a
 
@@ -51,29 +51,4 @@ def pixelate(img, area):
 '''--------------------|
 |Implement under here!!|
 |--------------------'''
-
-cap = cv2.VideoCapture(0)
-cap.set(3, 640) # width
-cap.set(4, 480) # height
-
-while cap.isOpened():
-    ret, frame = cap.read()
-
-    if ret:
-        # x, y, w, h
-        area = get_face_rect(frame)
-        if not list_compare(area, (0, 0, 0, 0)):
-            pixelate(frame, area)
-
-        cv2.imshow("Pixel", frame)
-
-        key = cv2.waitKey(33)
-        if key == 27: # ESC
-            break
-        if key == 32: # Spacebar
-            cv2.imwrite("captured_image.png", frame)
-
-cap.release()
-cv2.destroyAllWindows()
-
 
