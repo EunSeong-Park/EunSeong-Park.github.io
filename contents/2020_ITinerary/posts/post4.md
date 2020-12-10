@@ -118,15 +118,29 @@ comments: true
 </div>
 
 ## In-class: Lab Session
-<div class="grid scale" id="grid_for_list" onclick="location.href='#';">
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_3/labsession.pdf';">
   <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/labsession.png"></div>
   <div class="cell cell--auto">
-    <h5 id="h_for_list">Lab Session</h5>
-    <p id="p_for_list">It will be uploaded on Dec 10</p>
+    <h5 id="h_for_list">Lab Session PPT</h5>
+    <p id="p_for_list">PPT</p>
   </div>
 </div>
 
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_4/pygame/asset/asset.zip';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/prog.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Skeleton and images (.zip compression)</h5>
+    <p id="p_for_list">It should be in your project directory</p>
+  </div>
+</div>
 
+<div class="grid scale" id="grid_for_list" onclick="location.href='/contents/2020_ITinerary/assets/session_4/pygame/asset/asset.tar';">
+  <div class="cell cell--2"><img src="/contents/2020_ITinerary/assets/imgs/prog.png"></div>
+  <div class="cell cell--auto">
+    <h5 id="h_for_list">Skeleton and images (.tar compression)</h5>
+    <p id="p_for_list">It should be in your project directory</p>
+  </div>
+</div>
 
 ## Post-class: Recording
 (It will be uploaded after the class)
