@@ -95,8 +95,8 @@ comment: false
 </style>
 
 
-**(IMPORTANT NOTICE) We will meet on Zoom at every 10:00AM - 1:00PM** [link](https://us02web.zoom.us/j/9965189658?pwd=dGxPY1o4clZENnlvWC9MTW5aY09XUT09)
-{:.error}
+**The entire class is over. We want to express our appreciation for taking our course. Although we could not meet you face-to-face, this was a great time for us. We sincerely hope that our course was helpful for you, too. Take care, and enjoy your life with programming. Thank you, all!**
+{:.success}
 
 
 ## Welcome to the Course!
@@ -123,6 +123,9 @@ The syllabus is available [here](assets/docs/syllabus.pdf).
 ## Announcements
 <details>
 <summary><b>View</b></summary>
+<h4>201210</h4>
+Session 4 recording is uploaded. Thank you!
+
 <h4>201210</h4>
 Session 3 recording is uploaded. Thank you!
 

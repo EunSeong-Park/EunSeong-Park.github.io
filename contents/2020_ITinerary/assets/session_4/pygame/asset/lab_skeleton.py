@@ -11,9 +11,9 @@ class Poop:
 
 pygame.init()
 
-bg = pygame.image.load("background.png")
-temp = pygame.image.load("character.png")
-temp2 = pygame.image.load("poop.png")
+bg = pygame.image.load("../background.png")
+temp = pygame.image.load("../character.png")
+temp2 = pygame.image.load("../poop.png")
 character = pygame.transform.scale(temp, (40, 40))
 poop_img = pygame.transform.scale(temp2, (30, 30))
 default_font = pygame.font.Font(None, 24)
