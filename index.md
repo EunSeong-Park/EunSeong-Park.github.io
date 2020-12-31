@@ -92,44 +92,7 @@ comment: false
 - <i class="fab fa-github"></i> <a style ="color:#0000FF;" href = "https://github.com/eunseong-park">github.com/Eunseong-Park</a>
 
 
-I am a third-grade undergraduate student majoring **Computer Sceince & Engineering(CSE)** at **UNIST**. I am interested in **computer archtecture & system** and **data science**. 
-
-
-
-### Experiences
-- **Majoring Computer Science and Engineering (2019.-)**
-- **Minoring Industrial Engineering (2019.-)**
-- **2019 World Friends ICT Volunteer in Ghana (2019.07-2019.08)**
-  - App development
-  - OpenCV education
-  - Automated agriculture project
-- **Internship in ISSL(2020.06-)**
-  - Trustworthiness of Serverless Computing
-- **IBM Cybersecurity Analyst Professional Certificate (2020.08)**
-- **2020 World Friends IT E-Volunteer in Ghana (2020.11-2020.12)** 
-  - Basic Python programming course [[Link]](https://eunseong-park.github.io/itinerary)
-
-
-### Honors & Awards & Scholarships
-- <a style ="color:#000000; font-weight:bold;" href = "https://www.etnews.com/20181102000413">유하푸른재단 2기 장학생 선발 (2018.11)</a>
-- <a style ="color:#000000; font-weight:bold;" href = "https://news.unist.ac.kr/the-successful-completion-of-2019-world-friends-ict-volunteers-program/">2019 World Friends ICT 최우수상 (UNIST-GhaU, 2019.12)</a>
-- **KT 그룹 희망나눔재단 장학생 선발 (2020.07)**
-
-### Skills
-- **System Software Programming**
-  - Intel SGX
-- **Python Programming**
-  - Computer Vision (OpenCV)
-  - Data Science & Analysis
-- **Cloud Computing**
-  - OpenWhisk
-- **Languages Available**
-  - Python
-  - C/C++
-  - Java
-  - Scala
-  - OCaml
-  - HTML / CSS / JavaScript
+Moved to other blog, bye
   
 
 
